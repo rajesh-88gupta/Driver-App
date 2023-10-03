@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/_2adp">
+    <LinearLayout
+        android:id="@+id/lv_opponnent_chat_messages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        app:layout_constraintTop_toTopOf="parent">
+        <RelativeLayout
+            android:id="@+id/profile_layout"
+            android:layout_width="@dimen/_45adp"
+            android:layout_height="@dimen/_45adp"
+            app:layout_constraintStart_toEndOf="@+id/imgvu_back"
+            app:layout_constraintTop_toTopOf="parent"
+            >
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="@dimen/_10adp"
+                app:cardBackgroundColor="@color/newtaxi_app_gray"
+                app:cardCornerRadius="@dimen/_15adp"
+                >
+
+                <ImageView
+                    android:id="@+id/imgv_opponent_profile_pic"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/app_round_button_gray"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imgvu_back"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/_6adp"
+        app:cardElevation="@dimen/_3adp"
+        app:cardBackgroundColor="#EFEFF4"
+        app:cardUseCompatPadding="true">
+
+        <TextView
+            android:id="@+id/tv_opponent_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10adp"
+            android:layout_marginTop="@dimen/_5adp"
+            android:layout_marginEnd="@dimen/_10adp"
+            android:layout_marginBottom="@dimen/_5adp" />
+    </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_my_messages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:cardCornerRadius="@dimen/_6adp"
+        app:cardElevation="@dimen/_3adp"
+        app:cardUseCompatPadding="true"
+        app:cardBackgroundColor="@color/newtaxi_app_navy"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/tv_my_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10adp"
+            android:layout_marginTop="@dimen/_5adp"
+            android:layout_marginEnd="@dimen/_10adp"
+            android:layout_marginBottom="@dimen/_10adp" />
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

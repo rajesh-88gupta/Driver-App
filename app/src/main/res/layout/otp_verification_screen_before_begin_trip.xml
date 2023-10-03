@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/app_top_curve_white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:animateLayoutChanges="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+        android:id="@+id/tv_close_popup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20adp"
+        android:layout_marginEnd="@dimen/_15adp"
+        android:paddingStart="@dimen/_10adp"
+        android:paddingEnd="@dimen/_10adp"
+        android:paddingTop="@dimen/_10adp"
+        android:text="@string/close"
+        android:padding="@dimen/_3adp"
+        android:background="@drawable/top_left_radius"
+        android:layout_gravity="end"
+        android:textColor="@color/destination_red_marker"
+        app:fontname="@string/font_Medium"
+        android:textSize="@dimen/_14asp"
+        app:layout_constraintTop_toBottomOf="@id/rl_edittexts"
+        />
+    <LinearLayout
+        android:background="@color/newtaxi_app_white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+        <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+        android:id="@+id/tv_mobile_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+            android:text="@string/enter_otp_to_begin_trip"
+        android:textAlignment="viewStart"
+        android:textColor="@color/newtaxi_app_black"
+        app:fontname="@string/font_Medium"
+        android:textSize="@dimen/_17asp"
+        app:layout_constraintTop_toBottomOf="@id/tv_mobile_heading"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/_20adp"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+        <RelativeLayout
+            android:id="@+id/rl_edittexts"
+            android:layoutDirection="@string/default_direction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_20adp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_otp_text"
+            >
+
+            <com.seentechs.newtaxidriver.common.custompalette.FontEditText
+                android:id="@+id/one"
+                android:layout_width="@dimen/_60adp"
+                android:background="@drawable/app_curve_button_white_with_outline"
+                android:textCursorDrawable="@drawable/app_cursor_color"
+                android:padding="@dimen/_2adp"
+                android:layout_height="@dimen/_60adp"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="@dimen/_7adp"
+                android:gravity="center"
+                android:hint="0"
+                android:inputType="number"
+                android:lines="1"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:minLines="1"
+                android:paddingBottom="@dimen/_10adp"
+                android:textSize="@dimen/_18asp"
+                app:fontname="@string/font_Medium"
+                >
+
+                <requestFocus />
+            </com.seentechs.newtaxidriver.common.custompalette.FontEditText>
+
+
+            <com.seentechs.newtaxidriver.common.custompalette.FontEditText
+                android:id="@+id/two"
+                android:layout_width="@dimen/_60adp"
+                android:background="@drawable/app_curve_button_white_with_outline"
+                android:textCursorDrawable="@drawable/app_cursor_color"
+                android:padding="@dimen/_2adp"
+                android:layout_height="@dimen/_60adp"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="@dimen/_7adp"
+                app:fontname="@string/font_Medium"
+                android:layout_toEndOf="@+id/one"
+                android:gravity="center"
+                android:hint="0"
+                android:inputType="number"
+                android:lines="1"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:minLines="1"
+                android:paddingBottom="@dimen/_10adp"
+                android:textSize="@dimen/_18asp" />
+
+            <com.seentechs.newtaxidriver.common.custompalette.FontEditText
+                android:id="@+id/three"
+                android:layout_width="@dimen/_60adp"
+                android:background="@drawable/app_curve_button_white_with_outline"
+                android:textCursorDrawable="@drawable/app_cursor_color"
+                android:padding="@dimen/_2adp"
+                android:layout_height="@dimen/_60adp"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="@dimen/_7adp"
+                app:fontname="@string/font_Medium"
+                android:layout_toEndOf="@+id/two"
+                android:gravity="center"
+                android:hint="0"
+                android:inputType="number"
+                android:lines="1"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:minLines="1"
+                android:paddingBottom="@dimen/_10adp"
+                android:textSize="@dimen/_18asp" />
+
+            <com.seentechs.newtaxidriver.common.custompalette.FontEditText
+                android:id="@+id/four"
+                android:layout_width="@dimen/_60adp"
+                android:background="@drawable/app_curve_button_white_with_outline"
+                android:textCursorDrawable="@drawable/app_cursor_color"
+                android:padding="@dimen/_2adp"
+                android:layout_height="@dimen/_60adp"
+                android:layout_alignParentTop="true"
+                app:fontname="@string/font_Medium"
+                android:layout_toEndOf="@+id/three"
+                android:gravity="center"
+                android:hint="0"
+                android:inputType="number"
+                android:lines="1"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:minLines="1"
+                android:paddingBottom="@dimen/_10adp"
+                android:textSize="@dimen/_18asp" />
+        </RelativeLayout>
+
+    <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+        android:id="@+id/tv_otp_error_field"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_valid_otp"
+        android:textAlignment="center"
+        android:textColor="@color/destination_red_marker"
+        app:fontname="@string/font_Medium"
+        android:textSize="@dimen/_14asp"
+        app:layout_constraintTop_toBottomOf="@id/rl_edittexts"
+        />
+
+    <com.seentechs.newtaxidriver.common.custompalette.FontButton
+        android:id="@+id/btn_verify_OTP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/app_curve_button_navy_disable"
+        android:textColor="@color/newtaxi_app_white"
+        android:textSize="@dimen/_16asp"
+        android:layout_marginTop="@dimen/_10adp"
+        android:layout_marginStart="@dimen/_25adp"
+        android:layout_marginEnd="@dimen/_25adp"
+        android:layout_marginBottom="@dimen/_10adp"
+        app:fontname="@string/font_Medium"
+        android:text="@string/Done"/>
+    </LinearLayout>
+
+</LinearLayout>

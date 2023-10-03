@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true"
+        android:background="@drawable/call_answering_page_background"
+        tools:context=".trips.voip.CallProcessingActivity"
+        >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/ic_default_profile_pic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+    <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+            android:id="@+id/tv_caller_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="8dp"
+
+            android:textColor="@color/text_black"
+            android:textSize="20sp"
+            app:fontname="@string/font_UBERNews"
+            app:layout_constraintEnd_toEndOf="@+id/profile_image"
+            app:layout_constraintStart_toStartOf="@+id/profile_image"
+            app:layout_constraintTop_toBottomOf="@+id/profile_image"
+            />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_incomming_view"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_caller_name"
+            >
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_answer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="50dp"
+                app:srcCompat="@drawable/ic_phone"
+                android:tint="@color/white"
+                app:backgroundTint="@color/green_text_color"
+                app:layout_constraintBottom_toBottomOf="parent"
+
+
+                app:layout_constraintEnd_toStartOf="@+id/fab_dismiss"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_dismiss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="50dp"
+                app:srcCompat="@drawable/ic_call_end"
+                app:backgroundTint="@color/destination_red_marker"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/fab_answer"
+                />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_answer_view"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_caller_name"
+            >
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_end_call"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="50dp"
+                app:srcCompat="@drawable/ic_call_end"
+                app:backgroundTint="@color/destination_red_marker"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+
+
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+        <LinearLayout
+                android:id="@+id/ll_loudspeaker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/ub__transparent"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="@+id/fab_end_call"
+                app:layout_constraintEnd_toStartOf="@+id/fab_end_call"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/fab_end_call"
+                >
+
+            <ImageView
+                    android:id="@+id/imgv_loud_speaker"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="8dp"
+
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/circle_shape_light_gray"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_loudspeaker"
+
+                    />
+        </LinearLayout>
+
+
+        <LinearLayout
+                android:id="@+id/ll_mic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/ub__transparent"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="@+id/fab_end_call"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/fab_end_call"
+                app:layout_constraintTop_toTopOf="@+id/fab_end_call"
+                >
+
+            <ImageView
+                    android:id="@+id/imgv_mute_voice"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/circle_shape_light_gray"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_mic"
+
+
+                    />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                >
+
+            <TextView
+                    android:id="@+id/tv_call_connection_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/connecting"
+                    />
+
+
+            <Chronometer
+                    android:id="@+id/chronometer_call_timer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                android:visibility="gone"
+                    />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.hadiidbouk:ChartProgressBar-Android:2.0.6@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/19eaf5ad8662c0246d9a80230ac6d7c1/transformed/jetified-ChartProgressBar-Android-2.0.6/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/19eaf5ad8662c0246d9a80230ac6d7c1/transformed/jetified-ChartProgressBar-Android-2.0.6/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/19eaf5ad8662c0246d9a80230ac6d7c1/transformed/jetified-ChartProgressBar-Android-2.0.6/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.hadiidbouk/ChartProgressBar-Android/2.0.6/9bc56dc2f938a3f0d44c50814b4708b711ca24fc/ChartProgressBar-Android-2.0.6-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

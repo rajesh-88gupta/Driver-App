@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="@string/layout_direction"
+    android:background="@color/newtaxi_app_white"
+    tools:context=".common.views.PaymentWebViewActivity">
+
+    <include
+        android:id="@+id/common_header"
+        layout="@layout/app_common_header" />
+
+   <FrameLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_marginTop="@dimen/_10adp"
+       android:background="@drawable/app_top_curve_white"
+       android:layout_below="@+id/common_header">
+    <WebView
+        android:id="@+id/payment_wv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_30adp"
+        />
+   </FrameLayout>
+
+</RelativeLayout>

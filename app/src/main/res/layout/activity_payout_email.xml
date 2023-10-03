@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layoutDirection="@string/layout_direction"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/common_header"
+        layout="@layout/app_common_header" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/common_header"
+        android:layout_marginTop="@dimen/default_header_to"
+        android:background="@drawable/app_top_curve_white"
+        android:padding="@dimen/_15adp"
+        android:paddingBottom="@dimen/_15adp">
+
+        <com.seentechs.newtaxidriver.common.custompalette.FontEditText
+            android:id="@+id/payoutemail_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="viewStart"
+            android:layout_marginStart="@dimen/_20adp"
+            android:layout_marginTop="@dimen/_35adp"
+            android:layout_marginEnd="@dimen/_20adp"
+            android:layout_marginBottom="@dimen/_20adp"
+            android:background="@drawable/app_curve_button_white_with_outline"
+            android:textCursorDrawable="@drawable/app_cursor_color"
+            android:hint="@string/paypal_email"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:minHeight="@dimen/_50adp"
+            android:padding="@dimen/_15adp"
+            android:singleLine="true"
+            android:textColor="@color/text_shadow"
+            android:textSize="@dimen/_15asp"
+            app:fontname="@string/font_Medium" />
+
+        <com.seentechs.newtaxidriver.common.custompalette.FontButton
+            android:id="@+id/payout_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/payoutemail_edittext"
+            android:layout_marginStart="@dimen/_20adp"
+            android:layout_marginTop="@dimen/_50adp"
+            android:layout_marginEnd="@dimen/_20adp"
+            android:layout_marginBottom="@dimen/_20adp"
+            android:background="@drawable/app_curve_button_navy"
+            android:enabled="false"
+            android:text="@string/submit"
+            android:textAllCaps="false"
+            android:textColor="@color/newtaxi_app_black"
+            android:textSize="@dimen/_16asp"
+            app:fontname="@string/font_Medium" />
+
+    </RelativeLayout>
+</RelativeLayout>

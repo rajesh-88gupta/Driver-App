@@ -1,0 +1,265 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_gravity="bottom"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ctlv_apply_toll_fare"
+        android:background="@drawable/app_top_curve_white"
+        android:animateLayoutChanges="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:visibility="visible">
+
+        <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+            android:id="@+id/fontTextView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/_10adp"
+            android:text="@string/apply_extra_fee"
+            android:textColor="@color/newtaxi_app_black"
+            android:textSize="@dimen/_18asp"
+            app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/newtaxi_app_white"
+            android:padding="@dimen/_10adp"
+            android:layout_margin="@dimen/_15adp"
+            app:layout_constraintTop_toBottomOf="@+id/fontTextView6">
+
+            <com.seentechs.newtaxidriver.common.custompalette.FontButton
+                android:id="@+id/btn_no"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10adp"
+                android:layout_marginBottom="@dimen/_10adp"
+                android:background="@drawable/app_curve_button_navy_with_outline"
+                android:text="@string/no"
+                android:elevation="@dimen/_5adp"
+                android:textSize="@dimen/_15asp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/btn_yes"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <com.seentechs.newtaxidriver.common.custompalette.FontButton
+                android:id="@+id/btn_yes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10adp"
+                android:layout_marginBottom="@dimen/_10adp"
+                android:background="@drawable/app_curve_button_navy"
+                android:text="@string/yes"
+                android:elevation="@dimen/_5adp"
+                android:textSize="@dimen/_15asp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/btn_no" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ctlv_enter_toll_fare"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:background="@drawable/app_top_curve_white"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+            android:id="@+id/tv_enter_toll_fee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_10adp"
+            android:padding="@dimen/_10adp"
+            android:text="@string/enter_extra_fee"
+            android:textColor="@color/newtaxi_app_navy"
+            android:textSize="@dimen/_18asp"
+            app:fontname="@string/font_Medium"
+            app:layout_constraintBottom_toTopOf="@+id/tipl_extra_fee_amount"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tipl_extra_fee_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="@dimen/_25adp"
+            android:background="@color/newtaxi_app_white"
+            android:layout_marginEnd="@dimen/_25adp"
+            android:layout_marginTop="@dimen/_10adp"
+            app:hintEnabled="false"
+            app:layout_constraintTop_toBottomOf="@+id/tipl_extra_fee_amount">
+
+            <com.seentechs.newtaxidriver.common.custompalette.FontEditText
+                android:id="@+id/edtx_extra_fee_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_10adp"
+                android:layout_marginTop="@dimen/_12adp"
+                android:layout_marginBottom="@dimen/_5adp"
+                android:layout_marginEnd="@dimen/_5adp"
+                android:layout_weight="1"
+                android:textAlignment="viewStart"
+                android:background="@drawable/app_curve_button_white_with_outline"
+                android:drawableEnd="@drawable/ccp_down_arrow"
+                android:focusableInTouchMode="false"
+                android:hint="@string/select_extra_fee_description"
+                android:inputType="number"
+                android:textColor="@drawable/error_enabled_coor"
+                android:textCursorDrawable="@drawable/app_cursor_color"
+                android:textSize="@dimen/_14asp"
+                app:fontname="@string/font_UBERNews" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tipl_extra_fee_other_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="@dimen/_25adp"
+            android:layout_marginEnd="@dimen/_25adp"
+            android:layout_marginTop="@dimen/_10adp"
+            android:background="@color/ub__transparent"
+            app:hintEnabled="false"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@+id/tipl_extra_fee_description">
+
+            <com.seentechs.newtaxidriver.common.custompalette.FontEditText
+                android:id="@+id/edtx_extra_fee_other_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="viewStart"
+                android:padding="@dimen/_12adp"
+                android:layout_marginEnd="@dimen/_5adp"
+                android:background="@drawable/app_curve_button_white_with_outline"
+                android:layout_weight="1"
+                android:hint="@string/enter_extra_fee_description"
+                android:textColor="@drawable/error_enabled_coor"
+                android:textSize="@dimen/_15asp"
+                app:fontname="@string/font_Medium" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tipl_extra_fee_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="@dimen/_25adp"
+            android:background="@color/newtaxi_app_white"
+            android:layout_marginEnd="@dimen/_25adp"
+            app:hintEnabled="false"
+            app:layout_constraintTop_toBottomOf="@+id/tv_enter_toll_fee">
+
+            <com.seentechs.newtaxidriver.common.custompalette.FontEditText
+                android:id="@+id/edtx_toll_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="viewStart"
+                android:padding="@dimen/_12adp"
+                android:hint="@string/enter_extra_fee"
+                android:background="@drawable/app_curve_button_white_with_outline"
+                android:layout_marginTop="@dimen/_10adp"
+                android:layout_marginEnd="@dimen/_5adp"
+                android:layout_weight="1"
+                android:inputType="numberDecimal"
+                android:maxLength="6"
+                android:textColor="@drawable/error_enabled_coor"
+                android:textSize="@dimen/_15asp"
+                app:fontname="@string/font_Medium"
+                android:textCursorDrawable="@drawable/app_cursor_color"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <!--<com.seentechs.newtaxidriver.common.custompalette.FontTextView
+            android:id="@+id/tv_currency_symbol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@color/white"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/ub__black"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/edtx_toll_amount"
+            app:layout_constraintEnd_toStartOf="@id/edtx_toll_amount"
+            app:layout_constraintTop_toTopOf="@id/edtx_toll_amount" />
+
+        <EditText
+            android:id="@+id/edtx_toll_amount"
+            android:layout_width="200dp"
+            android:maxLength="15"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+android:layout_marginTop="10dp"
+            android:digits="0123456789."
+            android:inputType="number"
+            android:layout_marginEnd="8dp"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tipl_extra_fee_description" />-->
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/newtaxi_app_white"
+            android:padding="@dimen/_20adp"
+            app:layout_constraintTop_toBottomOf="@id/tipl_extra_fee_other_description">
+
+            <com.seentechs.newtaxidriver.common.custompalette.FontButton
+                android:id="@+id/btn_cancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10adp"
+                android:layout_marginBottom="@dimen/_10adp"
+                android:background="@drawable/app_curve_button_navy_with_outline"
+                android:text="@string/cancel"
+                android:elevation="@dimen/_5adp"
+                app:fontname="@string/font_Medium"
+                android:textSize="@dimen/_14asp"
+                android:textColor="@color/newtaxi_app_black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/btn_apply"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <com.seentechs.newtaxidriver.common.custompalette.FontButton
+                android:id="@+id/btn_apply"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="@dimen/_20adp"
+                android:background="@drawable/app_curve_button_navy"
+                android:text="@string/apply"
+                android:elevation="@dimen/_5adp"
+                app:fontname="@string/font_Medium"
+                android:textSize="@dimen/_14asp"
+                android:textColor="@color/newtaxi_app_black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/btn_cancel" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

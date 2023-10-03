@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/selectcurrency"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:background="@color/white"
+    android:layoutDirection="@string/layout_direction"
+    android:paddingBottom="10dp"
+    android:paddingEnd="20dp"
+    android:paddingStart="20dp"
+    android:paddingTop="10dp">
+    <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+        android:id="@+id/currencyname_txt"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center_horizontal"
+        android:textAlignment="viewStart"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:textSize="15dp"
+        app:fontname="@string/font_UBERMedium" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/currencyname_txt"
+        android:layout_alignEnd="@+id/currencyname_txt"
+        android:layout_marginTop="5dp"
+        android:maxHeight="50dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:src="@drawable/divider" />
+
+    <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+        android:id="@+id/currencysymbol_txt"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/imageView1"
+        android:gravity="center_vertical"
+        android:paddingBottom="10dp"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"
+        android:paddingTop="10dp"
+        android:text="symbol"
+        android:textAlignment="viewStart"
+        android:textSize="15dp"
+        app:fontname="@string/font_UBERMedium" />
+
+    <RadioButton
+        android:id="@+id/radioButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="20dp"
+        android:checked="false"
+        android:clickable="false"
+        android:focusable="false" />
+
+
+</RelativeLayout>
+

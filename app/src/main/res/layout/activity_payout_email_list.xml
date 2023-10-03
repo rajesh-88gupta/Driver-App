@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/text_color"
+    android:layoutDirection="@string/layout_direction">
+
+    <RelativeLayout
+        android:id="@+id/payoutemaillist_title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/app_background"
+        android:paddingTop="15dp">
+
+        <ImageView
+            android:id="@+id/payoutemaillist_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="15dp"
+            android:paddingEnd="20dp"
+            android:paddingTop="5dp"
+            android:src="@drawable/ic_back"/>
+
+
+        <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_marginStart="10dp"
+            android:textStyle="bold"
+            android:textAlignment="textStart"
+            android:layout_height="wrap_content"
+            android:textSize="21sp"
+            android:textColor="@color/actionbar_text_color"
+            android:text="@string/payout"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/payoutemaillist_back" />
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_above="@+id/payout_addpayout"
+        android:layout_below="@+id/payoutemaillist_title" />
+
+    <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+        android:id="@+id/payoutmain_title"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/vbigb"
+        android:textColor="@color/text_light_shadow"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="125dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:text="@string/payout_title"/>
+
+
+    <com.seentechs.newtaxidriver.common.custompalette.FontButton
+        android:id="@+id/payout_addpayout"
+        android:layout_weight=".2"
+        android:layout_width="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="80dp"
+        android:layout_marginEnd="20dp"
+        android:textSize="@dimen/big"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:background="@drawable/d_background_black"
+        android:text="@string/addpayout"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textColor="@color/white"/>
+
+    <com.seentechs.newtaxidriver.common.custompalette.FontButton
+        android:id="@+id/payout_addstripe"
+        android:layout_weight=".2"
+        android:layout_width="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="20dp"
+        android:textSize="@dimen/big"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:background="@drawable/d_background_black"
+        android:text="@string/add_stripe_payout"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textColor="@color/white"/>
+
+</RelativeLayout>

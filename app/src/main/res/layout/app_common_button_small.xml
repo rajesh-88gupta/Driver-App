@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.seentechs.newtaxidriver.common.custompalette.FontButton
+        android:id="@+id/btn_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_60adp"
+        android:layout_weight="1"
+        android:layout_marginStart="@dimen/_100adp"
+        android:layout_marginEnd="@dimen/_100adp"
+        android:layout_marginBottom="@dimen/_5adp"
+        android:background="@drawable/app_curve_button_white"
+        android:text="@string/cancel"
+        android:textColor="@color/newtaxi_app_black"
+        android:textSize="@dimen/_15asp"
+        app:fontname="@string/font_Medium"
+        tools:ignore="MissingClass" />
+
+</RelativeLayout>

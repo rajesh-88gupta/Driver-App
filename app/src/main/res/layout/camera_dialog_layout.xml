@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="bottom"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llt_camera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingStart="15dp"
+            android:paddingEnd="30dp"
+            android:src="@drawable/cameraicon"
+            android:tint="@color/textblack" />
+
+        <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="@string/camera"
+            android:textColor="@color/textblack"
+            android:textSize="20sp"
+            app:fontname="@string/font_UBERMedium" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llt_library"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingStart="15dp"
+            android:paddingEnd="30dp"
+            android:src="@drawable/rsz_gallery"
+            android:tint="@color/textblack" />
+
+        <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="@string/camera_roll"
+            android:textColor="@color/textblack"
+            android:textSize="20sp"
+            app:fontname="@string/font_UBERMedium" />
+
+    </LinearLayout>
+</LinearLayout>

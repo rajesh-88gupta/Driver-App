@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="@string/layout_direction"
+    android:background="@color/newtaxi_app_white">
+    <include
+        android:id="@+id/common_header"
+        layout="@layout/app_common_header"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/common_header"
+        android:background="@drawable/app_top_curve_white"
+        android:layout_marginTop="@dimen/_20adp"
+        android:elevation="@dimen/_10adp">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_20adp">
+
+            <RelativeLayout
+                android:id="@+id/rltCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <com.stripe.android.view.CardMultilineWidget
+                    android:id="@+id/stripe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15adp"
+                    android:padding="@dimen/_20adp" />
+
+
+            </RelativeLayout>
+        </ScrollView>
+        <com.seentechs.newtaxidriver.common.custompalette.FontButton
+            android:id="@+id/btnAddCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/_20adp"
+            android:text="@string/Done"
+            android:paddingTop="@dimen/_10adp"
+            android:paddingBottom="@dimen/_10adp"
+            android:textColor="@color/newtaxi_app_black"
+            android:background="@drawable/app_curve_button_navy"
+            android:textSize="@dimen/_14asp"
+            app:fontname="@string/font_UBERMedium"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

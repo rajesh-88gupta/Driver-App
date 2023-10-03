@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "1079456627108",
+    "firebase_url": "https://new-taxis-default-rtdb.firebaseio.com",
+    "project_id": "new-taxis",
+    "storage_bucket": "new-taxis.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1079456627108:android:16548d72d4e064d2e7a931",
+        "android_client_info": {
+          "package_name": "com.seentechs.newtaxidriver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1079456627108-mkht1849cou0i1lc1kqd406hmhqsj0gn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.seentechs.newtaxidriver",
+            "certificate_hash": "17d6568da6a0480ade41789172d2a04ababa04d3"
+          }
+        },
+        {
+          "client_id": "1079456627108-6e3bb94omdgvq2fdf7e0jnlm1ndhkag0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7jI8m9h7lbbdPURdxy0_7tBMWEpHJPHk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1079456627108-6e3bb94omdgvq2fdf7e0jnlm1ndhkag0.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1079456627108-4omfl49i3ljqtsn8o24nv0nh745kketp.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.seentechs.newtaxiuser"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1079456627108:android:348f97485238fca6e7a931",
+        "android_client_info": {
+          "package_name": "com.seentechs.newtaxiuser"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1079456627108-1ghfeilkraamv7f9qel8826a41e0ekbo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.seentechs.newtaxiuser",
+            "certificate_hash": "1daef57173406072d83ec497d0b042f63acde4a1"
+          }
+        },
+        {
+          "client_id": "1079456627108-6e3bb94omdgvq2fdf7e0jnlm1ndhkag0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7jI8m9h7lbbdPURdxy0_7tBMWEpHJPHk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1079456627108-6e3bb94omdgvq2fdf7e0jnlm1ndhkag0.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1079456627108-4omfl49i3ljqtsn8o24nv0nh745kketp.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.seentechs.newtaxiuser"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#a4f1efef"
+    android:layoutDirection="@string/layout_direction">
+
+    <include
+        android:id="@+id/common_header"
+        layout="@layout/app_common_header" />
+
+    <ScrollView
+        android:id="@+id/scv_referal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/newtaxi_app_white"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/common_header">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/newtaxi_app_white">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout_referral_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_30adp"
+                android:layout_marginTop="@dimen/_20adp"
+                android:layout_marginEnd="@dimen/_30adp"
+                android:layout_marginBottom="@dimen/_8adp"
+                android:background="@drawable/app_curve_button_white"
+                android:elevation="@dimen/_20adp"
+                android:padding="@dimen/_10adp"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+                    android:id="@+id/tv_heading_invite_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10adp"
+                    android:layout_marginStart="@dimen/_5adp"
+                    android:text="@string/your_invite_code"
+                    android:textAlignment="viewStart"
+                    android:textAllCaps="false"
+                    android:textColor="@color/newtaxi_app_black"
+                    android:textSize="@dimen/_15asp"
+                    app:fontname="@string/font_Medium"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imag_copy"
+                    android:layout_width="@dimen/_25adp"
+                    android:layout_height="@dimen/_25adp"
+                    android:layout_marginTop="@dimen/_10adp"
+                    android:layout_marginEnd="@dimen/_10adp"
+                    android:src="@drawable/ic_content_copy"
+                    app:layout_constraintEnd_toStartOf="@+id/imag_share"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imag_share"
+                    android:layout_width="@dimen/_25adp"
+                    android:layout_height="@dimen/_25adp"
+                    android:layout_marginTop="@dimen/_10adp"
+                    android:layout_marginEnd="@dimen/_10adp"
+                    android:src="@drawable/app_ic_share"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+                    android:id="@+id/tv_referral_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_12adp"
+                    android:layout_marginEnd="@dimen/_70adp"
+                    android:drawablePadding="@dimen/_10adp"
+                    android:text=""
+                    android:layout_marginStart="@dimen/_5adp"
+                    android:textAlignment="viewStart"
+                    android:textAllCaps="false"
+                    android:textColor="@color/newtaxi_app_navy"
+                    android:textSize="@dimen/_24asp"
+                    app:fontname="@string/font_Medium"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_heading_invite_code" />
+
+
+                <View
+                    android:id="@+id/vu_border_below_shareMyCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_2adp"
+                    android:layout_marginStart="@dimen/_10adp"
+                    android:layout_marginTop="@dimen/_10adp"
+                    android:layout_marginEnd="@dimen/_10adp"
+                    android:background="@color/newtaxi_app_border_shadow"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_referral_code" />
+
+                <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+                    android:id="@+id/tv_referral_benifit_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_8adp"
+                    android:layout_marginTop="@dimen/_5adp"
+                    android:layout_marginEnd="@dimen/_8adp"
+                    android:layout_marginBottom="@dimen/_8adp"
+                    android:padding="@dimen/_10adp"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/newtaxi_app_black"
+                    android:textSize="@dimen/_15asp"
+                    app:fontname="@string/font_Medium"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/vu_border_below_shareMyCode" />
+
+                <RelativeLayout
+                    android:id="@+id/rlt_share"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="@dimen/_15adp"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_referral_benifit_text">
+
+                    <ImageView
+                        android:id="@+id/iv_share"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:padding="@dimen/_3adp"
+                        android:src="@drawable/ic_share" />
+
+                    <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/_10adp"
+                        android:layout_marginEnd="@dimen/_10adp"
+                        android:layout_toEndOf="@+id/iv_share"
+                        android:text="@string/share_to_contacts"
+                        android:textAlignment="center"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/_17asp"
+                        app:fontname="@string/font_Medium" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_20adp"
+                        android:layout_height="@dimen/_20adp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/next" />
+
+                </RelativeLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout_referral_code">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="@dimen/_3adp"
+                    tools:ignore="MissingConstraints">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        app:layout_constraintHorizontal_weight="2">
+
+                        <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+                            android:id="@+id/remaing_referral"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/_10adp"
+                            android:text="@string/remaining_referral"
+                            android:textAllCaps="true"
+                            android:textSize="@dimen/_15asp"
+                            app:layout_constraintEnd_toStartOf="@+id/remaing_referral_amount"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintHorizontal_weight="1"
+                            app:layout_constraintStart_toStartOf="parent" />
+
+                        <TextView
+                            android:id="@+id/remaing_referral_amount"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="end"
+                            android:padding="@dimen/_10adp"
+                            android:text="0"
+                            android:textAllCaps="true"
+                            android:textColor="@color/text_black"
+                            android:textSize="@dimen/_15asp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintHorizontal_weight="1"
+                            app:layout_constraintStart_toEndOf="@+id/remaing_referral"
+                            tools:layout_editor_absoluteY="0dp" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout_in_completed_friends"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_header_to"
+                android:background="@drawable/app_top_curve_white"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
+
+                <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+                    android:id="@+id/tv_friends_in_completed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_20adp"
+                    android:layout_marginTop="@dimen/_25adp"
+                    android:layout_marginEnd="@dimen/_20adp"
+                    android:padding="@dimen/_10adp"
+                    android:text="@string/friends_incompleted"
+                    android:textAllCaps="true"
+                    android:textColor="@color/newtaxi_app_black"
+                    android:textSize="@dimen/_14asp"
+                    app:fontname="@string/font_Medium"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_in_completed_referrals"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_20adp"
+                    android:layout_marginEnd="@dimen/_20adp"
+                    android:scrollbars="none"
+                    app:layout_constraintTop_toBottomOf="@id/tv_friends_in_completed" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_2adp"
+                android:layout_marginStart="@dimen/_25adp"
+                android:layout_marginTop="@dimen/_20adp"
+                android:layout_marginEnd="@dimen/_25adp"
+                android:background="@color/newtaxi_app_border_shadow"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout_in_completed_friends" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout_completed_friends"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_header_to"
+                android:visibility="visible"
+                app:layout_constraintTop_toBottomOf="@id/constraintLayout_in_completed_friends">
+
+                <RelativeLayout
+                    android:id="@+id/rlt_friends_complete"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_20adp"
+                    android:paddingTop="@dimen/_10adp"
+                    app:layout_constraintBottom_toTopOf="@+id/rv_completed_referrals">
+
+                    <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+                        android:id="@+id/tv_friends_completed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_5adp"
+                        android:padding="@dimen/_10adp"
+                        android:text="@string/friends_completed"
+                        android:textAllCaps="false"
+                        android:textColor="@color/newtaxi_app_black"
+                        android:textSize="@dimen/_15asp"
+                        app:fontname="@string/font_Medium" />
+
+                    <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+                        android:id="@+id/tv_total_earned"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_2adp"
+                        android:layout_toEndOf="@+id/tv_friends_completed"
+                        android:paddingTop="@dimen/_10adp"
+                        android:paddingBottom="@dimen/_10adp"
+                        android:text="@string/earned"
+                        android:textColor="@color/newtaxi_app_black"
+                        android:textSize="@dimen/_15asp"
+                        app:fontname="@string/font_Medium"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+                        android:id="@+id/tv_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/tv_total_earned"
+                        android:paddingTop="@dimen/_10adp"
+                        android:paddingBottom="@dimen/_10adp"
+                        android:text="1000"
+                        android:textColor="@color/newtaxi_app_black"
+                        android:textSize="@dimen/_15asp"
+                        app:fontname="@string/font_Medium"
+                        app:layout_constraintEnd_toEndOf="parent" />
+                </RelativeLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_completed_referrals"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_20adp"
+                    android:layout_marginEnd="@dimen/_20adp"
+                    app:layout_constraintTop_toBottomOf="@id/rlt_friends_complete"
+                    tools:layout_editor_absoluteX="16dp" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+                android:id="@+id/tv_no_referrals_yet"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_500adp"
+                android:layout_marginTop="@dimen/_84adp"
+                android:background="@drawable/app_top_curve_white"
+                android:gravity="center"
+                android:text="@string/no_referrals_yet"
+                android:textColor="@color/newtaxi_app_black"
+                android:textSize="@dimen/_17asp"
+                android:visibility="visible"
+                app:fontname="@string/font_Medium"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/constraintLayout_completed_friends" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

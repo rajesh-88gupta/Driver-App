@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".home.permissionoverview.PermissionOverViewActivity">
+
+
+        <ImageView
+            android:id="@+id/iv_app_logo"
+            android:layout_width="@dimen/_120adp"
+            android:layout_height="@dimen/_80adp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/app_a_app_logo" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_12adp"
+            android:textSize="@dimen/_16asp"
+            android:text="We will ask the following permissions to use the application. "
+            android:textColor="@color/colorBlack"
+            app:layout_constraintTop_toBottomOf="@+id/iv_app_logo" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_permission_list"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scrollbars="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toTopOf="@+id/privacy_container"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title"
+            tools:listitem="@layout/item_permission_list" />
+
+        <LinearLayout
+            android:id="@+id/privacy_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_12adp"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/_8adp"
+            app:layout_constraintBottom_toTopOf="@+id/btn_grant_permission">
+
+            <CheckBox
+                android:id="@+id/checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+                android:id="@+id/text_view_privacy_policy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:padding="4dp"
+                android:textColor="@color/newtaxi_app_black"
+                android:textSize="@dimen/_14asp"
+                 />
+        </LinearLayout>
+
+
+        <com.seentechs.newtaxidriver.common.custompalette.FontButton
+            android:id="@+id/btn_grant_permission"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginBottom="@dimen/_8adp"
+            android:background="@drawable/app_curve_button_yellow"
+            android:padding="@dimen/_15adp"
+            android:text="Agree"
+            android:textAllCaps="false"
+            android:textColor="@color/newtaxi_app_gray_dark"
+            android:textSize="@dimen/_18asp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/btn_skip" />
+
+        <com.seentechs.newtaxidriver.common.custompalette.FontButton
+            android:id="@+id/btn_skip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginBottom="@dimen/_8adp"
+            android:background="@drawable/app_curve_button_white_with_outline"
+            android:padding="@dimen/_15adp"
+            android:text="@string/skip"
+            android:textAllCaps="false"
+            android:textColor="@color/newtaxi_app_black"
+            android:textSize="@dimen/_17asp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

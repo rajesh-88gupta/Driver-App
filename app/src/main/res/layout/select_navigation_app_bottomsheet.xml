@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:weightSum="2">
+
+    <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_20adp"
+        android:gravity="center_horizontal"
+        android:text="@string/choose_map"
+        android:textColor="@color/newtaxi_app_navy"
+        android:textSize="@dimen/_18asp"
+        app:fontname="@string/font_Medium" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/llt_google_map"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/newtaxi_app_white"
+            android:orientation="vertical"
+            android:padding="@dimen/_10adp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:padding="@dimen/_15adp"
+                android:src="@drawable/ic_googlemap" />
+
+            <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/google_map"
+                android:textSize="@dimen/_15asp"
+                android:textColor="@color/newtaxi_app_black"
+                app:fontname="@string/font_Medium" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llt_waze"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/newtaxi_app_white"
+            android:orientation="vertical"
+            android:padding="@dimen/_10adp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:scaleType="fitCenter"
+                android:padding="@dimen/_15adp"
+                android:src="@drawable/ic_wazemap" />
+
+            <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/waze_map"
+                android:textSize="@dimen/_15asp"
+                android:textColor="@color/newtaxi_app_black"
+                app:fontname="@string/font_Medium" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

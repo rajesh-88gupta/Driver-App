@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/newtaxi_app_white"
+    android:layoutDirection="@string/layout_direction">
+
+    <RelativeLayout
+        android:id="@+id/starcomment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/common_header"
+        android:layout_marginTop="@dimen/default_header_to"
+        android:background="@drawable/app_top_curve_white"
+        android:visibility="gone">
+
+        <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/newtaxi_app_black"
+            android:text="@string/noratings"
+            app:fontname="@string/font_Medium"/>
+    </RelativeLayout>
+
+
+   <!-- <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        style="@style/MyTabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/common_header"
+        android:background="@color/newtaxi_app_white"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:visibility="visible"
+        app:tabIndicatorAnimationMode="elastic"
+        android:layout_marginTop="@dimen/_10adp"
+        app:tabIndicatorFullWidth="false"
+        app:tabPaddingEnd="@dimen/_25adp"
+        app:tabPaddingStart="@dimen/_25adp"
+        app:tabIndicatorHeight="@dimen/_3adp"
+        app:tabSelectedTextColor="@color/newtaxi_app_black"
+        app:tabTextAppearance="@style/AppTabLayout"
+        app:tabIndicatorColor="@color/newtaxi_app_navy"
+        app:tabTextColor="@color/newtaxi_app_text_ash" />-->
+
+    <include
+        android:id="@+id/common_header"
+        layout="@layout/app_common_header"/>
+
+    <RelativeLayout
+        android:id="@+id/comment_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/common_header"
+        android:background="@drawable/app_top_curve_white"
+        android:layout_marginTop="@dimen/default_header_to"
+        >
+
+        <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+            android:id="@+id/norating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="@dimen/_20adp"
+            android:padding="@dimen/_10adp"
+            android:textColor="@color/newtaxi_app_black"
+            android:textSize="@dimen/_18asp"
+            app:fontname="@string/font_Medium"
+            android:visibility="gone"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/my_recycler_view2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/norating"
+            android:padding="@dimen/_20adp"
+            android:layout_marginTop="@dimen/_10adp"
+            android:scrollbars="none" />
+
+    </RelativeLayout>
+
+    <!-- View pager to swipe views -->
+    <!--<androidx.viewpager.widget.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tabLayout"
+        android:background="@drawable/app_top_curve_white"
+        android:scrollbars="none"/>-->
+</RelativeLayout>

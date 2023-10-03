@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".home.payouts.BankDetailsActivity">
+
+
+    <data>
+
+        <variable
+            name="bankDetails"
+            type="com.seentechs.newtaxidriver.home.datamodel.BankDetailsModel" />
+
+
+        <variable
+            name="handlers"
+            type="com.seentechs.newtaxidriver.home.payouts.BankDetailsActivity.MyClickHandlers" />
+
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/newtaxi_app_white">
+
+        <include
+            android:id="@+id/common_header"
+            layout="@layout/app_common_header" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/common_header"
+            android:layout_marginTop="@dimen/default_header_to"
+            android:background="@drawable/app_top_curve_white">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_2adp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_12adp">
+
+                    <LinearLayout
+                        android:id="@+id/ll_card_details_lay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10adp"
+                            android:layout_marginTop="@dimen/_25adp"
+                            android:layout_marginRight="@dimen/_10adp"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+
+                            <com.seentechs.newtaxidriver.common.custompalette.FontEditText
+                                android:id="@+id/edt_acc_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/app_curve_button_white_with_outline"
+                                android:hint="@string/account_holder_name"
+                                android:padding="@dimen/_15adp"
+                                android:singleLine="true"
+                                android:text="@{bankDetails.account_holder_name}"
+                                android:textAlignment="viewStart"
+                                android:textColor="@color/newtaxi_app_black"
+                                android:textCursorDrawable="@drawable/app_cursor_color"
+                                android:textSize="@dimen/_15asp"
+                                app:fontname="@string/font_Medium" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10adp"
+                            android:layout_marginTop="@dimen/_15adp"
+                            android:layout_marginRight="@dimen/_10adp"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+
+                            <com.seentechs.newtaxidriver.common.custompalette.FontEditText
+                                android:id="@+id/edt_acc_num"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/app_curve_button_white_with_outline"
+                                android:hint="@string/account_number"
+                                android:padding="@dimen/_15adp"
+                                android:singleLine="true"
+                                android:text="@{bankDetails.account_number}"
+                                android:textAlignment="viewStart"
+                                android:textColor="@color/newtaxi_app_black"
+                                android:textCursorDrawable="@drawable/app_cursor_color"
+                                android:textSize="@dimen/_15asp"
+                                app:fontname="@string/font_Medium" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10adp"
+                            android:layout_marginTop="@dimen/_15adp"
+                            android:layout_marginRight="@dimen/_10adp"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+
+                            <com.seentechs.newtaxidriver.common.custompalette.FontEditText
+                                android:id="@+id/edt_bank_acc"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/app_curve_button_white_with_outline"
+                                android:hint="@string/name_of_bank"
+                                android:padding="@dimen/_15adp"
+                                android:singleLine="true"
+                                android:text="@{bankDetails.bank_name}"
+                                android:textAlignment="viewStart"
+                                android:textColor="@color/newtaxi_app_black"
+                                android:textCursorDrawable="@drawable/app_cursor_color"
+                                android:textSize="@dimen/_15asp"
+                                app:fontname="@string/font_Medium" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10adp"
+                            android:layout_marginTop="@dimen/_15adp"
+                            android:layout_marginRight="@dimen/_10adp"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+
+                            <com.seentechs.newtaxidriver.common.custompalette.FontEditText
+                                android:id="@+id/edt_bank_loc"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/app_curve_button_white_with_outline"
+                                android:hint="@string/bank_location"
+                                android:padding="@dimen/_15adp"
+                                android:singleLine="true"
+                                android:text="@{bankDetails.bank_location}"
+                                android:textAlignment="viewStart"
+                                android:textColor="@color/newtaxi_app_black"
+                                android:textCursorDrawable="@drawable/app_cursor_color"
+                                android:textSize="@dimen/_15asp"
+                                app:fontname="@string/font_Medium" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10adp"
+                            android:layout_marginTop="@dimen/_15adp"
+                            android:layout_marginRight="@dimen/_10adp"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+
+                            <com.seentechs.newtaxidriver.common.custompalette.FontEditText
+                                android:id="@+id/edt_swift_code"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/app_curve_button_white_with_outline"
+                                android:hint="@string/bic_swift_code"
+                                android:padding="@dimen/_15adp"
+                                android:singleLine="true"
+                                android:text="@{bankDetails.bank_code}"
+                                android:textAlignment="viewStart"
+                                android:textColor="@color/newtaxi_app_black"
+                                android:textCursorDrawable="@drawable/app_cursor_color"
+                                android:textSize="@dimen/_15asp"
+                                app:fontname="@string/font_Medium" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <com.seentechs.newtaxidriver.common.custompalette.FontButton
+                        android:id="@+id/payout_submit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ll_card_details_lay"
+                        android:layout_marginStart="@dimen/_20adp"
+                        android:layout_marginTop="@dimen/_50adp"
+                        android:layout_marginEnd="@dimen/_20adp"
+                        android:layout_marginBottom="@dimen/_20adp"
+                        android:background="@drawable/app_curve_button_navy"
+                        android:onClick="@{handlers::onButtonClick}"
+                        android:text="@string/submit"
+                        android:textAllCaps="false"
+                        android:textColor="@color/newtaxi_app_black"
+                        android:textSize="@dimen/_18asp"
+                        app:fontname="@string/font_Medium" />
+                </RelativeLayout>
+            </ScrollView>
+
+        </RelativeLayout>
+    </RelativeLayout>
+</layout>

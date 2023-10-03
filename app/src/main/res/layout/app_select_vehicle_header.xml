@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <ImageView
+            android:id="@+id/img_car"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50adp"
+            android:layout_above="@+id/header"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1"
+            android:padding="@dimen/_10adp"
+            android:paddingTop="@dimen/_10adp"
+            android:src="@drawable/select_car"
+            app:tint="@color/newtaxi_app_navy" />
+
+        <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+            android:id="@+id/header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="start"
+            android:paddingStart="@dimen/_20adp"
+            android:paddingEnd="@dimen/_20adp"
+            android:paddingBottom="@dimen/_20adp"
+            android:text="@string/selectcurrency"
+            android:textAlignment="center"
+            android:textColor="@color/newtaxi_app_black"
+            android:textSize="@dimen/_18asp"
+            app:fontname="@string/font_Medium" />
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@+id/vehicleFragment"
+    android:id="@+id/vehicle_graph">
+
+    <fragment
+        android:id="@+id/vehicleFragment"
+        android:name="com.seentechs.newtaxidriver.home.managevehicles.ManageVehicleFragment"
+        android:label="Vehicle Management"
+        tools:layout="@layout/manage_vehicle_fragment">
+        <action
+            android:id="@+id/action_vehicleFragment_to_documentFragment"
+            app:destination="@id/documentFragment" />
+        <action
+            android:id="@+id/action_vehicleFragment_to_addVehicle"
+            app:destination="@id/addVehicle" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/documentFragment"
+        android:name="com.seentechs.newtaxidriver.home.managevehicles.ManageVehicleDocumentFragment"
+        android:label="Document Management"
+        tools:layout="@layout/manage_documents_fragment">
+        <action
+            android:id="@+id/action_documentFragment_to_viewDocumentFragment2"
+            app:destination="@id/viewDocumentFragment" />
+    </fragment>
+
+
+
+    <fragment
+        android:id="@+id/viewDocumentFragment"
+        android:name="com.seentechs.newtaxidriver.home.managevehicles.ViewVehicleDocumentFragment"
+        android:label="View Document"
+        tools:layout="@layout/view_document_layout">
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/addVehicle"
+        android:name="com.seentechs.newtaxidriver.home.managevehicles.AddVehicleFragment"
+        android:label="Document Management"
+        tools:layout="@layout/manage_documents_fragment">
+    </fragment>
+
+</navigation>

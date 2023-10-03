@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@android:color/transparent"
+    android:layout_width="match_parent"
+    android:layoutDirection="@string/layout_direction"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+
+        android:background="@color/text_color"
+        android:id="@+id/paypalemailmore">
+
+        <com.seentechs.newtaxidriver.common.custompalette.FontButton
+            android:id="@+id/paypal_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="@dimen/midb"
+            android:textStyle="bold"
+            android:background="@color/red_text"
+            android:textColor="@color/white"
+            android:layout_alignParentEnd="true"
+            android:textAllCaps="false"
+            android:text="@string/delete"/>
+
+        <com.seentechs.newtaxidriver.common.custompalette.FontButton
+            android:id="@+id/paypal_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="@dimen/midb"
+            android:textStyle="bold"
+            android:background="@color/colorAccent"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:text="@string/makedefault"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="5dp"
+            android:layout_toStartOf="@+id/paypal_delete" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingBottom="10dp"
+        android:background="@color/text_color"
+        android:id="@+id/paypalemailid">
+
+        <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+            android:id="@+id/paypal_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="@dimen/midi"
+            android:layout_centerVertical="true"
+            android:textStyle="bold"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="5dp"
+            android:layout_toStartOf="@+id/paypal_ready"
+            android:background="@android:color/transparent"
+            android:textColor="@color/text_shadow"
+            android:text="@string/paypal_email"/>
+
+
+        <ImageView
+            android:id="@+id/image_child1"
+            android:layout_marginTop="20dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:tint="@color/text_light_shadow"
+            android:src="@drawable/ic_chevron_right"/>
+        <ImageView
+            android:id="@+id/image_child"
+            android:layout_below="@+id/paypal_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/d_bordor"/>
+
+        <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+            android:id="@+id/paypal_ready"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/midi"
+            android:textStyle="bold"
+            android:maxWidth="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:textColor="@color/colorAccent"
+            android:text="@string/defaults"
+            android:textAlignment="textEnd"
+            android:layout_alignBottom="@+id/image_child"
+            android:layout_toStartOf="@+id/image_child1" />
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.seentechs.newtaxidriver.common.custompalette.FontTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/header"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="start"
+    android:padding="@dimen/_20adp"
+    android:text="@string/addphoto"
+    android:textColor="@color/newtaxi_app_black"
+    android:textSize="@dimen/_16asp"
+    app:fontname="@string/font_Medium" />

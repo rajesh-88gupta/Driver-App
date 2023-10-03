@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_primary">#ffffff</color>
+    <color name="color_primary_dark">#000000</color>
+    <color name="color_accent">#ff1fbad6</color>
+    <!--App theme and Button Colours-->
+    <color name="app_primary">#1FBAD6</color>
+
+    <color name="colorAccent">@color/app_continue</color>
+    <color name="app_background">#000000</color>
+    <color name="app_button">#000000</color>
+    <color name="app_continue">#1FBAD6</color>
+    <color name="app_confirm_trip">#4267A9</color>
+    <color name="app_button_green">#1FBAD6</color>
+    <color name="blue_text_color">#ff368ecd</color>
+    
+    <!-- App Text Colours-->
+    <color name="colorblack">#000000</color>
+    <color name="textgray">#8a000000</color>
+    <color name="textblack">#de000000</color>
+    <color name="colorblockgray">#646464</color>
+    <color name="white">#ffffff</color>
+    <color name="header_color">#000000</color>
+    <color name="background_color">#161616</color>
+    <color name="text_black">#de000000</color>
+
+    <color name="quantum_grey">#9e9e9e</color>
+    <color name="bluetext">#165190</color> <!-- Upload Document Page-->
+    <color name="arrow_tint">#ffd6d7d7</color> <!--Document Page Arrow Tint-->
+    <color name="whitelight">#559B9A9B</color> <!-- Earning Page Lines -->
+
+    <!-- Black and White -->
+    <color name="background">#00A699</color>
+    <color name="black_alpha_20">#44000000</color>
+    <color name="black_alpha_40">#66000000</color>
+
+    <!-- Switch Colours -->
+<!--    <color name="switch_thumb_enable">#ff3D83D0</color>-->
+    <color name="switch_thumb_enable">@color/white</color>
+    <color name="switch_thumb_disabled">#ff616161</color>
+
+    <color name="cancel_disable_grey">#37000000</color> <!-- RiderProfilePage-->
+    <color name="rb_blue_button">#ff368ecd</color> <!-- Radio Button-->
+
+    <color name="cb_textColor">#ff8f8d8d</color>
+    <color name="light_disable_grey">#24000000</color> <!-- trips earnings and Other pages-->
+    <color name="dialog_border">#ffbdbdbd</color> <!-- Logout border and Other Popup-->
+    <color name="light_border">#ffbdbdbd</color> <!-- Lines Color-->
+    <color name="light_text">#ffbdbdbd</color> <!-- Disable Texts Color-->
+
+    <!--Chat page Colours -->
+    <color name="chat_input_background">#fff6f6f6</color>
+    <color name="chat_input_default_border">#ffeaeaea</color>
+    <color name="gray_border">#dbd8d8</color>
+
+    <!--Payout Detail page -->
+    <color name="actionbar_text_color">#fff</color>
+    <color name="text_light_shadow">#ff616161</color>
+    <color name="text_color">#f6f6f6</color>
+    <color name="text_shadow">#484848</color>
+    <color name="calendar_text_unselectable">#84858b</color>
+    <color name="calendar_text_selected_host">#ffffffff</color>
+    <color name="chat_gray_border">#dbd8d8</color>
+
+
+    <!--swipe button color-->
+    <color name="proswipebtn_translucent_white">#33ffffff</color>
+    <color name="proswipebtn_disabled_grey">#939393</color>
+
+    <!-- Other Views and Text Colours-->
+    <color name="whereto_border_color">#ffababab</color>
+    <color name="ub__black">#ff000000</color>
+    <color name="ub__bounce_contact_border_color">#ffa3a3a3</color>
+    <color name="ub__contact_resolved_green">#ff5dc048</color>
+    <color name="ub__green">#ff27aa0b</color>
+    <color name="ub__red">#fff32f00</color>
+    <color name="ub__transparent">#00000000</color>
+    <!--<color name="ub__transparent">#80000000</color>-->
+    <color name="ub__uber_black_40">#ff9d9da3</color>
+    <color name="ub__uber_black_60">#ff6b6b76</color>
+    <color name="ub__uber_black_80">#ff3a3a48</color>
+    <color name="ub__uber_black_transparent_black">#ff000000</color>
+    <color name="ub__uber_blue_120">#ff1eacc7</color>
+    <color name="ub__uber_white_20">#fff2f2f4</color>
+    <color name="ub__ui_core_grey_40">#ffededed</color>
+    <color name="ub__ui_core_warning">#303F9F</color>
+    <color name="white_trans">#99FFFFFF</color>
+    <color name="error_red">#ff0000</color>
+    <color name="line_gray">#DBDBDB</color>
+    <color name="calendar_divider_host">#ffbababa</color>
+    <color name="red_text">#ea2a1c</color>
+    <color name="input_bacground_color">#f1f0f0</color> <!-- Account Kit-->
+    <color name="colorgreencray">#2775A4</color>
+    <color name="text_semi_dark">#888888</color> <!-- manual -->
+    <color name="quantum_grey400">#bdbdbd</color>
+    <color name="light_blue_button_color">#ff1fbad6</color>
+    <color name="text_light_gray">#80000000</color>
+    <color name="destination_red_marker">#fff32f00</color>
+    <color name="toll_bottomsheet_background">#EAF0FA</color>
+<color name="green_text_color">#ff27aa0b</color>
+
+
+
+    <!--        Newtaxi color code        -->
+    <color name="newtaxi_app_navy">#1FBAD6</color>
+    <color name="newtaxi_app_navy_fade">#12F6C92E</color>
+    <color name="newtaxi_app_black">#303841</color>
+    <color name="newtaxi_app_light_grey">#80303841</color>
+    <color name="newtaxi_app_gray">#EEEEEE</color>
+    <color name="newtaxi_app_gray_dark">#3A4750</color>
+    <color name="newtaxi_app_grey">#ffd6d7d7</color>
+    <color name="newtaxi_app_white">#FFFFFF</color>
+    <color name="newtaxi_app_white_outline">#37000000</color>
+    <color name="newtaxi_app_black_dark">#141414</color>
+    <color name="newtaxi_app_black_dot">#0D1724</color>
+    <color name="newtaxi_app_navy_disable">#FCEDBA</color>
+    <color name="newtaxi_app_text_ash">#A9A9A9</color>
+    <color name="newtaxi_app_red">#FF2F38</color>
+    <color name="newtaxi_app_ash_light">#88888829</color>
+    <color name="newtaxi_app_border_shadow">#F4F4F4</color>
+    <color name="newtaxi_app_divider_grey">#C7C7C7</color>
+    <color name="newtaxi_app_navy_dim">#FEF9EB</color>
+    <color name="promo_background">#ff0e9e5e</color>
+    <color name="button_disable_color">#dbd8d8</color>
+    <color name="earnings_dim">#FFEDAC</color>
+</resources>

@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:layoutDirection="@string/layout_direction"
+    tools:context=".home.signinsignup.Register">
+
+
+    <RelativeLayout
+        android:id="@+id/back_lay"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/app_background">
+
+        <ImageView
+            android:id="@+id/dochome_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:scaleX=".6"
+            android:scaleY=".6"
+            android:src="@drawable/gobackleftarrow"
+            app:tint="@color/white" />
+
+        <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/dochome_back"
+            android:text="@string/register"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:fontname="@string/font_UBERBook" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/back_lay"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/secondlayour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/accountbutton"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_margin="20dp"
+                    android:background="@color/colorblack"
+                    android:text="@string/signupwithrider"
+                    android:textColor="@color/white" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:layout_below="@+id/accountbutton"
+                    android:layout_marginStart="20dp"
+                    android:layout_toStartOf="@+id/ortext"
+                    android:background="#ffc2c2c2"
+
+                    />
+
+                <TextView
+                    android:id="@+id/ortext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/accountbutton"
+                    android:layout_centerHorizontal="true"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:text="@string/or"
+                    android:textSize="16dp" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:layout_below="@+id/accountbutton"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginEnd="20dp"
+                    android:layout_toEndOf="@+id/ortext"
+                    android:background="#ffc2c2c2" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/namelayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/secondlayour"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input_layout_first"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/back"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="1">
+
+                    <com.seentechs.newtaxidriver.common.custompalette.FontEditText
+                        android:id="@+id/input_first"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/first"
+                        android:singleLine="true"
+                        android:textColor="@color/colorblack"
+                        android:textSize="16sp"
+                        app:fontname="@string/font_UBERNews" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input_layout_last"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/input_layout_first"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1">
+
+                    <com.seentechs.newtaxidriver.common.custompalette.FontEditText
+                        android:id="@+id/input_last"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/last"
+                        android:singleLine="true"
+                        android:textColor="@color/colorblack"
+                        android:textSize="16sp"
+                        app:fontname="@string/font_UBERNews" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/emaillayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/namelayout"
+                android:layout_margin="20dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/emailName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/emaitext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/email"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@color/colorblack"
+                        android:textColorHint="#ffc2c2c2"
+                        android:textSize="16sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/mobile_txtlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/emaillayout"
+                android:layout_marginStart="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mobile"
+                    android:textColor="#ffc2c2c2"
+                    android:textSize="14dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/flaglayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mobile_txtlayout"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp">
+
+                <com.hbb20.CountryCodePicker
+                    android:id="@+id/mobile_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:clickable="false"
+                    app:ccp_arrowSize="0sp"
+                    app:ccp_clickable="true"
+                    app:ccp_showArrow="false"
+                    app:ccp_showNameCode="false"
+                    app:ccp_textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/mobile_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/mobile_code"
+                    android:editable="false"
+                    android:inputType="number"
+                    android:maxLines="10"
+                    android:textColor="@color/colorblack"
+                    android:textColorHint="#ffc2c2c2"
+                    android:textSize="16sp"
+                    android:transitionName="mobilenumber" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/error_mob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/flaglayout"
+                android:layout_marginStart="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="104dp"
+                    android:text="@string/error_msg_phone"
+                    android:textColor="#ff0000"
+                    android:textSize="12dp" />
+            </RelativeLayout>
+
+
+            <include
+                android:id="@+id/v_gender"
+                layout="@layout/select_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/flaglayout"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp" />
+
+            <RelativeLayout
+                android:id="@+id/passwordlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/v_gender"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="10dp">
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/passwordName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:passwordToggleEnabled="true">
+
+                    <EditText
+                        android:id="@+id/passwordtext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/password"
+                        android:inputType="textPassword"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/colorblack"
+                        android:textColorHint="#ffc2c2c2"
+                        android:textSize="16sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/citylayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/passwordlayout"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/cityName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/cityText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/city"
+                        android:singleLine="true"
+                        android:textColor="@color/colorblack"
+                        android:textColorHint="#ffc2c2c2"
+                        android:textSize="16sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/location_placesearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cityName"
+                    android:background="@color/white" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input_layout_referral"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/location_placesearch"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center_vertical">
+
+                    <EditText
+                        android:id="@+id/input_referral"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/referral_code_optional" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/buttonlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/citylayout"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp">
+
+                <Button
+                    android:id="@+id/btn_continue"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="@color/app_continue"
+                    android:paddingBottom="5dp"
+                    android:text="@string/continues"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/haveaccounttext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/buttonlayout"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="0dp"
+                android:text="@string/havean_account" />
+
+            <TextView
+                android:id="@+id/loginlink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/buttonlayout"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_toEndOf="@+id/haveaccounttext"
+                android:text="@string/login"
+                android:textColor="@color/app_continue" />
+
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/haveaccounttext"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingBottom="20dp"
+                android:textAlignment="viewStart"
+                android:text="@string/descreption" />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

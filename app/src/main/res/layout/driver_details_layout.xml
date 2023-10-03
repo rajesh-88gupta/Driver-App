@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="riderDetailsModelList"
+            type="com.seentechs.newtaxidriver.home.datamodel.RiderDetailsModelList" />
+
+    </data>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/d_bottom"
+        android:paddingBottom="@dimen/_10adp"
+        android:paddingTop="@dimen/_10adp"
+
+        >
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/profileimg_card"
+            android:layout_width="@dimen/_40adp"
+            android:layout_height="@dimen/_40adp"
+            android:layout_marginEnd="@dimen/_5adp"
+            android:layout_marginStart="@dimen/_10adp"
+            android:layout_marginTop="@dimen/_10adp"
+            android:layout_marginBottom="@dimen/_3adp"
+            android:elevation="@dimen/_3adp"
+            app:cardCornerRadius="@dimen/_10adp">
+
+            <ImageView
+                android:id="@+id/profileimg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_default_profile_pic"
+                android:loadImage="@{riderDetailsModelList.profileImage}"
+                android:scaleType="centerCrop" />
+        </androidx.cardview.widget.CardView>
+
+       <!-- <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivRiderImage"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/ic_default_profile_pic"
+            android:loadImage="@{riderDetailsModelList.profileImage}"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="2dp" />-->
+
+        <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+            android:id="@+id/tv_rider_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingEnd="@dimen/_10adp"
+            android:paddingStart="@dimen/_20adp"
+            android:layout_toEndOf="@+id/profileimg_card"
+            android:text="@{riderDetailsModelList.name}"
+            android:layout_centerVertical="true"
+            android:textColor="@color/textgray"
+            android:textAlignment="viewStart"
+            android:textSize="@dimen/_14asp"
+            app:fontname="@string/font_Medium"
+            />
+
+
+
+    </RelativeLayout>
+
+</layout>
+

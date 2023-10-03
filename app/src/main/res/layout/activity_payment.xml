@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".home.fragments.payment.PaymentActivity">
+
+   <include
+       android:id="@+id/common_header"
+       layout="@layout/app_common_header"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/common_header"
+        android:layout_marginTop="@dimen/default_header_to"
+        android:background="@drawable/app_top_curve_white"
+        android:orientation="vertical">
+
+        <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+            android:id="@+id/payment"
+            app:fontname="@string/font_UBERBook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10adp"
+            android:paddingStart="@dimen/_10adp"
+            android:visibility="gone"
+            android:text="@string/payment"
+            android:textSize="@dimen/_17asp" />
+
+        <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+            app:fontname="@string/font_Medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_25adp"
+            android:layout_marginEnd="@dimen/_25adp"
+            android:layout_marginTop="@dimen/_20adp"
+            android:paddingStart="@dimen/_20adp"
+            android:padding="@dimen/_8adp"
+            android:paddingTop="@dimen/_10adp"
+            android:text="@string/payment_methods"
+            android:background="@drawable/app_top_curve_gray"
+            android:textColor="@color/newtaxi_app_black"
+            android:textSize="14sp" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/_10adp"
+            android:layout_marginTop="@dimen/_10adp"
+            android:layout_marginStart="@dimen/_23adp"
+            android:layout_marginEnd="@dimen/_23adp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:id="@+id/rv_payment_list"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20adp"
+            android:layout_marginStart="@dimen/_23adp"
+            android:layout_marginEnd="@dimen/_23adp"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rltbraintree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/d_buttomboarder"
+                android:paddingStart="@dimen/_20adp"
+                android:paddingTop="@dimen/_15adp"
+                android:paddingEnd="@dimen/_20adp"
+                android:paddingBottom="@dimen/_15adp">
+
+                <ImageView
+                    android:id="@+id/ivbraintree"
+                    android:layout_width="@dimen/_25adp"
+                    android:layout_height="@dimen/_25adp"
+                    android:src="@drawable/online_payment"
+                    android:layout_centerVertical="true" />
+
+                <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/_12adp"
+                    android:layout_toEndOf="@+id/ivbraintree"
+                    android:text="@string/onlinepayment"
+                    android:textAllCaps="false"
+                    android:textColor="@color/newtaxi_app_black"
+                    android:textSize="@dimen/_14asp"
+                    app:fontname="@string/font_Medium" />
+
+                <ImageView
+                    android:id="@+id/ivbraintreetick"
+                    android:layout_width="@dimen/_20adp"
+                    android:layout_height="@dimen/_20adp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/_20adp"
+                    android:layout_marginTop="@dimen/_20adp"
+                    android:visibility="gone"
+                    android:src="@drawable/tick_green" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/paypal"
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/d_buttomboarder"
+                android:paddingStart="@dimen/_20adp"
+                android:paddingTop="@dimen/_15adp"
+                android:paddingEnd="@dimen/_20adp"
+                android:paddingBottom="@dimen/_15adp">
+
+                <ImageView
+                    android:id="@+id/paypalimg"
+                    android:layout_width="@dimen/_25adp"
+                    android:layout_height="@dimen/_25adp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/paypal" />
+
+                <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/_12adp"
+                    android:layout_toEndOf="@+id/paypalimg"
+                    android:text="@string/paypal"
+                    android:textAllCaps="false"
+                    android:textColor="@color/newtaxi_app_black"
+                    android:textSize="@dimen/_14asp"
+                    app:fontname="@string/fonts_Medium" />
+
+                <ImageView
+                    android:id="@+id/paypal_tickimg"
+                    android:layout_width="@dimen/_20adp"
+                    android:layout_height="@dimen/_20adp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/_20adp"
+                    android:layout_marginTop="@dimen/_20adp"
+                    android:src="@drawable/tick_green" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rltCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/payment_cash"
+                android:background="@drawable/app_background_white"
+                android:padding="@dimen/_10adp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/ivCard"
+                    android:layout_width="@dimen/_25adp"
+                    android:layout_height="@dimen/_25adp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/_10adp"
+                    android:src="@drawable/card" />
+
+                <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+                    android:id="@+id/tvCard"
+                    app:fontname="@string/fonts_Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/_20adp"
+                    android:layout_toEndOf="@+id/ivCard"
+                    android:text="@string/credit_or_debit"
+                    android:textColor="@color/newtaxi_app_black"
+                    android:textSize="@dimen/_14asp" />
+
+                <ImageView
+                    android:id="@+id/ivCardTick"
+                    android:layout_width="@dimen/_20adp"
+                    android:layout_height="@dimen/_20adp"
+                    android:visibility="gone"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/_20adp"
+                    android:layout_marginTop="@dimen/_20adp"
+                    android:src="@drawable/tick_green" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rltAddCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/app_background_white"
+                android:padding="@dimen/_10adp">
+
+                <ImageView
+                    android:id="@+id/ivAddCard"
+                    android:layout_width="@dimen/_25adp"
+                    android:layout_height="@dimen/_25adp"
+                    android:layout_marginStart="@dimen/_10adp"
+                    android:src="@drawable/app_ic_card"
+                    app:tint="@color/newtaxi_app_navy"/>
+
+                <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+                    app:fontname="@string/font_UBERBook"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/_16adp"
+                    android:layout_toEndOf="@+id/ivAddCard"
+                    android:text="@string/credit_or_debit"
+                    android:textColor="@color/newtaxi_app_black"
+                    android:textSize="@dimen/_14asp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

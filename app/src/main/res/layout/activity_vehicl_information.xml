@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="@string/layout_direction"
+    tools:context=".home.profile.VehiclInformation">
+
+
+    <RelativeLayout
+        android:id="@+id/back_lay"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/app_background">
+
+        <ImageView
+            android:id="@+id/dochome_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:paddingEnd="20dp"
+            android:paddingStart="20dp"
+            android:scaleX=".6"
+            android:scaleY=".6"
+            android:src="@drawable/gobackleftarrow"
+            android:tint="@color/white" />
+
+        <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/dochome_back"
+            android:text="@string/vehicleinformation"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:fontname="@string/font_UBERBook" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/back_lay"
+        android:id="@+id/rl_company_name"
+        android:background="@color/colorAccent"
+        android:padding="10dp"
+        >
+        <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+            android:id="@+id/tv_company"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:text=""
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:visibility="visible"
+            app:fontname="@string/font_UBERMedium" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_company_name"
+        android:background="@drawable/d_buttomboarder"
+        android:padding="10dp"
+        >
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="1dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/carimage"
+            android:background="@color/black_alpha_40" />
+
+
+        <ProgressBar
+            android:id="@+id/pb_loader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_centerVertical="true"
+            />
+
+        <ImageView
+            android:id="@+id/carimage"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerVertical="true"
+             />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/view"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/carname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingStart="20dp"
+                android:paddingTop="10dp"
+                android:text="carname"
+                android:textColor="@color/colorblack"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/carnumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/carname"
+                android:paddingBottom="10dp"
+                android:paddingStart="20dp"
+                android:text="carnumber"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/cartype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/carnumber"
+                android:paddingBottom="10dp"
+                android:paddingStart="20dp"
+                android:text="cartype"
+                android:textColor="@color/textgray"
+                android:textSize="16dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

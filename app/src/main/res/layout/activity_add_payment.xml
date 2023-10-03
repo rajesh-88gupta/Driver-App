@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:layoutDirection="@string/layout_direction"
+    tools:context=".home.fragments.payment.AddPayment">
+
+
+    <RelativeLayout
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/app_background">
+
+        <ImageView
+            android:id="@+id/arrow"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/gobackleftarrowwrite" />
+
+
+        <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@+id/arrow"
+            android:paddingEnd="20dp"
+            android:text="@string/addpayout"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            app:fontname="@string/fonts_UBERBook" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/back"
+        android:layout_margin="20dp"
+        android:background="@color/white">
+
+        <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+            android:id="@+id/payment_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/addpayment_msg"
+            android:textColor="@color/textgray"
+            android:textSize="18dp"
+            app:fontname="@string/fonts_UBERBook" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/payment_msg"
+            android:layout_marginTop="20dp"
+            android:layoutDirection="inherit">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/emailName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@+id/emailclose"
+                android:layoutDirection="inherit">
+
+                <EditText
+                    android:id="@+id/emaitext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/paypalemail"
+                    android:inputType="textEmailAddress"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/colorblack"
+                    android:textColorHint="#ffc2c2c2"
+                    android:textSize="14dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+                android:id="@+id/emailclose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/emailName"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="@color/white"
+                android:padding="5dp"
+                android:text="R"
+                android:textSize="14dp"
+                app:fontname="@string/font_UberClone" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <com.seentechs.newtaxidriver.common.custompalette.FontButton
+        android:id="@+id/save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:background="@drawable/d_background_black"
+        android:text="@string/save"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:fontname="@string/font_UBERMedium" />
+</RelativeLayout>

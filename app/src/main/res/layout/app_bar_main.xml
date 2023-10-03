@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layoutDirection="@string/layout_direction"
+    android:background="@color/newtaxi_app_white"
+    tools:context="com.seentechs.newtaxidriver.home.MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_80adp"
+        android:background="@color/newtaxi_app_white"
+        android:layoutDirection="@string/layout_direction"
+        android:padding="@dimen/_5adp"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    <include layout="@layout/app_bar_home_toolbar_view" />
+
+
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/navigation"
+        android:layout_below="@+id/toolbar"
+        android:background="@color/newtaxi_app_white"></FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="@string/layout_direction"
+    android:background="@color/newtaxi_app_white"
+    >
+
+    <include
+        android:id="@+id/common_header"
+        layout="@layout/app_common_header" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_support_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/common_header"
+        android:layout_marginTop="@dimen/default_header_to"
+        android:background="@drawable/app_top_curve_white"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        android:padding="@dimen/_25adp"
+        android:scrollbars="none"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+</RelativeLayout>

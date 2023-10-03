@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:layoutDirection="@string/layout_direction"
+    tools:context=".home.fragments.AccountFragment">
+
+
+    <RelativeLayout
+        android:id="@+id/toplayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_60adp"
+        >
+
+
+        <ImageView
+            android:id="@+id/arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:scaleX=".6"
+            android:scaleY=".6"
+            android:src="@drawable/gobackleftarrow"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/titletext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/rateyourrider"
+            android:textColor="@color/newtaxi_app_black"
+            android:textSize="@dimen/_18asp" />
+
+
+        <TextView
+            android:id="@+id/tvskip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/skip"
+            android:layout_marginEnd="@dimen/_10adp"
+            android:visibility="gone"
+            android:padding="@dimen/_10adp"
+            android:textColor="@color/newtaxi_app_black"
+            android:layout_alignParentEnd="true"
+            android:textSize="@dimen/_17asp" />
+
+
+        <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+            android:id="@+id/tickshad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/_20adp"
+            android:layout_marginTop="@dimen/_10adp"
+            android:text="4"
+            android:textColor="@color/newtaxi_app_text_ash"
+            android:textSize="@dimen/_18asp"
+            android:visibility="gone"
+            app:fontname="@string/fonts_Medium" />
+
+        <ImageView
+
+            android:id="@+id/cameraicon"
+            android:layout_width="@dimen/_25adp"
+            android:layout_height="@dimen/_25adp"
+            android:layout_alignTop="@+id/tickshad"
+            android:layout_marginEnd="@dimen/_31adp"
+            android:layout_toStartOf="@+id/tickshad"
+            android:background="@drawable/cameraicon"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:fillViewport="true"
+        android:layout_below="@+id/toplayout">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/app_top_curve_white"
+            android:layout_marginTop="@dimen/default_header_to"
+           >
+
+            <RelativeLayout
+                android:id="@+id/titleback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_20adp"
+                android:layout_marginStart="@dimen/_25asp"
+                android:layout_marginEnd="@dimen/_25asp"
+                android:layout_marginTop="@dimen/_30adp"
+                android:background="@color/newtaxi_app_white"
+                android:gravity="center">
+
+                <include
+                    android:id="@+id/common_profile"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="@dimen/_15asp"
+                    android:layout_marginEnd="@dimen/_15asp"
+                    android:layout_marginTop="@dimen/_5adp"
+                    layout="@layout/app_common_profile_card_view"/>
+
+                <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+                    android:id="@+id/smooth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/common_profile"
+                    android:layout_centerHorizontal="true"
+                    android:paddingTop="@dimen/_20adp"
+                    android:text=""
+                    android:textColor="@color/newtaxi_app_black"
+                    android:textSize="@dimen/_17asp"
+                    app:fontname="@string/fonts_Medium"
+                    android:visibility="gone" />
+
+                <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+                    android:id="@+id/rateyour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/smooth"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/rateyourrider"
+                    android:textColor="@color/newtaxi_app_black"
+                    android:textSize="@dimen/_17asp"
+                    app:fontname="@string/fonts_Medium"
+                    android:visibility="gone" />
+
+                <com.seentechs.newtaxidriver.common.custompalette.FontEditText
+                    android:id="@+id/driver_comments"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_160adp"
+                    android:layout_below="@+id/driver_rating"
+                    android:textCursorDrawable="@drawable/app_cursor_color"
+                    android:layout_marginTop="@dimen/_25adp"
+                    android:hint="@string/writecomment"
+                    android:textAlignment="viewStart"
+                    android:scrollbars="horizontal"
+                    android:singleLine="false"
+                    android:lines="100"
+                    android:gravity="top"
+                    android:layout_marginStart="@dimen/_5adp"
+                    android:layout_marginEnd="@dimen/_5adp"
+                    android:layout_marginBottom="@dimen/_5adp"
+                    android:background="@drawable/app_curve_button_white_with_outline"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/_14asp"
+                    android:padding="@dimen/_12adp"
+                    app:fontname="@string/font_Book" />
+
+                <RatingBar
+                    android:id="@+id/driver_rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_45adp"
+                    android:layout_below="@+id/rateyour"
+                    android:layout_centerHorizontal="true"
+                    android:numStars="5"
+                    android:stepSize="1"
+                    android:layout_marginTop="@dimen/default_header_to"
+                    android:theme="@style/RatingBar"
+                    />
+
+
+                <!--<com.iarcuschin.simpleratingbar.SimpleRatingBar
+                    android:id="@+id/driver_rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rateyour"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:layoutDirection="@string/layout_direction"
+                    app:srb_borderColor="#848482"
+                    app:srb_fillColor="#fffce500"
+                    app:srb_numberOfStars="5"
+                    app:srb_starBackgroundColor="#848482"
+                    app:srb_starBorderWidth="0.1"
+                    app:srb_starSize="40dp"
+                    app:srb_stepSize="1" />-->
+
+            </RelativeLayout>
+
+            <include
+                android:id="@+id/common_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/titleback"
+                android:layout_margin="@dimen/_10adp"
+                android:layout_marginBottom="@dimen/_10adp"
+                layout="@layout/app_common_button_large"/>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

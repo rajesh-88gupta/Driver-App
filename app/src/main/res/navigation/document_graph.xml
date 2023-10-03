@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@+id/documentFragment"
+    android:id="@+id/document_graph">
+
+
+
+    <fragment
+        android:id="@+id/documentFragment"
+        android:name="com.seentechs.newtaxidriver.home.managevehicles.ManageDriverDocumentFragment"
+        android:label="Document Management"
+        tools:layout="@layout/manage_documents_fragment">
+
+
+        <action
+            android:id="@+id/action_documentFragment_to_viewDocumentFragment"
+            app:destination="@id/viewDocumentFragment" />
+    </fragment>
+
+
+
+    <fragment
+        android:id="@+id/viewDocumentFragment"
+        android:name="com.seentechs.newtaxidriver.home.managevehicles.ViewDriverDocumentFragment"
+        android:label="View Document"
+        tools:layout="@layout/view_document_layout">
+    </fragment>
+
+
+
+
+</navigation>

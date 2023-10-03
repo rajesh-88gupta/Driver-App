@@ -1,0 +1,551 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    android:layoutDirection="@string/layout_direction"
+    tools:context=".home.fragments.AccountFragment">
+
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:divider="@drawable/divider"
+        android:dividerPadding="50dp"
+        android:orientation="horizontal"
+        android:showDividers="middle"
+        android:weightSum="2">
+
+        <RelativeLayout
+            android:id="@+id/imglatout1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/app_background"
+            android:gravity="center">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="20dp"
+                app:civ_border_color="@color/app_background"
+                app:civ_border_width="2dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profilename"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="30dp"
+                android:paddingTop="10dp"
+                android:text="@string/edit"
+                android:textAlignment="center"
+                android:textColor="@color/app_continue"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/profilename"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profile_image1"
+                android:layout_centerHorizontal="true"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:paddingTop="10dp"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/imglatout2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/app_background"
+            android:gravity="center">
+
+
+            <ProgressBar
+                android:id="@+id/pb_loader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:layout_centerHorizontal="true"
+                />
+
+            <ImageView
+                android:id="@+id/car_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="20dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/carname"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="30dp"
+                android:paddingTop="10dp"
+                android:text="@string/view"
+                android:textColor="@color/app_continue"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/carname"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/carno"
+                android:layout_centerHorizontal="true"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:paddingTop="10dp"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/carno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignEnd="@+id/car_image"
+                android:layout_alignStart="@+id/car_image"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="1dp"
+                android:background="@color/white"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="2"
+                android:layout_below="@+id/car_image"
+                android:text=""
+                android:textColor="@color/colorblack"
+                android:textSize="14.5dp" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main">
+
+        <RelativeLayout
+            android:id="@+id/bottom_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F2F2F4"
+            android:paddingTop="20dp">
+
+            <RelativeLayout
+                android:id="@+id/helplayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bottomboarderearning"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
+                android:visibility="gone">
+
+                <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+                    android:id="@+id/imghelptext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20dp"
+                    android:text="Q"
+                    android:textColor="#ffc2c2c2"
+                    android:textSize="20dp"
+                    app:fontname="@string/font_UberClone" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/imghelptext"
+                    android:paddingStart="20dp"
+                    android:text="@string/help"
+                    android:textColor="#09091A"
+                    android:textSize="18dp" />
+
+                <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+                    android:id="@+id/arrarowone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="20dp"
+                    android:text="q"
+                    app:fontname="@string/font_UberClone" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/documentlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/helplayout"
+                android:background="@drawable/bottomboarderearning"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/imgdocumenttext2"
+                    android:paddingStart="20dp"
+                    android:text="@string/document_s"
+                    android:textColor="#09091A"
+                    android:textSize="18dp" />
+
+                <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+                    android:id="@+id/arrarowtwo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="20dp"
+                    android:text="q"
+                    app:fontname="@string/font_UberClone" />
+
+                <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+                    android:id="@+id/imgdocumenttext2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="21dp"
+                    android:text="t"
+                    android:textColor="#ffc2c2c2"
+                    android:textSize="20dp"
+                    app:fontname="@string/font_UberClone" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/paymentlayout"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/documentlayout"
+                android:background="@drawable/bottomboarderearning"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp">
+
+                <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+                    android:id="@+id/imgpaymenttext2"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/paypal"
+                    android:backgroundTint="#ffc2c2c2"
+                    android:textColor="#ffc2c2c2"
+                    android:textSize="20dp"
+                    app:fontname="@string/font_UberClone" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/imgpaymenttext2"
+                    android:paddingStart="20dp"
+                    android:text="@string/payout"
+                    android:textColor="#09091A"
+                    android:textSize="18dp" />
+
+                <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="20dp"
+                    android:id="@+id/arrarowthree"
+                    android:text="q"
+                    app:fontname="@string/font_UberClone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rltPayTo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/paymentlayout"
+                android:background="@drawable/bottomboarderearning"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                tools:visibility="visible">
+
+                <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+                    android:id="@+id/iv_pay"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/money1"
+                    android:backgroundTint="#ffc2c2c2"
+                    android:textColor="#ffc2c2c2"
+                    android:textSize="20dp"
+                    app:fontname="@string/font_UberClone" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/iv_pay"
+                    android:paddingStart="20dp"
+                    android:text="@string/pay_to"
+                    android:textColor="#09091A"
+                    android:textSize="18dp" />
+
+                <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="20dp"
+                    android:id="@+id/arrarowfour"
+                    android:text="q"
+                    app:fontname="@string/font_UberClone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlt_bank_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rltPayTo"
+                android:background="@drawable/bottomboarderearning"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
+                android:visibility="visible">
+
+                <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+                    android:id="@+id/iv_bank"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/ic_credit_card_black"
+                    android:backgroundTint="#ffc2c2c2"
+                    android:textColor="#ffc2c2c2"
+                    android:textSize="20dp"
+                    app:fontname="@string/font_UberClone" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/iv_bank"
+                    android:paddingStart="20dp"
+                    android:text="@string/payout"
+                    android:textColor="#09091A"
+                    android:textSize="18dp" />
+
+                <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="20dp"
+                    android:id="@+id/arrarowfive"
+                    android:text="q"
+                    app:fontname="@string/font_UberClone" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/aboutlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlt_bank_layout"
+                android:background="@drawable/bottomboarderearning"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
+                android:visibility="gone">
+
+                <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+                    android:id="@+id/imgabouttext2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20dp"
+                    android:text="T"
+                    android:textColor="#ffc2c2c2"
+                    android:textSize="20dp"
+                    app:fontname="@string/font_UberClone" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/imgabouttext2"
+                    android:paddingStart="20dp"
+                    android:text="@string/about"
+                    android:textColor="#09091A"
+                    android:textSize="18dp" />
+
+                <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="20dp"
+                    android:text="q"
+                    android:id="@+id/arrarowsix"
+                    app:fontname="@string/font_UberClone" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/referral_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/aboutlayout"
+                android:background="@drawable/bottomboarderearning"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/img_referal_layout"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20dp"
+                    android:src="@drawable/referral"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/img_referal_layout"
+                    android:paddingStart="20dp"
+                    android:text="@string/referral"
+                    android:textColor="#09091A"
+                    android:textSize="18dp" />
+
+                <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="20dp"
+                    android:id="@+id/arrarowseven"
+                    android:text="q"
+                    app:fontname="@string/font_UberClone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/currencylayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/referral_layout"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bottomboarderearning"
+                android:paddingBottom="20dp"
+                android:paddingTop="10dp">
+
+
+                <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:gravity="center_vertical"
+                    android:paddingStart="10dp"
+                    android:text="@string/currencies"
+                    android:textColor="#09091A"
+                    android:textSize="18dp"
+                    app:fontname="@string/fonts_UBERBook" />
+
+                <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+                    android:id="@+id/currency_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="10dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/currency"
+                    android:textAlignment="textEnd"
+                    android:textColor="#09091A"
+                    android:textSize="18dp"
+                    app:fontname="@string/fonts_UBERBook" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/languagelayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/currencylayout"
+
+                android:background="@drawable/bottomboarderearning"
+                android:paddingBottom="20dp"
+                android:paddingTop="10dp">
+
+
+                <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:gravity="center_vertical"
+                    android:paddingStart="10dp"
+                    android:text="@string/language"
+                    android:textColor="#09091A"
+                    android:textSize="18dp"
+                    app:fontname="@string/fonts_UBERBook" />
+
+                <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+                    android:id="@+id/language"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="10dp"
+                    android:gravity="center_vertical"
+                    android:text="English"
+                    android:textAlignment="textEnd"
+                    android:textColor="#09091A"
+                    android:textSize="18dp"
+                    app:fontname="@string/fonts_UBERBook" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/signlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/languagelayout"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bottomboarderearning"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:text="@string/signout"
+                    android:textColor="#09091A"
+                    android:textSize="18dp" />
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

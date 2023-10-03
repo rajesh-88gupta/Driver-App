@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/newtaxi_app_white"
+    android:keepScreenOn="true"
+    android:layoutDirection="@string/layout_direction"
+    tools:context="com.seentechs.newtaxidriver.home.MainActivity">
+
+
+    <!--android:fitsSystemWindows="true"
+    android:layoutDirection="@string/layout_direction"
+    tools:openDrawer="start"-->
+
+
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:layoutDirection="@string/layout_direction"
+        android:background="@color/ub__transparent"
+        tools:openDrawer="start"
+        >
+
+
+        <include
+           android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            layout="@layout/app_bar_main"
+            android:background="@color/ub__transparent"
+            />
+
+
+
+    <!--<RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:layout_below="@+id/relativeLayout2">
+
+        <TextView
+            android:id="@+id/iv_line"
+            android:layout_width="50dp"
+            android:layout_height="5dp"
+            android:background="#ffffff" />
+
+
+    </RelativeLayout>-->
+
+
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="@color/newtaxi_app_white"
+            android:fitsSystemWindows="true"
+            app:headerLayout="@layout/nav_header_main"
+            app:itemTextColor="@color/newtaxi_app_black"
+            app:menu="@menu/activity_main_drawer"
+            app:theme="@style/NavigationDrawerStyle"
+            >
+
+            <RelativeLayout
+                android:id="@+id/gotorider"
+                android:layout_width="match_parent"
+                android:layout_height="126dp"
+                android:layout_gravity="bottom"
+                android:background="@color/newtaxi_app_white"
+                android:paddingStart="@dimen/_20adp"
+                android:paddingTop="@dimen/_10adp"
+                android:paddingEnd="@dimen/_20adp">
+
+
+                <com.seentechs.newtaxidriver.common.custompalette.FontButton
+                    android:id="@+id/rltSignOut"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/sign_out_bg"
+                    android:drawableStart="@drawable/app_ic_signout"
+                    android:drawablePadding="24dp"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:paddingLeft="32dp"
+                    android:paddingRight="32dp"
+                    android:paddingBottom="@dimen/activity_vertical_margin"
+                    android:text="@string/signout"
+                    android:textSize="@dimen/_15asp"
+                    app:fontname="@string/font_Medium" />
+
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/gotoriders"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gotorider"
+                android:layout_gravity="bottom"
+                android:background="@color/newtaxi_app_white"
+                android:paddingStart="@dimen/_20adp"
+                android:paddingTop="@dimen/_10adp"
+                android:paddingEnd="@dimen/_20adp">
+
+
+                <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+                    android:id="@+id/drivewithuber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:gravity="start|center_vertical"
+                    android:paddingBottom="@dimen/_20adp"
+                    android:text="@string/drivewithuber"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/newtaxi_app_black"
+                    android:textSize="@dimen/_14asp"
+                    app:fontname="@string/font_Medium" />
+
+
+                <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+                    android:id="@+id/tvAppVersion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:gravity="start|center_vertical"
+                    android:text="V 2.0"
+                    android:textColor="@color/newtaxi_app_text_ash"
+                    android:textSize="@dimen/_14asp"
+                    app:fontname="@string/font_Medium" />
+
+
+            </RelativeLayout>
+        </com.google.android.material.navigation.NavigationView>
+
+
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

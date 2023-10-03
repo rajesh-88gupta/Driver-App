@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="@string/layout_direction"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+            android:id="@+id/canceltext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20adp"
+            android:layout_centerHorizontal="true"
+            android:text="@string/cancel_vehicle_creation"
+            android:textColor="@color/newtaxi_app_black"
+            android:textSize="@dimen/_18asp"
+            app:fontname="@string/font_Medium" />
+
+        <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+            android:id="@+id/cancel5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/canceltext"
+            android:layout_marginEnd="@dimen/_20adp"
+            android:layout_marginStart="@dimen/_20adp"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible"
+            android:layout_marginTop="20dp"
+            android:text="@string/cancelaccount_msg"
+            android:textColor="@color/newtaxi_app_black"
+            android:textSize="@dimen/_14asp"
+            app:fontname="@string/font_Medium" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cancel5"
+            android:layout_marginBottom="@dimen/_20adp"
+            android:layout_marginEnd="@dimen/_30adp"
+            android:layout_marginStart="@dimen/_30adp"
+            android:layout_marginTop="@dimen/_20adp"
+            android:weightSum="2">
+
+            <com.seentechs.newtaxidriver.common.custompalette.FontButton
+                android:id="@+id/signup_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10adp"
+                android:layout_weight="1"
+                android:background="@drawable/app_curve_button_navy_with_outline"
+                android:paddingBottom="@dimen/_15adp"
+                android:layout_marginBottom="@dimen/_10adp"
+                android:paddingTop="@dimen/_15adp"
+                android:text="@string/cancel"
+                android:textSize="@dimen/_15asp"
+                app:fontname="@string/font_Medium" />
+
+            <com.seentechs.newtaxidriver.common.custompalette.FontButton
+                android:id="@+id/signup_cancel_confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10adp"
+                android:layout_weight="1"
+                android:layout_marginBottom="@dimen/_10adp"
+                android:background="@drawable/app_curve_button_navy"
+                android:paddingBottom="@dimen/_15adp"
+                android:paddingTop="@dimen/_15adp"
+                android:text="@string/confirm"
+                android:textColor="@color/newtaxi_app_black"
+                android:textSize="@dimen/_15asp"
+                app:fontname="@string/font_Medium" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

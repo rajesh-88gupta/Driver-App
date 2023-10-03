@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset xmlns:android="http://schemas.android.com/apk/res/android"
+        android:insetBottom="-2dp"
+        android:insetLeft="-2dp"
+        android:insetRight="-2dp">
+<shape
+        android:shape="rectangle">
+
+    <solid android:color="@color/newtaxi_app_white"
+            />
+
+    <stroke
+            android:width="2.5dp"
+            android:color="@color/newtaxi_app_border_shadow" />
+
+    <corners
+            android:topLeftRadius="10dp"
+            android:topRightRadius="10dp"
+
+            />
+</shape>
+</inset>

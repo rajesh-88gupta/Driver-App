@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/newtaxi_app_white"
+    tools:context=".home.fragments.payment.PayToAdminActivity">
+
+
+    <include
+        android:id="@+id/common_header"
+        layout="@layout/app_common_header" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/common_header"
+        android:background="@drawable/app_top_curve_white"
+        android:layout_marginTop="@dimen/_20adp"
+        >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_20adp">
+
+            <ImageView
+                android:id="@+id/ivWalletImage"
+                android:layout_width="@dimen/_150adp"
+                android:layout_height="@dimen/_150adp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_20adp"
+                android:src="@drawable/paytoadmin" />
+
+            <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+                android:id="@+id/tvWallet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ivWalletImage"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_20adp"
+                android:text="@string/your_pay_to"
+                android:textColor="@color/newtaxi_app_black"
+                android:textSize="@dimen/_14asp"
+                app:fontname="@string/fonts_UBERNews" />
+
+            <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+                android:id="@+id/tvOweAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvWallet"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_10adp"
+                android:text=""
+                android:textColor="@color/newtaxi_app_black"
+                android:textSize="@dimen/_22asp"
+                app:fontname="@string/font_Medium" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:paddingTop="@dimen/_10adp"
+            android:paddingBottom="@dimen/_10adp">
+
+            <include
+                android:id="@+id/common_button"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                layout="@layout/app_common_button_large"
+                android:paddingBottom="@dimen/_10adp"
+                android:paddingTop="@dimen/_10adp"
+                android:textColor="@color/newtaxi_app_black"
+                android:textSize="@dimen/_16asp"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

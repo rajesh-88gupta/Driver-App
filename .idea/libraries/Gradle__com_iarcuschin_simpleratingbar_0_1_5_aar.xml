@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.iarcuschin:simpleratingbar:0.1.5@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/bafcfa431bb078ed0378464b713f1e65/transformed/jetified-simpleratingbar-0.1.5/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/bafcfa431bb078ed0378464b713f1e65/transformed/jetified-simpleratingbar-0.1.5/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/bafcfa431bb078ed0378464b713f1e65/transformed/jetified-simpleratingbar-0.1.5/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.iarcuschin/simpleratingbar/0.1.5/b2876a7bbd89a740644b6b9d967b69da94c26052/simpleratingbar-0.1.5-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.iarcuschin/simpleratingbar/0.1.5/b0a6ea5ed50012f3131d402bcd4dc41e4bab8b0d/simpleratingbar-0.1.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

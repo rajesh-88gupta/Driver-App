@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:layoutDirection="@string/layout_direction"
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/rltUserChoice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_15adp"
+        >
+
+        <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+            android:id="@+id/tvname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="@dimen/_20adp"
+            android:layout_marginEnd="@dimen/_8adp"
+            android:layout_toStartOf="@+id/tv_code"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textAlignment="viewStart"
+            android:textColor="@color/newtaxi_app_black"
+            android:textSize="@dimen/_14asp"
+            app:fontname="@string/font_Medium"
+            />
+
+        <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+            android:id="@+id/tv_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/newtaxi_app_black"
+            android:textSize="@dimen/_14asp"
+            app:fontname="@string/font_Medium"
+            />
+
+        <RadioButton
+            android:id="@+id/ivTick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/_20adp"
+            android:buttonTint="@color/newtaxi_app_black"
+            android:checked="false"
+            android:clickable="false"
+            android:focusable="false" />
+
+    </RelativeLayout>
+</RelativeLayout>

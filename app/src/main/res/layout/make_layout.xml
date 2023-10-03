@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="make"
+            type="com.seentechs.newtaxidriver.home.datamodel.Make" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/_5adp">
+
+
+        <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+            android:id="@+id/tv_car_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingStart="@dimen/_20adp"
+            android:paddingTop="@dimen/_10adp"
+            android:paddingEnd="@dimen/_10adp"
+            android:paddingBottom="@dimen/_10adp"
+            android:text="@{make.name}"
+            android:textAlignment="viewStart"
+            android:textColor="@color/newtaxi_app_black"
+            android:textSize="@dimen/_14asp"
+            app:fontname="@string/font_Medium" />
+
+
+        <ImageView
+            android:id="@+id/iv_tick"
+            android:layout_width="@dimen/_22adp"
+            android:layout_height="@dimen/_22adp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="@dimen/_5adp"
+            android:src="@drawable/tick_green" />
+
+    </RelativeLayout>
+
+   <!-- <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1adp"
+        android:layout_marginStart="@dimen/_30adp"
+        android:layout_marginEnd="@dimen/_30adp"
+        android:layout_marginBottom="@dimen/_1adp"
+        android:background="@color/newtaxi_app_border_shadow"/>-->
+    </LinearLayout>
+
+</layout>
+

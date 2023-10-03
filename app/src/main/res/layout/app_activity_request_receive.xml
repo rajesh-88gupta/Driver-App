@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:timer="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/request_receive_dialog_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/v_bottom"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="-50dp">
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.seentechs.newtaxidriver.common.helper.CircularMusicProgressBar
+            android:id="@+id/album_art"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:visibility="visible"
+            app:border_color="@color/newtaxi_app_navy"
+            app:border_width="10dp"
+            app:centercircle_diammterer="3"
+            app:draw_anticlockwise="true"
+            app:progress_color="@color/newtaxi_app_navy_dim"
+            app:progress_startAngle="280" />
+
+
+        <io.github.krtkush.lineartimer.LinearTimerView
+            android:id="@+id/linearTimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="visible"
+            timer:initialColor="@color/newtaxi_app_navy"
+            timer:progressColor="@color/newtaxi_app_navy_dim"
+            timer:startingPoint="270"
+            timer:strokeWidth="3dp">
+
+        </io.github.krtkush.lineartimer.LinearTimerView>
+
+        <com.seentechs.newtaxidriver.trips.RoundedLayout
+            android:id="@+id/maplayout"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            app:cardCornerRadius="@dimen/_150adp"
+            app:cardElevation="210dp">
+
+
+            <ImageView
+                android:id="@+id/map_snap"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:alpha=".25"
+                android:src="@drawable/circle_shape"
+                app:tint="@color/newtaxi_app_navy" />
+
+            <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+                android:id="@+id/tv_title_accept"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/accept"
+                android:textAllCaps="true"
+                android:textColor="@color/newtaxi_app_black"
+                android:textSize="@dimen/_17asp"
+                app:fontname="@string/font_Medium" />
+
+            <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+                android:id="@+id/tvcountdowntimer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_title_accept"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/_5adp"
+                android:textColor="@color/newtaxi_app_black"
+                android:textSize="@dimen/_16asp"
+                app:fontname="@string/font_Medium" />
+
+
+        </com.seentechs.newtaxidriver.trips.RoundedLayout>
+
+
+    </RelativeLayout>
+
+    <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+        android:id="@+id/tv_decline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/v_bottom"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/_25adp"
+        android:layout_marginTop="@dimen/_25adp"
+        android:layout_marginEnd="@dimen/_25adp"
+        android:layout_marginBottom="@dimen/_25adp"
+        android:background="@drawable/app_curve_button_black"
+        android:paddingStart="@dimen/_15adp"
+        android:paddingTop="@dimen/_10adp"
+        android:paddingEnd="@dimen/_15adp"
+        android:paddingBottom="@dimen/_10adp"
+        android:text="@string/cancel_s"
+        android:textAllCaps="false"
+        android:textColor="@color/newtaxi_app_white"
+        app:fontname="@string/font_Medium" />
+
+    <RelativeLayout
+        android:id="@+id/v_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/app_top_curve_white">
+
+        <RelativeLayout
+            android:id="@+id/pic_drop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/_10adp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/_5adp">
+
+                <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+                    android:id="@+id/req_min"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_5adp"
+                    android:text="MINUTE"
+                    android:textColor="@color/newtaxi_app_black"
+                    android:textSize="@dimen/_13asp"
+                    timer:fontname="@string/font_Medium" />
+
+                <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+                    android:id="@+id/tv_seat_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/req_min"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_10adp"
+                    android:text="Pool Request (2 persons)"
+                    android:textColor="@color/newtaxi_app_black"
+                    android:textSize="@dimen/_12asp"
+                    timer:fontname="@string/font_UBERMedium" />
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_seat_count"
+                    android:layout_marginTop="@dimen/_15adp"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    tools:itemCount="2"
+                    tools:listitem="@layout/app_pick_drop_location">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

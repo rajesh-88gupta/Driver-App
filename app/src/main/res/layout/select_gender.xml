@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layoutDirection="@string/layout_direction"
+    android:padding="@dimen/_10adp">
+
+    <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+        android:id="@+id/tv_gender_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/gender"
+        android:textColor="@color/newtaxi_app_black"
+        android:textSize="@dimen/_15asp"
+        app:fontname="@string/font_Medium"
+        />
+
+    <RadioGroup
+        android:id="@+id/rg_gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_gender_title"
+        android:layout_marginTop="@dimen/_10adp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rd_male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_15adp"
+            android:text="@string/male"
+            android:textSize="@dimen/_14asp"
+            android:textStyle="bold"
+            android:buttonTint="@color/newtaxi_app_navy"
+            android:textColor="@color/newtaxi_app_black"
+            />
+
+        <RadioButton
+            android:id="@+id/rd_female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/female"
+            android:textSize="@dimen/_14asp"
+            android:textStyle="bold"
+            android:buttonTint="@color/newtaxi_app_navy"
+            android:textColor="@color/newtaxi_app_black"
+            />
+
+    </RadioGroup>
+</RelativeLayout>

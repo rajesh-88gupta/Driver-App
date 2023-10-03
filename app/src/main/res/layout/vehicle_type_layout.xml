@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <RelativeLayout
+        android:id="@+id/rlt_vehicle_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@drawable/d_bottom"
+        android:layoutDirection="@string/layout_direction"
+        android:paddingBottom="@dimen/_10adp"
+        android:paddingEnd="@dimen/_10adp"
+        android:paddingStart="@dimen/_20adp"
+        android:paddingTop="@dimen/_10adp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/rb_vehicle_type"
+            >
+
+        <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+            android:id="@+id/tv_vehicle_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/_7adp"
+            android:paddingEnd="@dimen/_10adp"
+            android:text="Ford "
+            android:textAlignment="viewStart"
+            android:textSize="@dimen/_15asp"
+            android:textColor="@color/newtaxi_app_black"
+            app:fontname="@string/font_Medium" />
+
+        <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+            android:id="@+id/tv_vehicle_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/_10adp"
+            android:paddingEnd="@dimen/_10adp"
+            android:layout_below="@+id/tv_vehicle_type"
+            android:text="(Wx547) "
+            android:textAlignment="viewStart"
+            android:textSize="@dimen/_15asp"
+            android:textColor="@color/newtaxi_app_text_ash"
+            app:fontname="@string/font_Medium"
+            />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_below="@+id/tv_vehicle_number"
+                android:layout_centerHorizontal="true"
+                android:layout_marginEnd="@dimen/_30adp"
+                android:layout_toEndOf="@+id/ortext"
+                android:visibility="gone"
+                android:background="@color/newtaxi_app_border_shadow" />
+
+        </RelativeLayout>
+        <RadioButton
+            android:id="@+id/rb_vehicle_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/_15adp"
+            android:buttonTint="@color/newtaxi_app_navy"
+            android:checked="true"
+            android:clickable="false"
+            android:focusable="false"
+            />
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

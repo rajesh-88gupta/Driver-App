@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/transparent"
+    android:layout_marginEnd="@dimen/_20adp"
+    android:layout_marginStart="@dimen/_20adp"
+    android:id="@+id/country_layout">
+
+
+    <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+        android:text="Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_15asp"
+        android:paddingTop="@dimen/_10adp"
+        android:paddingBottom="@dimen/_10adp"
+        android:textColor="@color/newtaxi_app_black"
+        android:id="@+id/countryname"
+        app:fontname="@string/font_Medium"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

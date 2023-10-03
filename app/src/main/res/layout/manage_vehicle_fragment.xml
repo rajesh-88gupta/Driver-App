@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/newtaxi_app_white"
+    tools:context=".home.managevehicles.ManageVehicleFragment">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/_20adp"
+    android:background="@drawable/app_top_curve_white"
+    android:id="@+id/manage_vehicles"
+    >
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_vehicles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="@dimen/_20adp"
+        android:layout_alignParentStart="true"
+        android:scrollbars="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        />
+
+
+
+    <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+        android:id="@+id/tv_no_vehicles"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:gravity="start|center_vertical"
+        android:text="@string/you_have_no_vehicles"
+        android:textColor="@color/colorblack"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:textSize="16sp"
+        app:fontname="@string/font_UBERNews" />
+
+
+</RelativeLayout>
+
+</RelativeLayout>

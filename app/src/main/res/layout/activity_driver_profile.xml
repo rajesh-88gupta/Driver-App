@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="@string/layout_direction"
+    tools:context=".home.fragments.AccountFragment">
+
+    <RelativeLayout
+        android:id="@+id/drivermainlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_background"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+
+        <ImageView
+            android:id="@+id/arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingStart="20dp"
+            android:paddingEnd="10dp"
+            android:scaleX=".6"
+            android:scaleY=".6"
+            android:src="@drawable/gobackleftarrow"
+            app:tint="@color/white" />
+
+
+        <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+            android:id="@+id/close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:text="R"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:visibility="gone"
+            app:fontname="@string/font_UberClone" />
+
+        <TextView
+            android:id="@+id/titletext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/arrow"
+            android:paddingTop="5dp"
+            android:text="@string/profile"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/editicon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/pencil"
+            android:visibility="gone" />
+
+        <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+            android:id="@+id/tickshad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:text="4"
+            android:textColor="#ffc2c2c2"
+            android:textSize="24dp"
+            android:visibility="visible"
+            app:fontname="@string/font_UberClone" />
+
+        <ImageView
+            android:id="@+id/cameraicon"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignTop="@+id/tickshad"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="31dp"
+            android:layout_toStartOf="@+id/tickshad"
+            android:background="@drawable/cameraicon"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/drivermainlayout">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/drivermainlayout">
+
+            <RelativeLayout
+                android:id="@+id/titleback"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@color/app_background"
+                android:gravity="center">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image1"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="50dp"
+                    app:civ_border_color="@color/app_background"
+                    app:civ_border_width="2dp" />
+            </RelativeLayout>
+
+
+            <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+                android:id="@+id/personicon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/titleback"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="42dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="20dp"
+                android:text="P"
+                android:textColor="#ffc2c2c2"
+                android:textSize="25dp"
+                app:fontname="@string/font_UberClone" />
+
+            <LinearLayout
+                android:id="@+id/namelayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/titleback"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_toEndOf="@+id/personicon"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input_layout_first"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/back"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="1">
+
+                    <com.seentechs.newtaxidriver.common.custompalette.FontEditText
+                        android:id="@+id/input_first"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusableInTouchMode="false"
+                        android:hint="@string/first"
+                        android:singleLine="true"
+                        android:textAlignment="viewStart"
+                        android:textCursorDrawable="@drawable/app_cursor_color"
+                        android:textColor="@color/colorblack"
+                        android:textSize="16sp"
+                        app:fontname="@string/font_UBERNews" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input_layout_last"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/input_layout_first"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1">
+
+                    <com.seentechs.newtaxidriver.common.custompalette.FontEditText
+                        android:id="@+id/input_last"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusableInTouchMode="false"
+                        android:hint="@string/last"
+                        android:singleLine="true"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/colorblack"
+                        android:textCursorDrawable="@drawable/app_cursor_color"
+                        android:textSize="16sp"
+                        app:fontname="@string/font_UBERNews" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/emaillayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/namelayout"
+                android:layout_alignStart="@+id/namelayout"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/emailName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/emaitext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusableInTouchMode="false"
+                        android:hint="@string/email"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/colorblack"
+                        android:textColorHint="#ffc2c2c2"
+                        android:textSize="14dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/mobile_txtlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/emaillayout"
+                android:layout_alignStart="@+id/emaillayout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="5dp"
+                    android:text="@string/mobile"
+                    android:textColor="#ffc2c2c2"
+                    android:textSize="14dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/flaglayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mobile_txtlayout"
+                android:layout_alignStart="@+id/emaillayout"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp">
+
+                <com.hbb20.CountryCodePicker
+                    android:id="@+id/mobile_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    app:ccp_arrowSize="0sp"
+                    app:ccp_clickable="false"
+                    app:ccp_showArrow="false"
+                    app:ccp_showNameCode="false"
+                    app:ccp_textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/mobile_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/mobile_code"
+                    android:clickable="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="7200279088"
+                    android:maxLines="10"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorblack"
+                    android:textColorHint="#ffc2c2c2"
+                    android:textSize="14dp"
+                    android:transitionName="mobilenumber" />
+            </RelativeLayout>
+
+            <include
+                android:id="@+id/v_gender"
+                layout="@layout/select_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/flaglayout"
+                android:layout_alignStart="@+id/namelayout"
+                android:layout_marginStart="-5dp"
+                android:layout_marginTop="10dp" />
+
+            <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/v_gender"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="20dp"
+                android:text="E"
+                android:textAlignment="viewStart"
+                android:textColor="#ffc2c2c2"
+                android:textSize="25dp"
+                app:fontname="@string/font_UberClone" />
+
+            <RelativeLayout
+                android:id="@+id/addresslayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/v_gender"
+                android:layout_alignStart="@+id/v_gender"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/addressName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/addresstext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusableInTouchMode="false"
+                        android:hint="@string/address1"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/colorblack"
+                        android:textColorHint="#ffc2c2c2"
+                        android:textSize="14dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/addresslayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/addresslayout1"
+                android:layout_alignStart="@+id/flaglayout"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/addressName2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/addresstext2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusableInTouchMode="false"
+                        android:hint="@string/address2"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/colorblack"
+                        android:textColorHint="#ffc2c2c2"
+                        android:textSize="14dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/citylayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/addresslayout2"
+                android:layout_alignStart="@+id/addresslayout2"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/cityName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/citytext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusableInTouchMode="false"
+                        android:hint="@string/city"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/colorblack"
+                        android:textColorHint="#ffc2c2c2"
+                        android:textSize="14dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/statelayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/citylayout"
+                android:layout_alignStart="@+id/citylayout"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/stateName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/statetext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusableInTouchMode="false"
+                        android:hint="@string/state"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/colorblack"
+                        android:textColorHint="#ffc2c2c2"
+                        android:textSize="14dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/statelayout"
+                android:layout_alignStart="@+id/statelayout"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/postName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/posttext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusableInTouchMode="false"
+                        android:hint="@string/postalcode"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/colorblack"
+                        android:textColorHint="#ffc2c2c2"
+                        android:textSize="14dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

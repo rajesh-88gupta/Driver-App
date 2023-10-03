@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/newtaxi_app_white"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/app_top_curve_white"
+        android:layout_marginTop="@dimen/_10adp">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/newtaxi_app_white"
+        android:layout_marginStart="@dimen/_15adp"
+        android:layout_marginEnd="@dimen/_15adp"
+        android:layout_marginTop="@dimen/_13adp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/newtaxi_app_white"
+               >
+
+                <RelativeLayout
+                    android:id="@+id/rlt_make"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/d_bottom"
+                    android:paddingStart="@dimen/_10adp"
+                    android:paddingTop="@dimen/_10adp"
+                    android:paddingBottom="@dimen/_20adp">
+
+
+                    <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+                        android:id="@+id/tv_make"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/ivpayout"
+                        android:gravity="center_vertical"
+                        android:text="@string/make"
+                        android:textColor="@color/newtaxi_app_black"
+                        android:textSize="@dimen/_12asp"
+                        app:fontname="@string/font_UBERNews" />
+
+
+                    <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+                        android:id="@+id/tv_make_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_make"
+                        android:layout_marginTop="5dp"
+                        android:layout_toStartOf="@+id/img_make_arrow"
+                        android:gravity="start"
+                        android:hint="@string/choose_make"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/newtaxi_app_black"
+                        android:textSize="@dimen/_14asp"
+                        app:fontname="@string/font_Medium" />
+
+                    <ImageView
+                        android:id="@+id/img_make_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="10dp"
+                        android:src="@drawable/ic_arrow" />
+
+                    <requestFocus />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/rlt_model"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/d_bottom"
+                    android:paddingStart="@dimen/_10adp"
+                    android:paddingTop="@dimen/_10adp"
+                    android:paddingBottom="@dimen/_20adp">
+
+
+                    <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+                        android:id="@+id/tv_model"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/ivpayout"
+                        android:gravity="center_vertical"
+                        android:text="@string/model"
+                        android:textColor="@color/newtaxi_app_black"
+                        android:textSize="@dimen/_12asp"
+                        app:fontname="@string/font_UBERNews" />
+
+                    <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+                        android:id="@+id/tv_model_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_model"
+                        android:layout_marginTop="@dimen/_5adp"
+                        android:layout_toStartOf="@id/img_model_arrow"
+                        android:gravity="start"
+                        android:hint="@string/choose_model"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/newtaxi_app_black"
+                        android:textSize="@dimen/_14asp"
+                        app:fontname="@string/font_Medium" />
+
+
+                    <ImageView
+                        android:id="@+id/img_model_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/_10adp"
+                        android:src="@drawable/ic_arrow" />
+
+                    <requestFocus />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/rlt_year"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/d_bottom"
+                    android:paddingStart="@dimen/_10adp"
+                    android:paddingTop="@dimen/_10adp"
+                    android:paddingBottom="@dimen/_20adp">
+
+
+                    <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+                        android:id="@+id/tv_year"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/ivpayout"
+                        android:gravity="center_vertical"
+                        android:text="@string/year"
+                        android:textColor="@color/newtaxi_app_black"
+                        android:textSize="@dimen/_12asp"
+                        app:fontname="@string/font_UBERNews" />
+
+                    <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+                        android:id="@+id/tv_year_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_year"
+                        android:layout_marginTop="@dimen/_5adp"
+                        android:layout_toStartOf="@id/img_year_arrow"
+                        android:gravity="start"
+                        android:hint="@string/choose_year"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/newtaxi_app_black"
+                        android:textSize="@dimen/_14asp"
+                        app:fontname="@string/font_Medium" />
+
+
+                    <ImageView
+                        android:id="@+id/img_year_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/_10adp"
+                        android:src="@drawable/ic_arrow" />
+
+                    <requestFocus />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlt_license"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/d_bottom"
+                    android:paddingStart="@dimen/_10adp"
+                    android:paddingTop="@dimen/_10adp"
+                    android:paddingBottom="@dimen/_20adp">
+
+
+                      <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+                        android:id="@+id/tv_license"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/ivpayout"
+                        android:gravity="center_vertical"
+                        android:text="@string/vehicle_numbers"
+                        android:textColor="@color/newtaxi_app_black"
+                        android:textSize="@dimen/_12asp"
+                        app:fontname="@string/font_UBERNews" />
+
+                        <com.seentechs.newtaxidriver.common.custompalette.FontEditText
+                            android:id="@+id/tv_license_type"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_license"
+                            android:layout_marginTop="@dimen/_5adp"
+                            android:ellipsize="end"
+                            android:textCursorDrawable="@drawable/app_cursor_color"
+                            android:gravity="start"
+                            android:background="@color/ub__transparent"
+                            android:hint="@string/enter_license_plate"
+                            android:maxLength="15"
+                            android:paddingTop="@dimen/_5adp"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/colorblack"
+                            android:textSize="@dimen/_14asp"
+                            app:fontname="@string/font_Medium" />
+
+
+                    <!--    <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tv_license"
+
+                            android:gravity="center_vertical"
+                            android:layout_toEndOf="@+id/ivpayout"
+                            android:text="@string/license_plate"
+                            android:textColor="@color/colorblockgray"
+                            android:textSize="15sp"
+                            app:fontname="@string/font_UBERNews" />
+
+                        <com.seentechs.newtaxidriver.common.custompalette.FontEditText
+                            android:id="@+id/tv_license_type"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center_vertical"
+                            android:textAlignment="viewStart"
+                            android:hint="@string/enter_license_plate"
+                            android:textColor="@color/colorblack"
+                            android:ellipsize="end"
+                            android:maxLength="12"
+                            android:textSize="17sp"
+                            android:layout_below="@+id/tv_license"
+                            app:fontname="@string/font_UBERNews" />
+
+                        <requestFocus />-->
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/rlt_vehicle_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/d_bottom"
+                    android:paddingStart="@dimen/_10adp"
+                    android:paddingTop="@dimen/_10adp"
+                    android:paddingBottom="@dimen/_20adp"
+                    android:visibility="gone">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/tv_vehicle__name_header"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.seentechs.newtaxidriver.common.custompalette.FontEditText
+                            android:id="@+id/tv_vehicle_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_vehicle__name_header"
+                            android:layout_marginTop="@dimen/_5adp"
+                            android:textCursorDrawable="@drawable/app_cursor_color"
+                            android:paddingTop="@dimen/_5adp"
+                            android:gravity="start"
+                            android:hint="@string/enter_vehicle_name"
+                            android:text=""
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/newtaxi_app_black"
+                            android:textSize="@dimen/_17asp"
+                            app:fontname="@string/font_UBERNews" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <!--
+
+                                    <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/tv_vehicle__name_header"
+
+                                        android:gravity="center_vertical"
+                                        android:layout_toEndOf="@+id/ivpayout"
+                                        android:text="@string/vehicle_name_title"
+                                        android:textColor="@color/colorblockgray"
+                                        android:textSize="15sp"
+                                        app:fontname="@string/font_UBERNews" />
+
+                                    <com.seentechs.newtaxidriver.common.custompalette.FontEditText
+                                        android:id="@+id/tv_vehicle_name"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="5dp"
+                                        android:gravity="center_vertical"
+                                        android:textAlignment="viewStart"
+                                        android:text=""
+                                        android:textColor="@color/colorblack"
+                                        android:textSize="17sp"
+                                        android:hint="@string/enter_vehicle_name"
+                                        android:layout_below="@+id/tv_vehicle__name_header"
+                                        app:fontname="@string/font_UBERNews" />
+                    -->
+
+                    <requestFocus />
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/rlt_vehicle_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/d_bottom"
+                    android:paddingStart="@dimen/_10adp"
+                    android:paddingTop="@dimen/_10adp"
+                    android:paddingBottom="@dimen/_20adp">
+
+
+                    <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+                        android:id="@+id/tv_vehicle_color_header"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/ivpayout"
+                        android:gravity="center_vertical"
+                        android:text="@string/vehicle_color"
+                        android:textColor="@color/newtaxi_app_black"
+                        android:textSize="@dimen/_12asp"
+                        app:fontname="@string/font_UBERNews" />
+
+                    <com.seentechs.newtaxidriver.common.custompalette.FontEditText
+                        android:id="@+id/tv_vehicle_color"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_vehicle_color_header"
+                        android:layout_marginTop="@dimen/_5adp"
+                        android:backgroundTint="@color/quantum_grey"
+                        android:textCursorDrawable="@drawable/app_cursor_color"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:hint="@string/enter_vehicle_color"
+                        android:maxLength="15"
+                        android:background="@color/ub__transparent"
+                        android:text=""
+                        android:paddingTop="@dimen/_5adp"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/colorblack"
+                        android:textSize="@dimen/_14asp"
+                        app:fontname="@string/font_Medium" />
+
+
+                </RelativeLayout>
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_features_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="vertical"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_vehicle_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="vertical"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/white"
+                    android:paddingTop="@dimen/_25adp"
+                    android:paddingBottom="@dimen/_10adp">
+
+                    <com.seentechs.newtaxidriver.common.custompalette.FontButton
+                        android:id="@+id/btnAddVehicle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/CommonBottomSheetButton"
+                        android:layout_marginBottom="@dimen/_10adp"
+                        android:background="@drawable/app_curve_button_navy"
+                        android:text="@string/add_vehicle"
+                        android:textAllCaps="false"
+                        android:textColor="@color/newtaxi_app_black"
+                        android:textSize="@dimen/_15asp"
+                        app:fontname="@string/fonts_UBERNews" />
+                </RelativeLayout>
+
+            </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    </RelativeLayout>
+
+
+</LinearLayout>

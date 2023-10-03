@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [<!ENTITY appname_driver "Newtaxi Driver"><!ENTITY appname "Newtaxi">]>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="signin">"ورود"</string>
+    <string name="usernameemail">"نام کاربری یا پست الکترونیک"</string>
+    <string name="password">"کلمه عبور"</string>
+    <string name="forgotpassword">"فراموشی رمز عبور؟"</string>
+
+    <string name="error_msg_vehiclename">"لطفا نام وسیله نقلیه خود را وارد کنید"</string>
+    <string name="error_msg_vehiclenumber">"لطفا شماره وسیله نقلیه خود را وارد کنید"</string>
+    <string name="error_msg_vehicletype">"لطفا نوع وسیله نقلیه خود را انتخاب کنید"</string>
+    <string name="error_msg_firstname">"لطفا نام خود را وارد کنید"</string>
+
+    <string name="error_msg_mobilenumber">"شماره تلفن همراه نامعتبر"</string>
+    <string name="loading">بارگذاری</string>
+
+    <string name="sigin_terms1"> "با ادامه دادن با ما موافقت می کنید " </string>
+    <string name="sigin_terms4"> "سیاست حفظ حریم خصوصی" </string>
+
+    <string name="error_msg_lastname">"لطفا نام خانوادگی خود را وارد کنید"</string>
+    <string name="error_msg_email">"لطفا یک آدرس ایمیل معتبر وارد کنید"</string>
+    <string name="error_msg_phone">"لطفا یک شماره تلفن همراه معتبر وارد کنید"</string>
+    <string name="error_msg_password">"لطفا حداقل 6 کاراکتر را وارد کنید"</string>
+    <string name="error_msg_address">"لطفا یک آدرس معتبر وارد کنید"</string>
+    <string name="error_msg_city">"لطفا یک شهرستان معتبر وارد کنید"</string>
+    <string name="error_msg_state">"لطفا یک ایالت معتبر وارد کنید"</string>
+    <string name="error_msg_post">"لطفا کد پستی معتبر وارد کنید"</string>
+    <string name="error_msg_rating">"لطفا امتیاز خود را"</string>
+
+    <string name="getmobilenumber">شماره تلفن همراه خود را وارد کنید</string>
+    <string name="first">"نام کوچک"</string>
+    <string name="last">"نام خانوادگی"</string>
+    <string name="email">"پست الکترونیک"</string>
+    <string name="paypalemail">"پی پال ایمیل"</string>
+    <string name="address1">"آدرس 1"</string>
+    <string name="address2">"آدرس 2"</string>
+    <string name="city">"شهر"</string>
+    <string name="state">"حالت"</string>
+    <string name="postalcode">"کد پستی"</string>
+    <string name="havean_account">"حساب کاربری دارید؟"</string>
+    <string name="login">ورود</string>
+
+    <string name="resetpasswords">تنظیم مجدد کلمه ورود</string>
+
+
+    <string name="riderfeedbacktitle">"انتقادات و پیشنهادات ریدر"</string>
+
+    <string name="signout_msg">"آیا شما مطمئن هستید که میخواهید خارج شوید؟"</string>
+    <string name="cancel_s">"لغو"</string>
+
+
+    <string name="descreption">با توافق، من موافقم که &appname;؛ یا نمایندگان آن می توانند از طریق ایمیل، تیزهوش یا SMS (از جمله با شماره گیری تلفنی اتوماتیک) با آدرس ایمیل یا شماره من، از جمله برای اهداف بازاریابی، با من تماس بگیرند. من خواندن و درک مربوط به اعلامیه حریم خصوصی درایور را مطالعه کرده ام. مقادیر ارجاع و حداقل نیازهای سفر ممکن است از شهر به شهر متفاوت باشد.&appname;نام برنامه؛ ممکن است هر مقدار انگیزشی یا معیارهای انگیزشی را تنها بر پایه ی آن تغییر دهد.</string>
+
+    <string name="register">"ثبت نام"</string>
+    <string name="vehicle">"جزئیات خودرو"</string>
+    <string name="vehicle_name">"نام خودرو / به عنوان مثال: Toyoto کمری، هوندا …"</string>
+    <string name="vehicle_number">"شماره خودرو / به عنوان مثال: WNF 382"</string>
+    <string name="vehicle_type">"انتخاب نوع وسیله نقلیه خود را"</string>
+    <string name="looking">"به دنبال ریدر برنامه چیست؟"</string>
+    <string name="signupwithrider">"ثبت نام با حساب ریدر"</string>
+    <string name="or">"یا"</string>
+    <string name="trip_star_5">"کنونی شما"</string>
+    <string name="current_rating">"سفرها مادام العمر"</string>
+    <string name="trip_cancel">"5 ستاره"</string>
+    <string name="request_accepted">"سفرها دارای رتبه"</string>
+    <string name="enter4digit">کد 4 رقمی برای شما در ارسال را وارد کنید</string>
+    <string name="resend">ارسال مجدد کد</string>
+    <string name="otp_mismatch">"عدم تطابق کد OTP."</string>
+    <string name="otp_emty">"لطفا OTP را وارد کنید"</string>
+
+
+    <string name="riderfeedback">"بازخورد رایدر"</string>
+    <string name="checkfeedback">"اتمام بازخورد از سواران و یاد بگیرند که چگونه به منظور بهبود"</string>
+    <string name="drivingstyle">"رانندگی داشبورد سبک"</string>
+    <string name="seeyourdriving">"مشاهده مشخصات سبک رانندگی خود را پس از اتمام سفر دیگر"</string>
+    <string name="cancel_your_trip">"لغو سفر خود را"</string>
+    <string name="rider_profile">"مشخصات سوار"</string>
+    <string name="waiting_for_payment">"در حال انتظار برای پرداخت …"</string>
+    <string name="payment_done">"پرداخت انجام شد"</string>
+    <string name="paid">"پرداخت شده"</string>
+
+
+    <string name="documents">"اسناد"</string>
+    <string name="doc">"لطفا مدارک خود را ارسال کنند."</string>
+    <string name="personaldoc">"لطفا اسناد \ شخصی خود را آپلود کنید."</string>
+    <string name="vehicledoc_msg">"برای رانندگی با و &appname;؛ وسیله نقلیه خود را باید اواسط اندازه و سدان با اندازه کامل است که به راحتی و صندلی 4-8 مسافر."</string>
+    <string name="driverlicense_back">"گواهینامه رانندگی - (برگشت / معکوس)"</string>
+    <string name="driverlicense_front">"گواهینامه رانندگی - (جلو)"</string>
+    <string name="motor_insurance">"گواهی بیمه موتور"</string>
+    <string name="registeration">"گواهی ثبت نام"</string>
+    <string name="contract_carriage">"قرارداد حمل اجازه"</string>
+    <string name="verify">"تأیید"</string>
+
+    <string name="takephoto">"نگاهی به یک عکس از خود را"</string>
+    <string name="takephoto_msg">"لطفا مطمئن شوید که به راحتی می توانید به عنوان خوانده شده تمام جزئیات."</string>
+    <string name="taptoadd">"شیر به اضافه کردن"</string>
+    <string name="taptochange">"شیر را تغییر دهید"</string>
+
+
+    <string name="home">"صفحه اصلی"</string>
+    <string name="earnings">"درآمد"</string>
+    <string name="rating">"رتبه بندی"</string>
+    <string name="account">"حساب"</string>
+    <string name="offline">"آفلاین"</string>
+    <string name="checkstatus">"بررسی وضعیت"</string>
+    <string name="online">"آنلاین"</string>
+    <string name="trip_id">"شناسایی سفر:"</string>
+    <string name="enroute">"در راه"</string>
+    <string name="navigate">"حرکت"</string>
+    <string name="pickup">"سوار کردن"</string>
+    <string name="pick_up">"سوار کردن"</string>
+    <string name="dropoff">"رها کردن"</string>
+    <string name="contact_C">"تماس"</string>
+    <string name="call">"زنگ زدن"</string>
+    <string name="callsonly">"تماس فقط"</string>
+    <string name="cancel">"لغو"</string>
+    <string name="minute">"دقیقه"</string>
+    <string name="minutes">"دقایق"</string>
+    <string name="help">"کمک"</string>
+    <string name="edit">"ویرایش"</string>
+    <string name="document_s">"اسناد"</string>
+    <string name="about">"در باره"</string>
+    <string name="signout">"خروج"</string>
+    <string name="notrip">"شما هیچ سفر"</string>
+
+
+    <string name="currency">"₹"</string>
+    <string name="tripsdetails">"سفر جزئیات"</string>
+    <string name="triphistory">"تاریخ سفر"</string>
+    <string name="trip_payment">سفر از &amp; پرداخت</string>
+
+    <string name="tripearnings">"درآمد سفر"</string>
+    <string name="fare">"کرایه پایه"</string>
+    <string name="uberfee">"هزینه دسترسی"</string>
+    <string name="distancefare">"کرایه فاصله"</string>
+    <string name="timefare">"کرایه زمان"</string>
+    <string name="totalamount">"کرایه سفر در کل"</string>
+    <string name="adminamount">"مقدار مدیریت"</string>
+    <string name="oweamount">"مدیون مقدار"</string>
+    <string name="driverpayout">"پرداخت درایور"</string>
+    <string name="cashcollectable">"جمع آوری پول نقد"</string>
+    <string name="cash_trip">"سفر نقدی"</string>
+    <string name="cashcollected">"پول نقد جمع آوری"</string>
+    <string name="waitforrider">"در انتظار تأیید سوار"</string>
+
+    <string name="duration">"مدت زمان"</string>
+    <string name="distance">"فاصله"</string>
+    <string name="thisweek">"این هفته"</string>
+    <string name="thisweek_empty">"شما رانده که این هفته"</string>
+    <string name="last_trip">"آخرین سفر: "</string>
+    <string name="pay_statemet">"اظهارات پرداخت"</string>
+    <string name="payment">"پرداخت"</string>
+    <string name="payout">"پرداخت"</string>
+    <string name="addpayout">اضافه کردن پی پال پرداخت</string>
+    <string name="most_recent">"اکثر پرداخت های اخیر:"</string>
+    <string name="addpayment_msg">"برای اضافه کردن یک پرداخت جدید ایجاد یک ایمیل برای حساب کاربری خود&appname_driver;
+        است."</string>
+
+    <string name="begin_trip_text">"شروع سفر"</string>
+    <string name="end_trip_text">"سفر پایان"</string>
+
+    <string name="begin_trip">"شروع سفر"</string>
+    <string name="confirm_arrived">"تایید شما و وارد"</string>
+    <string name="end_trip">"سفر پایان"</string>
+    <string name="Rating">رتبه بندی</string>
+    <string name="completed">تکمیل شده</string>
+    <string name="Cancelled">لغو شد</string>
+    <string name="scheduled">"برنامه ریزی شد"</string>
+
+
+    <string name="paystatement">"بیانیه پرداخت"</string>
+    <string name="weeklystatement">"بیانیه هفتگی"</string>
+
+    <string name="timeonline">"مدت زمان آنلاین"</string>
+    <string name="completedtrips">"سفرها کامل"</string>
+    <string name="dailyearning">"درآمد روزانه"</string>
+    <string name="bankdeposit">"سپرده بانکی"</string>
+    <string name="totaluberearning">درآمد کل درایور</string>
+    <string name="riderfaresearn">"کرایه سوار به دست آورده و نگهداری می شود."</string>
+
+    <string name="Interneterror">بدون اتصال به اینترنت</string>
+    <string name="no_connection">بدون اتصال به اینترنت</string>
+    <string name="go_online">انلاین شو</string>
+
+    <string name="no_address_found">با عرض پوزش، هیچ آدرس پیدا شده است</string>
+    <string name="no_location_data_provided">اطلاعات موقعیت مکانی ارائه</string>
+    <string name="service_not_available">با عرض پوزش، خدمات در دسترس نیست</string>
+    <string name="invalid_lat_long_used">عرض جغرافیایی نامعتبر یا طول جغرافیایی مورد استفاده قرار</string>
+
+
+    <string name="profile">"مشخصات"</string>
+    <string name="mobile">"سیار"</string>
+
+
+    <string name="InvalidMobileNumber">شماره تلفن همراه نامعتبر</string>
+    <string name="InvalidPassword">لطفا حداقل 6 کاراکتر وارد کنید</string>
+    <string name="Passwordmismatch">عدم تطابق رمز عبور</string>
+    <string name="Enteryourpassword">رمز عبور خود را وارد کنید</string>
+    <string name="Confirmyourpassword">تکرار رمز عبور خود را</string>
+    <string name="currencies">"واحد پول"</string>
+
+    <string name="selectcurrency">"واحد پول را انتخاب کنید"</string>
+
+    <string name="location_not_enabled">موقعیت مکانی فعال نیست!</string>
+    <string name="location_settings">تنظیمات موقعیت مکانی را باز کنید</string>
+
+    <string name="mobilenumber">شماره موبایل</string>
+    <string name="language">زبان</string>
+    <string name="selectlanguage">زبان را انتخاب کنید</string>
+
+    <string name="noratings">بدون امتیاز و نظرات</string>
+    <string name="ratingsncomment">ارزیابی ها و نظرات</string>
+    <string name="vehicleinformation">اطلاعات خودرو</string>
+    <string name="pleaseentermobile">لطفا شماره تلفن را وارد کنید</string>
+    <string name="turnoninternet">اینترنت خود را روشن کنید</string>
+    <string name="ok">خوب</string>
+    <string name="yourtripcancelledbydriver">سفر شما لغو شده توسط راننده…</string>
+    <string name="driverarrrive">درایور وارد شوید…</string>
+    <string name="waiting">در انتظار تأیید مدیر..</string>
+    <string name="acceptingpickup">پذیرش وانت…</string>
+    <string name="rateyourrider">سوار خود را ارزیابی کنید</string>
+    <string name="writecomment">نظرات خود را بنویسید… </string>
+    <string name="paymentdetails">جزئیات پرداخت</string>
+    <string name="view">چشم انداز</string>
+    <string name="pressbackagain"> دوباره برای خروج فشار دهید</string>
+    <string name="paymentcompleted">پرداخت با موفقیت انجام شد…</string>
+    <string name="addphoto">اضافه کردن عکس</string>
+    <string name="choosefromlib">از کتابخانه انتخاب کن</string>
+    <string name="save">صرفه جویی </string>
+    <string name="other_reasons">دلایل دیگر</string>
+    <string name="yourtripcanceledrider">سفر شما لغو شده توسط رایدر…</string>
+
+    <string name="layout_direction">1</string>
+    <string name="enable_permission">لطفا مجوزها را فعال کنید</string>
+    <string name="active">فعال…</string>
+
+    <string name="app_name">&appname_driver;</string>
+    <string name="emailalreadyexits">شما قبلا یک حساب کاربری با این ایمیل داشته اید به جای آن سعی کنید وارد شوید.</string>
+    <string name="hide">پنهان شدن</string>
+    <string name="invalidelogin">جزئیات ورود نا معتبر می باشد</string>
+    <string name="network_failure">"لطفا اتصال اینترنت خود را بررسی کنید "</string>
+    <string name="internal_server_error">لطفا پس از گاهی دوباره امتحان کنید</string>
+    <string name="camera">دوربین</string>
+    <string name="camera_roll">رول دوربین</string>
+    <string name="next">بعد</string>
+    <string name="img_failed_msg">آپلود تصویر خراب شد</string>
+    <string name="image_uploaded">تصویر آپلود شده با موفقیت</string>
+    <string name="rider">رایدر</string>
+    <string name="settings">تنظیمات</string>
+    <string name="not_now">"الان نه "</string>
+    <string name="message">پیام</string>
+    <string name="camera_permission_description">برای گرفتن عکس و فیلم، اجازه دهید &appname;؛ برای دسترسی به دوربین و ذخیره سازی خود</string>
+
+    <string name="storage_permission_description">برای آپلود تصویر و &appname;؛ برای دسترسی به ذخیره سازی خود</string>
+
+    <string name="location_permission_description">رای درخواست سواری خود، اجازه دهید &appname; برای دسترسی به مکان دستگاه خود</string>
+    <string name="continues">ادامه هید</string>
+    <string name="payout_title">تنظیم &appname; به خود و. روش پرداخت</string>
+    <string name="payout_address">نشانی از پرداخت</string>
+    <string name="country_hint">کشور</string>
+    <string name="pin_hint">پستی / کد پستی</string>
+    <string name="street_hint">خیابان / نام جاده</string>
+    <string name="apt_hint">آپارتمان / سوئیت / ساختمان</string>
+    <string name="city_hint">شهرستان / شهر / منطقه</string>
+    <string name="state_hint">ایالت / استان / شهرستان</string>
+    <string name="currency1">واحد پول</string>
+    <string name="routing_number">شماره مسیریابی</string>
+    <string name="clearing_code">کد پاکسازی</string>
+    <string name="bank_name">نام بانک</string>
+    <string name="branch_name">نام شعبه</string>
+    <string name="bank_code">کد بانک</string>
+    <string name="branch_code">کد شعبه</string>
+    <string name="transit_number">تعداد حمل و نقل</string>
+    <string name="institute_number">تعداد موسسه</string>
+    <string name="sort_code">کد طبقه بندی</string>
+    <string name="account_number">شماره حساب</string>
+    <string name="account_owner_name">نام حساب مالک</string>
+    <string name="phone_number">شماره تلفن</string>
+    <string name="iban_number">شماره IBAN</string>
+    <string name="account_holder_name">نام صاحب حساب</string>
+    <string name="gender">جنس</string>
+    <string name="address_1">آدرس 1</string>
+    <string name="address_2">آدرس 2</string>
+    <string name="address_kanji2">آدرس 2</string>
+    <string name="address_kanji1">آدرس 1</string>
+    <string name="state_province">ایالت / استان</string>
+    <string name="postal_code">کد پستی</string>
+    <string name="legal_document">سند قانونی</string>
+    <string name="stripe_details">خط خطی اطلاعات</string>
+    <string name="submit">ارسال</string>
+    <string name="state_province_kanji">ایالت / استان</string>
+    <string name="postal_code_kanji">کد پستی</string>
+    <string name="address_kana2">آدرس 2</string>
+    <string name="postal_code_kana">کد پستی</string>
+    <string name="address_kana">نشانی کانا</string>
+    <string name="paypal_email">پی پال ID ایمیل</string>
+    <string name="address_kanji">نشانی کانجی</string>
+    <string name="showpassword">نمایش گذرواژه</string>
+    <string name="delete">حذف</string>
+    <string name="makedefault">پیش فرض</string>
+    <string name="defaults">به طور پیش فرض</string>
+    <string name="selectcountry">کشور را انتخاب کنید</string>
+    <string name="select">انتخاب شد</string>
+    <string name="city_kana">شهرستان</string>
+    <string name="kanji_city">شهرستان</string>
+    <string name="choose_currency">لطفا یک ارز را انتخاب کنید</string>
+    <string name="enable_permissions_to_proceed_further">فعال کردن اجازه برای ادامه بیشتر</string>
+    <string name="takephoto_title">عکس گرفتن</string>
+    <string name="add_stripe_payout">اضافه کردن خط خطی پرداخت</string>
+    <string name="please_choose_a_currency">لطفا یک ارز را انتخاب کنید</string>
+    <string name="please_enter_account_number">لطفا شماره حساب را وارد</string>
+    <string name="please_enter_bank_name">لطفا نام را وارد بانک</string>
+    <string name="please_enter_branch_name">لطفا نام را وارد شاخه</string>
+    <string name="please_enter_bank_code">لطفا کد را وارد بانک</string>
+    <string name="please_enter_branch_code">لطفا کد شعبه وارد کنید</string>
+    <string name="please_enter_account_holder_name">مدیر نام دارنده حساب وارد کنید</string>
+    <string name="please_enter_address1">لطفا آدرس 1 را وارد کنید</string>
+    <string name="please_enter_city">مدیر شهرستان را وارد کنید</string>
+    <string name="please_enter_state">مدیر دولتی وارد</string>
+    <string name="please_enter_postal_code">\"لطفا کد پستی را وارد کنید\"</string>
+    <string name="please_upload_legal_document">مدیر سند قانونی آپلود</string>
+    <string name="external_storage_permission_necessary">اجازه ذخیره سازی خارجی لازم است</string>
+    <string name="please_enter_sort_code">لطفا کد مرتب سازی وارد کنید</string>
+    <string name="please_enter_SSN">مدیر SSN وارد کنید</string>
+    <string name="please_enter_routing_number">لطفا وارد مسیریابی شماره</string>
+    <string name="please_enter_clearing_code">لطفا وارد پاکسازی کد</string>
+    <string name="please_enter_account_owner_name">لطفا به حساب نام مالک وارد کنید</string>
+    <string name="please_enter_phone_number">لطفا شماره تلفن را وارد کنید</string>
+    <string name="please_choose_gender">لطفا جنس را انتخاب کنید</string>
+    <string name="please_enter_address_1_of_kana">لطفا آدرس 1 از کانا وارد کنید</string>
+    <string name="please_enter_address_2_of_kana">لطفا آدرس 2 از کانا وارد کنید</string>
+    <string name="please_enter_city_of_kana">مدیر شهرستان از کانا وارد کنید</string>
+    <string name="please_enter_state_of_kana">مدیر دولت کانا وارد کنید</string>
+    <string name="please_enter_postal_code_of_kana">مدیر کد پستی از کانا وارد کنید</string>
+    <string name="please_enter_address_1_of_kanji">لطفا آدرس 1 از کانجی وارد کنید</string>
+    <string name="please_enter_address_2_of_kanji">لطفا آدرس 2 از کانجی وارد کنید</string>
+    <string name="please_enter_city_of_kanji">مدیر شهرستان از کانجی وارد کنید</string>
+    <string name="please_enter_state_of_kanji">مدیر دولت از کانجی وارد کنید</string>
+    <string name="please_enter_postal_code_of_kanji">مدیر کد پستی از کانجی وارد کنید</string>
+    <string name="please_choose_country">لطفا کشور را انتخاب کنید</string>
+    <string name="please_enter_transit_number">لطفا شماره ترانزیت وارد کنید</string>
+    <string name="please_enter_institution_number">لطفا شماره نهاد وارد کنید</string>
+    <string name="please_enter_BSB">مدیر BSB وارد کنید</string>
+    <string name="rate_your_ride">سواری خود را ارزیابی کنید</string>
+    <string name="skip">پرش</string>
+    <string name="no_ratings_display">شما برای رتبه دادن رتبه ندارید</string>
+    <string name="bank_location">محل بانک</string>
+    <string name="bic_swift_code">کد BIC / SWIFT</string>
+    <string name="name_of_bank">نام بانک</string>
+    <string name="required">ضروری</string>
+    <string name="bank_details_success_message">جزئیات بانک اضافه شده به صورت موفقیت آمیز</string>
+
+    <string name="manually_booked">دستی برای سوار رزرو</string>
+    <string name="manual_booking_reminder">یادآوری رزرو دستی</string>
+    <string name="manual_booking_cancelled">رزرو دستی لغو</string>
+    <string name="send_a_message">ارسال یک پیام</string>
+    <string name="google_map_not_found_in_device">نقشه گوگل در دستگاه یافت نشد</string>
+    <string name="waze_google_map_not_found_in_device">نقشه وزی در دستگاه یافت نشد</string>
+    <string name="choose_map">نقشه را انتخاب کنید</string>
+    <string name="google_map">نقشه گوگل</string>
+    <string name="waze_map">نقشه وزی</string>
+    <string name="location_not_enabled_please_enable_location">مکان فعال نیست، لطفا محل سکونت قادر به ادامه بیشتر</string>
+    <string name="you_have_been_manualy_booked">شما دستی رزرو شده است</string>
+
+
+    <string name="pending_trips">سفرهای در حال انتظار</string>
+    <string name="completed_trips">سفرهای تکمیل شده</string>
+    <string name="error_address">لطفا یک آدرس ارائه کنید</string>
+    <string name="error_city">لطفا شهر را تهیه کنید</string>
+    <string name="error_zip_code">لطفا یک کد پستی تهیه کنید</string>
+    <string name="error_country">لطفا کشور را برای پرداخت انتخاب کنید</string>
+    <string name="no_vehicle_assigned">هیچ وسیله نقلیه تعیین نشده است</string>
+    <string name="trips">سفر</string>
+    <string name="total_trip_amount">مقدار کل سفر</string>
+    <string name="doc_upload_error">لطفا تمام اسناد را آپلود کنید</string>
+    <string name="bank_details">اطلاعات دقیق بانکی</string>
+
+    <string name="pay_to">پرداخت به "&appname;"</string>
+    <string name="your_pay_to">پرداخت خود را به "&appname;"</string>
+
+    <string name="add_card">افزودن کارت</string>
+    <string name="change">تغییر دادن</string>
+    <string name="enter_amount">مقدار را وارد کنید</string>
+    <string name="enter_amount_empty">لطفا مبلغ را وارد کنید</string>
+    <string name="entered_amt_msg">مقدار وارد شده از مقدار Owe بیشتر است</string>
+    <string name="payment_methods">روش های پرداخت</string>
+    <string name="credit_or_debit">کارت اعتباری یا بدهی اضافه کنید</string>
+    <string name="select_reason">دلیل را انتخاب کنید</string>
+
+
+    <string name="enter_valid_otp">را وارد کنید معتبر OTP!</string>
+    <string name="enter_otp">را وارد کنید OTP</string>
+    <string name="mobile_verification">تأیید موبایل</string>
+    <string name="otp_send_to_phone_description">ما کد دسترسی شما از طریق SMS برای تأیید شماره تلفن همراه ارسال کرده اند</string>
+    <string name="please_enter_mobile_number">لطفا شماره تلفن همراه خود را وارد کنید</string>
+    <string name="resend_otp">آیا OTP دریافت نمی کنید؟</string>
+    <string name="send_OTP_again_in">شما می توانید OTP دوباره در ارسال</string>
+    <string name="Done">انجام شده</string>
+    <string name="amount">میزان</string>
+    <string name="apply">درخواست دادن</string>
+    <string name="apply_extra_fee">درخواست هزینه اضافی</string>
+    <string name="audio_permission_description">برای اتصال تماس تلفنی، اجازه می دهد برای دسترسی به تنظیمات صوتی</string>
+    <string name="close">بستن</string>
+    <string name="connected">متصل</string>
+    <string name="connecting">برقراری ارتباط…</string>
+    <string name="days_left">روزهای باقی مانده</string>
+    <string name="earned">به دست آورده</string>
+    <string name="enter_extra_fee">هزینه اضافی را وارد کنید</string>
+    <string name="enter_extra_fee_description">را وارد کنید توضیحات هزینه اضافی</string>
+    <string name="enter_other_reason">دیگر دلیل را وارد کنید</string>
+    <string name="enter_otp_to_begin_trip">را وارد کنید OTP برای شروع سفر</string>
+    <string name="enter_pendg_amount_empty">شما هیچ مقدار معلقی</string>
+    <string name="er_read_loc">مشکل لیستی از مکان های خواندن.</string>
+    <string name="friends_completed">دوستان - تکمیل</string>
+    <string name="friends_incompleted">دوستان - ناقص</string>
+    <string name="max_referral_earning_statement">مطلع در %s برای هر دوست که با سواری</string>
+    <string name="need_to_complete">نیاز به تکمیل</string>
+    <string name="no">خیر</string>
+    <string name="no_referrals_yet">بدون معارفه حال</string>
+    <string name="referral">معرف</string>
+    <string name="referral_code_copied">ارجاع کد کپی شد</string>
+    <string name="referral_code_not_copied">قادر به کپی کد ارجاع، لطفا به اشتراک گذاری کد</string>
+    <string name="referral_code_optional">کد ارجاع (اختیاری)</string>
+    <string name="referral_expired">ارجاع منقضی شده</string>
+    <string name="ringing">زنگ</string>
+    <string name="select_extra_fee_description">انتخاب کنید توضیحات هزینه اضافی</string>
+    <string name="share_my_code">به اشتراک کد من</string>
+    <string name="share_to_contacts">اشتراک به مخاطبین</string>
+    <string name="yes">آره</string>
+    <string name="your_invite_code">کد خود را دعوت</string>
+    <string name="invite_msg"><![CDATA[ثبت نام کنید و برای هر ثبت نام شده دعوت شده و پاداش بیشتری دریافت می کنید! از کد دعوت من استفاده کنید]]></string>
+    <string name="referrel_amount">مقدار ارجاع</string>
+    <string name="day_left">روز باقی مانده</string>
+    <string name="trip_left">سفر</string>
+    <string name="hr_eta">"&#160;ساعت&#160;"</string>
+
+    <string name="error_select_extra_fee_description">لطفا توضیحات هزینه اضافی را انتخاب کنید</string>
+
+    <string name="tap_to_reload">برای بارگیری مجدد ضربه بزنید</string>
+    <string name="error_msg_unknown">خطایی رخ داده</string>
+    <string name="total_earnings">درآمد کل</string>
+    <string name="remaining_referral">باقی مانده ارجاع</string>
+    <string name="payment_failed">پرداخت ناموفق</string>
+    <string name="choose">انتخاب کنید</string>
+    <string name="Add_payment_type">نوع پرداخت را اضافه کنید</string>
+    <string name="choose_payment_type">لطفا نوع پرداخت خود را انتخاب کنید</string>
+
+    <string name="what_would_you_like_to_do">"دوست دارید چه کاری انجام دهید؟"</string>
+    <string name="add_payout">پرداخت را اضافه کنید</string>
+    <string name="update">به روز رسانی</string>
+        <string name="min">حداقل&#160;</string>
+
+    <plurals name="minutes" tools:ignore="MissingQuantity">
+        <item quantity="one">%d&#160;حداقل</item>
+        <item quantity="other">%d&#160;دقایق</item>
+    </plurals>
+
+    <plurals name="hours" tools:ignore="MissingQuantity">
+        <item quantity="one">%d&#160;ساعت&#160;</item>
+        <item quantity="other">%d&#160;ساعت ها&#160;</item>
+    </plurals>
+
+    <string name="add_paypal">اضافه کردن پی پال</string>
+    <string name="payout_details">جزییات پرداخت</string>
+    <string name="onlinepayment">پرداخت آنلاین</string>
+    <string name="paypal">پی پال</string>
+    <string name="set_canceled">راه اندازی دوباره لغو کنید</string>
+    <string name="stripe_error_1">یه چیزی اشتباه شد دوباره تلاش کن</string>
+    <string name="stripe_error_2">نامعتبر خط خطی نسخه API بعدا دوباره امتحان کنید</string>
+    <string name="navigation_drawer_open">باز کردن کشوی پیمایش</string>
+    <string name="navigation_drawer_close">بستن کشوی پیمایش</string>
+    <string name="choose_vehicle_type">انتخاب نوع وسیله نقلیه</string>
+    <string name="choose_vehicle">انتخاب خودرو</string>
+    <string name="select_your_vehicle">انتخاب کنید خودرو شما</string>
+    <string name="manage_vehicles">مدیریت وسایل نقلیه</string>
+    <string name="add_vehicles">اضافه کردن وسایل نقلیه</string>
+    <string name="update_vehicles">به روز رسانی وسایل نقلیه</string>
+    <string name="New_vehicle">جدید</string>
+    <string name="update_vehicle">به روز رسانی خودرو</string>
+    <string name="setting">تنظیمات</string>
+    <string name="choose_make">انتخاب کنید را</string>
+    <string name="choose_year">انتخاب سال</string>
+    <string name="your_trips">سفرهای خود را</string>
+    <string name="manage_documents">مدیریت اسناد</string>
+    <string name="earning">عایدات</string>
+    <string name="choose_model">انتخاب مدل</string>
+    <string name="enter_vehicle_color">را وارد کنید خودرو رنگ</string>
+    <string name="vehicle_color">رنگ خودرو</string>
+    <string name="enter_vehicle_name">را وارد کنید نام خودرو</string>
+    <string name="vehicle_name_title">نام خودرو</string>
+    <string name="enter_license_plate">پلاک را وارد کنید</string>
+    <string name="license_plate">پلاک وسیله نقلیه</string>
+    <string name="year">سال</string>
+    <string name="model">مدل</string>
+    <string name="make">میک</string>
+    <string name="add_vehicle">اضافه کردن خودرو</string>
+    <string name="delete_msg">"آیا مطمئنید که میخواهید حذف کنید؟"</string>
+    <string name="you_have_no_vehicles">شما هیچ وسایل نقلیه</string>
+    <string name="you_have_no_document">بدون اسناد و مدارک اضافه</string>
+    <string name="please_choose_make">لطفا مطمئن را انتخاب کنید</string>
+    <string name="please_choose_model">لطفا مدل را انتخاب کنید</string>
+    <string name="please_choose_year">لطفا انتخاب کنید سال</string>
+    <string name="please_choose_license_number">لطفا شماره مجوز وارد کنید</string>
+    <string name="please_enter_vehicle_name">لطفا نام را وارد خودرو</string>
+    <string name="please_enter_vehicle_color">لطفا رنگ خودرو وارد</string>
+    <string name="please_choose_vehicle_type">لطفا نوع خودرو را انتخاب نمایید</string>
+    <string name="cancelaccount_msg">"اطلاعات شما ذخیره نخواهد شد."</string>
+    <string name="confirm">"تایید"</string>
+    <string name="cancel_vehicle_creation">لغو ایجاد وسیله نقلیه.</string>
+    <string name="upload_doc">بارگذاری سند</string>
+    <string name="pending">در انتظار</string>
+    <string name="go_onlines">انلاین شو</string>
+    <string name="go_offline">برو آفلاین</string>
+    <string name="add_driver_proof">اضافه کردن اثبات درایور</string>
+    <string name="manage_payout">مدیریت پرداخت</string>
+
+    <string name="pool_request">استخر درخواست پاسخ به (</string>
+    <string name="persons_braces"> &#160;  نفر)</string>
+    <string name="person_braces">&#160; فرد)</string>
+    <string name="pickup_address_braces">"وانت نشانی کنید: \n"</string>
+    <string name="drop_address_braces">"قطره نشانی کنید: \n"</string>
+    <string name="manage_driver_document">"مدیریت سند درایور"</string>
+    <string name="approved">تایید شده</string>
+
+    <plurals name="manage_vehicles" tools:ignore="MissingQuantity">
+        <item quantity="one" tools:ignore="ImpliedQuantity">مدیریت خودرو</item>
+        <item quantity="other">مدیریت وسایل نقلیه</item>
+    </plurals>
+
+    <string name="few_seconds">این ممکن است برخی از چند ثانیه</string>
+    <string name="please_expiry_date">لطفا تاریخ انقضاء خود را انتخاب کنید</string>
+    <string name="expiry_date">تاریخ انقضا</string>
+    <string name="yyyymmdd">YYYY-MM-DD</string>
+    <string name="changeAlert">از خود سفر هستند، شما می توانید وسایل نقلیه خود را تغییر دهید، لطفا سفرهای خود را به اتمام</string>
+    <string name="vehicleAlert">از خود را آنلاین، شما می توانید وسایل نقلیه خود را ویرایش کنید، لطفا آنلاین رفتن</string>
+    <string name="deleteAlert">از آنجا که آنلاین هستید ، نمی توانید وسایل نقلیه خود را حذف کنید ، لطفا آفلاین شوید</string>
+    <string name="rejected">رد شد</string>
+    <string name="Ratings">رتبه بندی</string>
+    <string name="female">زن</string>
+    <string name="male">نر</string>
+    <string name="error_gender">لطفا جنسیت خود را انتخاب کنید</string>
+    <string name="km_value">کیلومتر</string>
+    <string name="mins_value">مین</string>
+    <string name="support">پشتیبانی</string>
+    <string name="not_valid_data">داده معتبری نیست</string>
+
+    <string name="new_version_available">نسخه جدید در دسترس است</string>
+    <string name="update_desc">لطفا برنامه ما به روز رسانی به لذت بردن از آخرین ویژگی های!</string>
+    <string name="update_desc1">برای استفاده از برنامه، دانلود آخرین نسخه</string>
+
+    <string name="inactive">غیر فعال</string>
+    <string name="update_successfully">با موفقیت به روز شد.</string>
+    <string name="request_expire">درخواست پاسخ به منقضی شده</string>
+    <string name="seat_count">شماره صندلی:</string>
+    <string name="you_are_viewing_old_data">شما در حال مشاهده داده های آفلاین هستید ، لطفاً اتصال شبکه خود را بررسی کنید</string>
+    <string name="retry">دوباره امتحان کنید</string>
+    <string name="enable_connection_and_come_back">لطفاً اتصال را فعال کنید و دوباره بیایید</string>
+    <string name="send_message">پیام فرستادن</string>
+    <string name="copy">"کپی "</string>
+    <string name="driver_earnings">درآمد راننده</string>
+    <string name="cancel_trip">سفر را لغو کنید</string>
+    <string name="vehicle_numbers">شماره خودرو</string>
+    <string name="continue_with_phone_number">با شماره تلفن ادامه دهید</string>
+    <string name="login_to_continue">برای ادامه وارد شوید</string>
+    <string name="welcome_back">خوش برگشتی</string>
+    <string name="hello">سلام</string>
+    <string name="select_photo">یک عکس را انتخاب کنید</string>
+    <string name="pickup_address">آدرس وانت:</string>
+    <string name="drop_address">آدرس را رها کنید:</string>
+    <string name="accept">تایید کنید</string>
+    <string name="select_view">%s انتخاب کنید</string>
+    <string name="pleaseEnteryourpassword">لطفا رمز عبور خود را وارد کنید</string>
+    <string name="pleaseConfirmyourpassword">لطفا رمز عبور را اعلام می</string>
+    <string name="drivewithuber"> سوار با&appname;</string>
+    <string name="trip_request">درخواست سفر</string>
+    <string name="additional_document">سند اضافی</string>
+    <string name="please_upload_additional_document">لطفا سند اضافی را بارگذاری کنید</string>
+    <string name="please_enter_clabe_number">لطفا CLABE را وارد کنید</string>
+</resources>
+

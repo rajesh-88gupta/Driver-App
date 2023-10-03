@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:layoutDirection="@string/layout_direction"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/gobackleftarrow" />
+    </RelativeLayout>
+
+    <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+        android:id="@+id/codetext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@color/white"
+        android:text="@string/enter4digit"
+        android:textColor="@color/colorblack"
+        android:textSize="18sp"
+        app:fontname="@string/font_UBERBook" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_toEndOf="@+id/ccp"
+        android:background="@color/white">
+
+        <EditText
+            android:id="@+id/one"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:hint="0"
+            android:inputType="number"
+            android:lines="1"
+            android:maxLength="1"
+            android:maxLines="1"
+            android:minLines="1"
+            android:paddingBottom="10dp"
+            android:textSize="20dp"></EditText>
+
+
+        <EditText
+            android:id="@+id/two"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@+id/one"
+            android:gravity="center"
+            android:hint="0"
+            android:inputType="number"
+            android:lines="1"
+            android:maxLength="1"
+            android:maxLines="1"
+            android:minLines="1"
+            android:paddingBottom="10dp"
+            android:textSize="20dp"></EditText>
+
+        <EditText
+            android:id="@+id/three"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@+id/two"
+            android:gravity="center"
+            android:hint="0"
+            android:inputType="number"
+            android:lines="1"
+            android:maxLength="1"
+            android:maxLines="1"
+            android:minLines="1"
+            android:paddingBottom="10dp"
+            android:textSize="20dp"></EditText>
+
+        <EditText
+            android:id="@+id/four"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@+id/three"
+            android:gravity="center"
+            android:hint="0"
+            android:inputType="number"
+            android:lines="1"
+            android:maxLength="1"
+            android:maxLines="1"
+            android:minLines="1"
+            android:paddingBottom="10dp"
+            android:textSize="20dp"></EditText>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/next"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="29dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/roundnextbuttonlayout">
+
+            <ImageView
+                android:id="@+id/backArrow"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/arrownextright" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:indeterminate="true"
+                android:indeterminateTint="@color/ub__uber_blue_120"
+                android:indeterminateTintMode="src_atop"
+                android:visibility="gone"></ProgressBar>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/next"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="12dp"
+            android:layout_marginStart="20dp">
+
+            <TextView
+                android:id="@+id/resend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:enabled="false"
+                android:text="@string/resend"
+                android:textColor="@color/d_text_color"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/resend_timer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/resend"
+                android:paddingStart="20dp"
+                android:text="00:30"
+                android:textColor="@color/textgray"
+                android:textSize="16dp" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

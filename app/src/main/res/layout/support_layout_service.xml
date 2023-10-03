@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/_15adp"
+    android:layout_marginTop="@dimen/_5adp"
+    android:layout_marginEnd="@dimen/_15adp"
+    android:layout_marginBottom="@dimen/_15adp"
+    android:background="@drawable/app_curve_button_white_with_outline"
+    android:clipToPadding="false"
+    android:layoutDirection="@string/layout_direction"
+    android:orientation="vertical"
+    android:padding="@dimen/_7adp"
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/rlt_support"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <ImageView
+            android:id="@+id/cv_support"
+            android:layout_width="@dimen/_50adp"
+            android:layout_height="@dimen/_50adp"
+            android:padding="@dimen/_5adp"
+            android:layout_centerVertical="true"
+            />
+
+        <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+            android:id="@+id/tv_support_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_25adp"
+            android:layout_marginEnd="@dimen/_7adp"
+            android:layout_toEndOf="@+id/cv_support"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text=""
+            android:textColor="@color/newtaxi_app_black"
+            android:textSize="@dimen/_14asp"
+            app:fontname="@string/font_Medium"
+            />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
+
+

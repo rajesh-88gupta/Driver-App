@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00FF0000"
+    app:theme="@style/AppTheme">
+
+    <RelativeLayout
+        android:id="@+id/rlt_alert_dialog_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:background="@drawable/curve_shape_background"
+        android:padding="20dp"
+        android:visibility="gone">
+
+        <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+            android:id="@+id/tv_dialog_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:textColor="@color/ub__uber_black_80"
+            android:textSize="22sp"
+            android:visibility="gone"
+            app:fontname="@string/font_UBERBook" />
+
+        <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+            android:id="@+id/tv_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_dialog_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:gravity="start"
+            android:textColor="@color/ub__uber_black_40"
+            android:textSize="17sp"
+            app:fontname="@string/font_UBERBook" />
+
+
+        <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+            android:id="@+id/tv_deny"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_message"
+            android:layout_toLeftOf="@+id/tv_allow"
+            android:layout_toStartOf="@+id/tv_allow"
+            android:paddingTop="20dp"
+            android:textColor="@color/ub__uber_black_40"
+            android:textSize="16sp"
+            app:fontname="@string/font_UBERBook" />
+
+        <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+            android:id="@+id/tv_allow"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/tv_message"
+            android:layout_alignRight="@+id/tv_message"
+            android:layout_below="@id/tv_message"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:paddingTop="20dp"
+            android:textColor="@color/ub__uber_black_40"
+            android:textSize="16sp"
+            app:fontname="@string/font_UBERBook" />
+
+    </RelativeLayout>
+    <!--android:background="@drawable/curve_shape_background"-->
+    <RelativeLayout
+        android:id="@+id/llt_progress_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        android:visibility="visible">
+
+        <ProgressBar
+            android:id="@+id/progressBar_loader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:indeterminateDrawable="@drawable/custom_progress" />
+
+        <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:id="@+id/tv_loading"
+            android:layout_marginStart="40dp"
+            android:layout_toEndOf="@+id/progressBar_loader"
+            android:text="@string/loading"
+            android:textColor="@color/ub__uber_black_80"
+            android:textSize="20dp"
+            android:visibility="visible"
+            app:fontname="@string/font_UBERBook" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/d_buttomboarder"
+    android:layoutDirection="@string/layout_direction"
+    android:paddingBottom="@dimen/_15adp"
+    android:paddingEnd="@dimen/_10adp"
+    android:paddingStart="@dimen/_10adp"
+    android:paddingTop="@dimen/_15adp">
+
+    <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+        android:id="@+id/dailytrip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="start|center_vertical"
+        android:paddingBottom="@dimen/_5adp"
+        android:textColor="@color/newtaxi_app_black"
+        android:textSize="@dimen/_14asp"
+        app:fontname="@string/font_Medium" />
+
+    <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+        android:id="@+id/dailyamount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/trip_earning_arrow"
+        android:gravity="end|center_vertical"
+        android:paddingEnd="@dimen/_10adp"
+        android:textColor="@color/newtaxi_app_text_ash"
+        android:textSize="@dimen/_14asp"
+        app:fontname="@string/font_Medium" />
+
+    <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+        android:id="@+id/trip_earning_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:gravity="end|center_vertical"
+        android:rotation="180"
+        android:text="B"
+        android:layout_marginStart="@dimen/_5adp"
+        android:textColor="@color/ub__black"
+        android:textSize="@dimen/_15asp"
+        app:fontname="@string/font_UberClone" />
+
+</RelativeLayout>

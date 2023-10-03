@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/snackbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="@string/layout_direction"
+    android:orientation="horizontal">
+
+    <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+        android:id="@+id/snackbar_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/snack_button"
+        android:paddingBottom="20dp"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"
+        android:paddingTop="20dp"
+        android:textColor="@color/textblack"
+        android:textSize="16sp"
+        app:fontname="@string/font_UBERMedium" />
+
+    <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+        android:id="@+id/snack_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:paddingBottom="20dp"
+        android:paddingEnd="10dp"
+        android:paddingTop="20dp"
+        android:text="Retry"
+        android:textColor="@color/ub__ui_core_warning"
+        android:textSize="16sp"
+        app:fontname="@string/font_UBERMedium" />
+</RelativeLayout>

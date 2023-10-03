@@ -1,0 +1,260 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.google.firebase.crashlytics'
+
+repositories {
+    google()
+    jcenter()
+    mavenCentral()
+    maven { url 'https://jitpack.io' }
+    maven {
+        url "https://cardinalcommerceprod.jfrog.io/artifactory/android"
+            credentials {
+                username 'braintree_team_sdk'
+                password 'AKCp8jQcoDy2hxSWhDAUQKXLDPDx6NYRkqrgFLRc3qDrayg6rrCbJpsKKyMwaykVL8FWusJpp'
+        }
+    }
+}
+
+android {
+    compileSdkVersion 32
+    buildToolsVersion '30.0.3'
+
+    packagingOptions {
+        exclude 'AndroidManifest.xml' //
+    }
+    dataBinding {
+        enabled = true
+    }
+
+    defaultConfig {
+        applicationId "com.seentechs.newtaxidriver"
+        minSdkVersion 21
+        targetSdkVersion 32
+        versionCode 2
+        versionName "1.4"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+        vectorDrawables {
+            useSupportLibrary = true
+        }
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath = true
+            }
+        }
+        ndk.abiFilters 'armeabi-v7a', 'arm64-v8a', 'x86', 'x86_64'
+    }
+
+
+    bundle {
+        language {
+            // Specifies that the app bundle should not support
+            // configuration APKs for language resources. These
+            // resources are instead packaged with each base and
+            // dynamic feature APK.
+            enableSplit = false
+        }
+        density {
+            // This property is set to true by default.
+            enableSplit = true
+        }
+        abi {
+            // This property is set to true by default.
+            enableSplit = true
+        }
+
+    }
+    lintOptions { checkReleaseBuilds false }
+    buildTypes {
+        release {
+            //Other parameters
+            debuggable false
+            jniDebuggable false
+            renderscriptDebuggable false
+            shrinkResources false
+            // signingConfig playStoreConfig //Add your own signing config
+            //signingConfig signingConfigs.config
+            pseudoLocalesEnabled false
+            zipAlignEnabled true
+            minifyEnabled false
+            useProguard true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), "proguard-rules.pro"
+            //proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            //Other parameters
+            debuggable true
+            jniDebuggable false
+            renderscriptDebuggable false
+            shrinkResources false
+            //signingConfig signingConfigs.config //Add your own signing config
+            pseudoLocalesEnabled false
+            zipAlignEnabled true
+            minifyEnabled false
+            //useProguard false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), "proguard-rules.pro"
+            //proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            //signingConfig signingConfigs.config
+        }
+    }
+    //sourceSets { main { assets.srcDirs = ['src/main/assets', 'src/main/assets/'] } }
+    dexOptions {
+        javaMaxHeapSize "4g"
+        preDexLibraries = false
+        incremental false
+    }
+
+
+    useLibrary 'org.apache.http.legacy'
+    compileOptions {
+        sourceCompatibility = '1.8'
+        targetCompatibility = '1.8'
+        incremental = false
+    }
+
+
+}
+allprojects {
+    repositories {
+        google()
+    }
+    repositories {
+        maven {
+            url 'https://maven.google.com'
+        }
+    }
+    repositories {
+        jcenter()
+        maven { url "https://jitpack.io" }
+    }
+}
+dependencies {
+    implementation(name: 'sinch-android-rtc', version: '+', ext: 'aar')
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestImplementation('androidx.test.espresso:espresso-core:3.1.0', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+
+    //Cardinal Mobile SDK
+    implementation 'org.jfrog.cardinalcommerce.gradle:cardinalmobilesdk:2.2.7-2'
+
+    //Kotlin
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.core:core-ktx:1.3.2'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    androidTestImplementation 'androidx.test:runner:1.3.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    //labled Switch
+    implementation 'com.github.angads25:toggle:1.1.0'
+
+    //custom Bar Chart
+    implementation 'com.github.hadiidbouk:ChartProgressBar-Android:2.0.6'
+
+    //coroutines
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.4.1'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.1'
+
+    implementation 'androidx.legacy:legacy-support-v13:1.0.0'
+
+    implementation('com.hbb20:ccp:2.2.0', {
+        exclude group: 'com.android.support', module: 'support-v7'
+    })
+    implementation 'com.google.android.material:material:1.3.0'
+
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+    implementation 'com.google.android.gms:play-services-location:18.0.0'
+
+    implementation "android.arch.navigation:navigation-fragment-ktx:1.0.0"
+    implementation "android.arch.navigation:navigation-ui-ktx:1.0.0"
+    implementation "android.arch.lifecycle:extensions:1.1.1"
+    kapt "androidx.lifecycle:lifecycle-common-java8:2.3.1"
+
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.github.krtkush:LinearTimer:v2.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+
+    //Neumorphic Button
+    implementation 'com.github.SMehranB:NeumorphicViewSet:1.0.0'
+
+    implementation 'com.google.firebase:firebase-messaging:21.0.1'
+    implementation 'com.google.firebase:firebase-database:19.7.0'
+    implementation ('com.google.firebase:firebase-auth-ktx:20.0.3'){
+        exclude module: "play-services-safetynet"
+    }
+
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
+    //Glide
+    //implementation 'com.github.bumptech.glide:glide:4.12.0'
+
+    implementation 'com.google.maps.android:android-maps-utils:0.5'
+    implementation 'com.iarcuschin:simpleratingbar:0.1.5'
+    testImplementation 'junit:junit:4.13.2'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'com.github.florent37:camerafragment:1.0.7'// Custom camera
+    //Retrofit
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.7.2'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.9.0'
+    //Compressor
+    implementation 'id.zelory:compressor:1.0.1'
+
+//ButterKnife
+    implementation 'com.jakewharton:butterknife:10.2.1'
+    kapt 'com.jakewharton:butterknife-compiler:10.2.1'
+
+//GeoFire
+    implementation 'com.firebase:geofire-android:3.0.0'
+    //Paypal
+    //implementation 'com.paypal.sdk:paypal-android-sdk:2.15.3'
+
+    //credit or debit call integration dependencies
+    implementation 'com.stripe:stripe-android:15.1.0'
+    //Dagger
+    implementation 'com.google.dagger:dagger:2.31.2'
+    kapt 'com.google.dagger:dagger-compiler:2.31.2'
+
+    implementation "android.arch.work:work-runtime:2.7.1"
+    implementation "androidx.work:work-runtime-ktx:2.7.1"
+
+    // Add dependency
+    implementation 'com.google.firebase:firebase-crashlytics:17.4.1'
+    implementation 'com.google.firebase:firebase-analytics:18.0.2'
+    // For Braintree payment
+    implementation 'com.braintreepayments.api:drop-in:5.0.1'
+    implementation 'com.braintreepayments.api:braintree:3.14.2'
+
+    implementation 'com.airbnb.android:lottie:3.7.0'
+
+    implementation 'com.github.angads25:toggle:1.1.0'
+
+
+    components.all {
+        allVariants {
+            withDependencies { deps ->
+                deps.each { dep ->
+                    if (dep.group == 'net.minidev' && dep.name == 'json-smart') {
+                        dep.version {
+                            prefer "2.3"
+                        }
+                        dep.because "resolving dependencies issue"
+                    }
+                }
+            }
+        }
+    }
+}
+kapt {
+    generateStubs = true
+}
+apply plugin: 'com.google.gms.google-services'

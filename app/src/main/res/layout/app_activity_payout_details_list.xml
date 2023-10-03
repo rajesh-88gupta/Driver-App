@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/newtaxi_app_white">
+    <include
+        android:id="@+id/common_header"
+        layout="@layout/app_common_header"/>
+    <RelativeLayout
+        android:background="@drawable/app_top_curve_white"
+        android:layout_marginTop="@dimen/_20adp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/common_header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvPayoutList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/_90adp"
+            android:clipToPadding="true"
+            android:layout_margin="@dimen/_20adp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+             tools:background="@color/newtaxi_app_white">
+
+    <ProgressBar
+        android:id="@+id/loadmore_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:indeterminate="true"
+        android:indeterminateTintMode="src_atop"
+        android:indeterminateTint="@color/newtaxi_app_navy"/>
+
+    <LinearLayout
+        android:id="@+id/loadmore_errorlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/_16adp"
+        android:paddingTop="@dimen/_16adp"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <ImageButton
+            android:id="@+id/loadmore_retry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_24adp"
+            android:layout_marginStart="@dimen/activity_margin_content"
+            android:background="@drawable/rety_selector"
+            android:padding="@dimen/activity_margin_half"
+            android:tint="@color/cancel_disable_grey"
+            android:tintMode="src_in"
+            app:srcCompat="@drawable/ic_refresh_black_24dp"
+            tools:targetApi="lollipop" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/_24adp"
+            android:layout_marginLeft="@dimen/_16adp"
+            android:layout_marginRight="@dimen/_24adp"
+            android:layout_marginStart="@dimen/_16adp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+                android:id="@+id/loadmore_errortxt"
+                style="@style/Base.TextAppearance.AppCompat.Body1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="What went wrong"
+                app:fontname="@string/font_Medium"
+                />
+
+            <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+                style="@style/Base.TextAppearance.AppCompat.Caption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tap_to_reload"
+                app:fontname="@string/font_Medium"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

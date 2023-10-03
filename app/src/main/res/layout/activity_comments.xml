@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/newtaxi_app_white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include
+        android:id="@+id/common_header"
+        layout="@layout/app_common_header"/>
+
+    <RelativeLayout
+        android:id="@+id/comment_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/common_header"
+        android:background="@drawable/app_top_curve_white"
+        android:layout_marginTop="@dimen/default_header_to"
+        >
+
+    <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+        android:id="@+id/norating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_300adp"
+        android:padding="@dimen/_10adp"
+        android:textColor="@color/newtaxi_app_black"
+        android:textSize="@dimen/_18asp"
+        app:fontname="@string/font_Medium"
+        android:visibility="gone"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/my_recycler_view2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/norating"
+        android:padding="@dimen/_20adp"
+        android:scrollbars="none" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

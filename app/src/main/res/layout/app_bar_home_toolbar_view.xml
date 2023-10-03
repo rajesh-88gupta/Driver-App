@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_70adp"
+        android:background="@color/newtaxi_app_white"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        android:weightSum="2">
+
+        <ImageView
+            android:id="@+id/homelist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15adp"
+            android:layout_marginEnd="@dimen/_150adp"
+            android:layout_weight="1.7"
+            android:paddingStart="@dimen/_15adp"
+            android:src="@drawable/app_ic_menu"
+            android:visibility="visible" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="@dimen/_1adp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_5adp"
+            android:layout_marginTop="@dimen/_5adp"
+            android:layout_marginBottom="@dimen/_5adp"
+            android:layout_toEndOf="@+id/homelist"
+            android:background="@color/arrow_tint"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="@dimen/_150adp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15adp"
+            android:layout_marginEnd="@dimen/_10adp"
+            android:layout_toEndOf="@+id/homelist"
+            android:layout_weight="0.3"
+            android:gravity="end">
+
+            <com.github.angads25.toggle.widget.LabeledSwitch
+                android:id="@+id/labledSwitch"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45adp"
+                android:textSize="@dimen/_17asp"
+                android:visibility="gone"
+                app:colorBorder="@color/newtaxi_app_black"
+                app:colorDisabled="@color/newtaxi_app_white"
+                app:colorOff="@color/newtaxi_app_navy"
+                app:colorOn="@color/newtaxi_app_black"
+                app:on="true"
+                app:textOff="@string/offline"
+                app:textOn="@string/online" />
+
+
+            <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+                android:id="@+id/tv_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_8adp"
+                android:paddingStart="@dimen/_10adp"
+                android:text="@string/offline"
+                android:textColor="@color/newtaxi_app_white"
+                android:textSize="@dimen/_15asp"
+                android:visibility="gone"
+                app:fontname="@string/font_Medium" />
+            <!--  <androidx.appcompat.widget.SwitchCompat
+                  android:id="@+id/switch_driverstatus"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_alignParentEnd="true"
+                  android:layout_centerVertical="true"
+                  android:layout_marginEnd="@dimen/_5adp"
+                  android:padding="@dimen/_5adp"
+                  android:textOn="@string/online"
+                  android:textOff="@string/offline"
+                  android:textColor="@color/newtaxi_app_white"
+                  app:switchPadding="@dimen/_10adp"
+                  app:track="@drawable/app_track_switch"
+                  android:thumb="@drawable/app_thumb"
+                  android:checked="false" />-->
+        </RelativeLayout>
+
+        <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+            android:id="@+id/txt_checkdriverstatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/_20adp"
+            android:background="@color/newtaxi_app_white"
+            android:padding="@dimen/_5adp"
+            android:text="@string/checkstatus"
+            android:textColor="@color/newtaxi_app_black"
+            android:textSize="@dimen/_16adp"
+            android:visibility="gone"
+            app:fontname="@string/font_Medium" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout2"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/iv_line"
+            android:layout_width="@dimen/_50adp"
+            android:layout_height="@dimen/_5adp"
+            android:background="@color/newtaxi_app_white" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

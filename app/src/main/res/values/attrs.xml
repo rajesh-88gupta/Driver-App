@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="FontTextView">
+        <attr name="fontname" format="string" />
+        <attr name="textStyle" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="CircularMusicProgressBar">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color|reference" />
+        <attr name="border_overlay" format="boolean" />
+        <attr name="draw_anticlockwise" format="boolean" />
+        <attr name="fill_color" format="color|reference" />
+        <attr name="progress_color" format="color|reference" />
+        <attr name="centercircle_diammterer" format="float|reference" />
+        <attr name="progress_startAngle" format="float|reference" />
+
+    </declare-styleable>
+    <declare-styleable name="ProSwipeButton">
+        <attr name="btn_text" format="string" />
+        <attr name="text_color" format="color" />
+        <attr name="bg_color" format="color" />
+        <attr name="arrow_color" format="color" />
+        <attr name="btn_radius" format="float" />
+        <attr name="text_size" format="dimension" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:id="@+id/rtl_paymentMode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/d_buttomboarder"
+        android:paddingStart="@dimen/_5adp"
+        android:paddingTop="@dimen/_15adp"
+        android:paddingEnd="@dimen/_5adp"
+        android:paddingBottom="@dimen/_15adp">
+
+        <ImageView
+            android:id="@+id/iv_paymentIcon"
+            android:layout_width="@dimen/_25adp"
+            android:layout_height="@dimen/_25adp"
+            android:src="@drawable/online_payment"
+            android:layout_centerVertical="true" />
+
+        <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_12adp"
+            android:id="@+id/tv_paymentName"
+            android:layout_toEndOf="@+id/iv_paymentIcon"
+            android:text="@string/onlinepayment"
+            android:textAllCaps="false"
+            android:textColor="@color/newtaxi_app_black"
+            android:textSize="@dimen/_14asp"
+            app:fontname="@string/fonts_Medium" />
+
+        <ImageView
+            android:id="@+id/iv_isSelected"
+            android:layout_width="@dimen/_20adp"
+            android:layout_height="@dimen/_20adp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_20adp"
+            android:layout_marginTop="@dimen/_20adp"
+            android:src="@drawable/tick_green" />
+    </RelativeLayout>
+</LinearLayout>

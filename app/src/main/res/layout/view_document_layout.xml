@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <data>
+
+        <variable
+            name="viewDoc"
+            type="com.seentechs.newtaxidriver.home.datamodel.DocumentsModel" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/newtaxi_app_white"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_20adp"
+            android:background="@drawable/app_top_curve_white"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            tools:context=".home.signinsignup.DocumentUploadActivity">
+            <RelativeLayout
+                android:id="@+id/rlt_mapview"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_180adp"
+                android:layout_marginStart="@dimen/_50adp"
+                android:layout_marginEnd="@dimen/_50adp"
+                android:layout_marginBottom="@dimen/_20adp"
+                android:layout_marginTop="@dimen/_40adp"
+                android:visibility="visible">
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_view1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:cardCornerRadius="@dimen/_18adp">
+                    <ImageView
+                        android:id="@+id/ivImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:loadImage="@{viewDoc.documentUrl}"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/v_doc" />
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+
+
+            
+
+            <RelativeLayout
+                android:id="@+id/rltTapToAdd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20adp"
+                android:gravity="center_horizontal">
+
+                <ImageView
+                    android:id="@+id/ivCamera"
+                    android:layout_width="@dimen/_40adp"
+                    android:layout_height="@dimen/_40adp"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:background="@drawable/app_ic_camara"
+                    app:tint="@color/newtaxi_app_navy"
+                    />
+
+                <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+                    android:id="@+id/tvTapToAdd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_marginStart="17dp"
+                    android:layout_toEndOf="@id/ivCamera"
+                    android:changeText="@{viewDoc.documentUrl}"
+                    android:padding="@dimen/_5adp"
+                    android:text="@string/taptoadd"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/newtaxi_app_navy"
+                    android:textSize="@dimen/_16asp"
+                    app:fontname="@string/font_Medium" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlt_expiredate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_20adp"
+                android:background="@drawable/app_curve_button_white"
+                android:elevation="@dimen/_2adp"
+                android:paddingStart="@dimen/_20adp"
+                android:paddingTop="@dimen/_10adp"
+                android:paddingBottom="@dimen/_20adp">
+
+
+                <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+                    android:id="@+id/tv_expiredate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_5adp"
+                    android:gravity="center_vertical"
+                    android:text="@string/expiry_date"
+                    android:textColor="@color/newtaxi_app_black"
+                    android:textSize="@dimen/_15asp"
+                    app:fontname="@string/font_UBERNews" />
+
+                <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+                    android:id="@+id/tv_req"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5adp"
+                    android:layout_marginBottom="@dimen/_5adp"
+                    android:layout_toEndOf="@+id/tv_expiredate"
+                    android:gravity="center_vertical"
+                    android:text="*"
+                    android:textColor="@color/red_text"
+                    android:textSize="@dimen/_15asp"
+                    app:fontname="@string/font_UBERNews" />
+
+
+                <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+                    android:id="@+id/tv_expiredate_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_expiredate"
+                    android:layout_toStartOf="@+id/img_make_arrow"
+                    android:gravity="center_horizontal"
+                    android:hint="@string/yyyymmdd"
+                    android:text="@{viewDoc.expiredDate}"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/newtaxi_app_black"
+                    android:textSize="@dimen/_16asp"
+                    app:fontname="@string/font_Medium" />
+
+                <ImageView
+                    android:id="@+id/img_make_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_expiredate"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/ic_arrow" />
+
+                <requestFocus />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rltNext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_margin="@dimen/_20adp"
+                android:visibility="visible">
+
+
+                <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+                    android:id="@+id/btnNext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    style="@style/CommonBottomSheetButton"
+                    android:gravity="center"
+                    android:layout_marginBottom="@dimen/_10adp"
+                    android:text="@string/submit"
+                    android:paddingBottom="@dimen/_5adp"
+                    android:layout_margin="@dimen/_10adp"
+                    android:textColor="@color/newtaxi_app_black"
+                    android:textSize="@dimen/_14asp"
+                    app:fontname="@string/font_Medium" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</layout>

@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/newtaxi_app_white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/newtaxi_app_white"
+        >
+
+        <RelativeLayout
+            android:id="@+id/cardView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10adp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize"
+                android:background="@color/newtaxi_app_white">
+
+                <ImageView
+                    android:id="@+id/imgvu_back"
+                    android:layout_width="@dimen/_25adp"
+                    android:layout_height="@dimen/_25adp"
+                    android:layout_marginStart="@dimen/_30adp"
+                    android:layout_marginTop="@dimen/_10adp"
+                    android:layout_marginBottom="@dimen/_8adp"
+                    android:background="@drawable/app_ic_back_arrow"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+
+                <RelativeLayout
+                    android:id="@+id/profile_layout"
+                    android:layout_width="@dimen/_55adp"
+                    android:layout_height="@dimen/_55adp"
+                    android:layout_marginStart="@dimen/_10adp"
+                    android:padding="@dimen/_3adp"
+                    app:layout_constraintStart_toEndOf="@+id/imgvu_back"
+                    app:layout_constraintTop_toTopOf="parent"
+                    >
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        app:cardBackgroundColor="@color/newtaxi_app_gray"
+                        app:cardCornerRadius="@dimen/_15adp"
+                        >
+
+                        <ImageView
+                            android:id="@+id/imgvu_rider_profile"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/app_round_button_gray"
+                            android:scaleType="centerCrop"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/imgvu_back"
+                            app:layout_constraintTop_toTopOf="parent"
+                            />
+                    </androidx.cardview.widget.CardView>
+                </RelativeLayout>
+
+                <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+                    android:id="@+id/tv_profile_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10adp"
+                    android:layout_marginTop="@dimen/_15adp"
+                    android:paddingStart="@dimen/_5adp"
+                    android:ellipsize="end"
+                    android:maxEms="10"
+                    android:maxLines="1"
+                    android:textColor="@color/newtaxi_app_black"
+                    app:fontname="@string/font_UBERMedium"
+                    app:layout_constraintStart_toEndOf="@+id/profile_layout"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+
+                <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+                    android:id="@+id/tv_profile_rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10adp"
+                    android:layout_marginTop="@dimen/_5adp"
+                    android:layout_marginBottom="@dimen/_8adp"
+                    android:drawablePadding="@dimen/_5adp"
+                    android:paddingStart="@dimen/_5adp"
+                    android:drawableEnd="@drawable/app_ic_star_navy_small"
+                    android:gravity="center"
+                    android:textColor="@color/newtaxi_app_black"
+                    app:fontname="@string/font_UBERBook"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/profile_layout"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_profile_name"
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/app_top_curve_white"
+            android:layout_marginTop="@dimen/default_header_to"
+            app:layout_constraintBottom_toTopOf="@+id/cardView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView2">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_chat"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/_10adp"
+                android:layout_marginTop="@dimen/_10adp"
+                android:layout_marginStart="@dimen/_10adp"
+                android:layout_marginEnd="@dimen/_10adp"
+                android:layout_marginBottom="@dimen/_8adp"
+                app:reverseLayout="false"
+                app:stackFromEnd="true"
+                />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imgvu_emptychat"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/default_header_to"
+            android:background="@drawable/app_top_curve_white"
+            android:src="@drawable/ic_not_chats"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toTopOf="@+id/cardView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@+id/cardView2"/>
+
+
+        <RelativeLayout
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/newtaxi_app_white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/newtaxi_app_white">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_2adp"
+                    android:layout_marginEnd="@dimen/_2adp"
+                    android:background="@drawable/app_round_button_white_with_outline"
+                    android:padding="@dimen/_5adp">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_1adp"
+                        android:background="@color/chat_gray_border"
+                        android:visibility="gone"/>
+
+                    <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+                        android:id="@+id/tv_gif_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="@dimen/_2adp"
+                        android:gravity="center"
+                        android:padding="@dimen/_2adp"
+                        android:text="gif"
+                        android:textColor="@color/newtaxi_app_white"
+                        android:textSize="@dimen/_14asp"
+                        app:fontname="@string/font_Medium"
+                        android:visibility="gone"/>
+
+                    <com.seentechs.newtaxidriver.common.custompalette.FontEditText
+                        android:id="@+id/edt_new_msg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_toStartOf="@+id/iv_send"
+                        android:layout_toEndOf="@+id/tv_gif_icon"
+                        android:textCursorDrawable="@drawable/app_cursor_color"
+                        android:background="@null"
+                        android:hint="@string/send_a_message"
+                        android:textAlignment="viewStart"
+                        android:inputType="textEmailAddress"
+                        android:maxLines="5"
+                        android:paddingStart="@dimen/_10adp"
+                        android:paddingTop="@dimen/_6adp"
+                        android:paddingBottom="@dimen/_6adp"
+                        android:scrollbars="vertical"
+                        android:text=""
+                        app:fontname="@string/font_Book"
+                        android:textSize="@dimen/_15asp">
+
+                        <requestFocus/>
+                    </com.seentechs.newtaxidriver.common.custompalette.FontEditText>
+
+                    <ImageView
+                        android:id="@+id/iv_send"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:padding="@dimen/_5adp"
+                        android:src="@drawable/app_ic_chat_send"/>
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

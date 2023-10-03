@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:drawable="@drawable/ic_mic_disable">
+    <target android:name="strike_thru_path" android:animation="@animator/strike_thru_path_disabled_to_enabled" />
+    <target android:name="strike_thru_gap" android:animation="@animator/strike_thru_gap_disabled_to_enabled" />
+    <target android:name="icon" android:animation="@animator/icon_disabled_to_enabled" />
+</animated-vector>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+            android:id="@+id/enabled"
+            android:drawable="@drawable/ic_mic_enable"
+            android:state_enabled="true" />
+    <item
+            android:id="@+id/disabled"
+            android:drawable="@drawable/ic_mic_disable" />
+
+    <transition
+            android:drawable="@drawable/ic_mic_disabled_to_enabled"
+            android:fromId="@id/disabled"
+            android:toId="@id/enabled" />
+    <transition
+            android:drawable="@drawable/ic_mic_enabled_to_disabled"
+            android:fromId="@id/enabled"
+            android:toId="@id/disabled" />
+</animated-selector>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/newtaxi_app_white"
+    android:layoutDirection="@string/layout_direction"
+    tools:context=".trips.tripsdetails.YourTrips">
+
+    <include
+        android:id="@+id/common_header"
+        layout="@layout/app_common_header" />
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        style="@style/MyTabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/common_header"
+        android:layout_marginTop="@dimen/_10adp"
+        android:background="@color/newtaxi_app_white"
+        android:layoutDirection="@string/layout_direction"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:tabIndicatorAnimationMode="elastic"
+        app:tabIndicatorColor="@color/newtaxi_app_navy"
+        app:tabIndicatorFullWidth="false"
+        app:tabIndicatorHeight="@dimen/_3adp"
+        app:tabPaddingEnd="@dimen/_25adp"
+        app:tabPaddingStart="@dimen/_25adp"
+        app:tabSelectedTextColor="@color/newtaxi_app_black"
+        app:tabTextAppearance="@style/AppTabLayout"
+        app:tabTextColor="@color/newtaxi_app_text_ash" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/app_top_curve_white"
+        android:layout_marginTop="@dimen/_58adp"
+        android:layout_below="@+id/common_header">
+
+    <!-- View pager to swipe views -->
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layoutDirection="@string/layout_direction" />
+
+        </RelativeLayout>
+
+</RelativeLayout>

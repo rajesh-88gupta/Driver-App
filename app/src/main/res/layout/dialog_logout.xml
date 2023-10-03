@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/newtaxi_app_white"
+    android:layoutDirection="@string/layout_direction"
+    android:orientation="vertical">
+
+    <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_20adp"
+        android:layout_marginStart="@dimen/_20adp"
+        android:paddingBottom="@dimen/_15asp"
+        android:id="@+id/tv_message"
+        android:paddingTop="@dimen/_15asp"
+        android:text="@string/signout_msg"
+        android:textColor="@color/newtaxi_app_black"
+        android:textSize="@dimen/_16asp"
+        app:fontname="@string/font_Medium" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/d_topbordor"
+        android:divider="@drawable/divider"
+        android:orientation="horizontal"
+        android:paddingEnd="@dimen/_20adp"
+        android:paddingStart="@dimen/_20adp"
+        android:showDividers="middle"
+        android:weightSum="2">
+
+        <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+            android:id="@+id/signout_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingBottom="@dimen/_15asp"
+            android:paddingTop="@dimen/_15asp"
+            android:text="@string/cancel_s"
+            android:textAlignment="center"
+            android:textColor="@color/newtaxi_app_black"
+            android:textSize="@dimen/_14asp"
+            app:fontname="@string/font_Medium" />
+
+        <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+            android:id="@+id/signout_signout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingBottom="@dimen/_15asp"
+            android:paddingTop="@dimen/_15asp"
+            android:text="@string/signout"
+            android:textAlignment="center"
+            android:textColor="@color/newtaxi_app_black"
+            android:textSize="@dimen/_14asp"
+            app:fontname="@string/font_Medium" />
+    </LinearLayout>
+
+</LinearLayout>

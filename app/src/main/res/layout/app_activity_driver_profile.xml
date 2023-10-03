@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/newtaxi_app_white"
+    android:layoutDirection="@string/layout_direction"
+    tools:context=".home.fragments.AccountFragment">
+
+    <include
+        android:id="@+id/common_header"
+        layout="@layout/app_common_header" />
+
+    <RelativeLayout
+        android:id="@+id/common_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/app_top_curve_white"
+        android:layout_marginTop="@dimen/_20adp"
+        android:layout_below="@+id/common_header"
+        >
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_3adp"
+            android:clipToPadding="false"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20adp"
+                android:layout_marginEnd="@dimen/_20adp"
+                android:layout_marginTop="@dimen/_20adp">
+
+                <RelativeLayout
+                    android:id="@+id/imglatout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        >
+
+                        <include
+                            android:id="@+id/common_profile"
+                            layout="@layout/app_common_profile"
+                            android:layout_width="@dimen/_120adp"
+                            android:layout_height="@dimen/_120adp"
+                            android:layout_centerHorizontal="true"/>
+
+                        <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+                            android:id="@+id/edit_image"
+                            android:layout_width="@dimen/_30adp"
+                            android:layout_height="@dimen/_30adp"
+                            android:elevation="@dimen/_10adp"
+                            android:gravity="center"
+                            android:layout_marginStart="@dimen/_5adp"
+                            android:layout_marginBottom="@dimen/_5adp"
+                            android:background="@drawable/app_round_black"
+                            android:layout_gravity="start|bottom"
+                            android:text="A"
+                            android:textSize="@dimen/_15adp"
+                            android:textColor="@color/newtaxi_app_white"
+                            app:fontname="@string/font_UberClone" />
+
+                    </FrameLayout>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/namelayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imglatout"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="@dimen/_20adp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_15adp">
+
+
+                    <com.seentechs.newtaxidriver.common.custompalette.FontEditText
+                        android:id="@+id/input_first"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_18adp"
+                        android:layout_weight="1"
+                        android:textAlignment="viewStart"
+                        android:textCursorDrawable="@drawable/app_cursor_color"
+                        android:background="@drawable/app_curve_button_white_with_outline"
+                        android:hint="@string/first"
+                        android:inputType="textCapWords"
+                        android:padding="@dimen/_15adp"
+                        android:singleLine="true"
+                        android:textColor="@color/newtaxi_app_black"
+                        android:textSize="@dimen/_15asp"
+                        app:fontname="@string/font_Medium" />
+
+
+                    <com.seentechs.newtaxidriver.common.custompalette.FontEditText
+                        android:id="@+id/input_last"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/app_curve_button_white_with_outline"
+                        android:hint="@string/last"
+                        android:padding="@dimen/_15adp"
+                        android:textAlignment="viewStart"
+                        android:textCursorDrawable="@drawable/app_cursor_color"
+                        android:singleLine="true"
+                        android:textColor="@color/newtaxi_app_black"
+                        android:textSize="@dimen/_15asp"
+                        app:fontname="@string/font_Medium" />
+
+                </LinearLayout>
+
+                <com.seentechs.newtaxidriver.common.custompalette.FontEditText
+                    android:id="@+id/emaitext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/namelayout"
+                    android:layout_marginStart="@dimen/_12adp"
+                    android:layout_marginTop="@dimen/_10adp"
+                    android:layout_marginEnd="@dimen/_12adp"
+                    android:textAlignment="viewStart"
+                    android:layout_marginBottom="@dimen/_10adp"
+                    android:background="@drawable/app_curve_button_white_with_outline"
+                    android:textCursorDrawable="@drawable/app_cursor_color"
+                    android:hint="@string/email"
+                    android:inputType="textEmailAddress"
+                    android:padding="@dimen/_15adp"
+                    android:textColor="@color/newtaxi_app_black"
+                    android:textSize="@dimen/_15asp"
+                    app:fontname="@string/font_Medium" />
+
+                <RelativeLayout
+                    android:id="@+id/flaglayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/emaitext"
+                    android:layout_marginStart="@dimen/_12adp"
+                    android:layout_marginTop="@dimen/_10adp"
+                    android:layout_marginEnd="@dimen/_12adp"
+                    android:layout_marginBottom="@dimen/_10adp"
+                    android:background="@drawable/app_curve_button_white_with_outline"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/_2adp">
+
+                    <com.hbb20.CountryCodePicker
+                        android:id="@+id/mobile_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/_5adp"
+                        app:ccp_arrowSize="@dimen/_16asp"
+                        app:ccp_autoDetectLanguage="true"
+                        app:ccp_contentColor="@color/newtaxi_app_white_outline"
+                        app:ccp_showArrow="false"
+                        app:ccp_showNameCode="false"
+                        app:ccp_textSize="@dimen/_15asp" />
+
+                    <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+                        android:id="@+id/mobile_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/_12adp"
+                        android:layout_marginEnd="@dimen/_12adp"
+                        android:layout_toEndOf="@+id/mobile_code"
+                        android:textAlignment="viewStart"
+                        android:background="@color/ub__transparent"
+                        android:inputType="number"
+                        android:textCursorDrawable="@drawable/app_cursor_color"
+                        android:layout_marginTop="@dimen/_2adp"
+                        android:layout_marginBottom="@dimen/_2adp"
+                        android:padding="@dimen/_10asp"
+                        android:textColor="@color/newtaxi_app_black"
+                        android:textSize="@dimen/_15asp"
+                        app:fontname="@string/font_Medium" />
+
+
+                </RelativeLayout>
+
+                <include
+                    android:id="@+id/v_gender"
+                    layout="@layout/select_gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/flaglayout"
+                    android:layout_alignStart="@+id/namelayout"
+                    android:layout_marginStart="@dimen/_12adp"
+                    android:layout_marginTop="@dimen/_10adp"
+                    android:layout_marginEnd="@dimen/_12adp" />
+
+                <com.seentechs.newtaxidriver.common.custompalette.FontEditText
+                    android:id="@+id/addresstext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/v_gender"
+                    android:layout_marginStart="@dimen/_12adp"
+                    android:layout_marginTop="@dimen/_10adp"
+                    android:layout_marginEnd="@dimen/_12adp"
+                    android:layout_marginBottom="@dimen/_10adp"
+                    android:background="@drawable/app_curve_button_white_with_outline"
+                    android:textAlignment="viewStart"
+                    android:hint="@string/address1"
+                    android:padding="@dimen/_15adp"
+                    android:textColor="@color/newtaxi_app_black"
+                    android:textCursorDrawable="@color/newtaxi_app_black"
+                    android:textSize="@dimen/_15asp"
+                    app:fontname="@string/font_Medium" />
+
+                <com.seentechs.newtaxidriver.common.custompalette.FontEditText
+                    android:id="@+id/addresstext2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/addresstext"
+                    android:layout_marginStart="@dimen/_12adp"
+                    android:layout_marginTop="@dimen/_10adp"
+                    android:layout_marginEnd="@dimen/_12adp"
+                    android:layout_marginBottom="@dimen/_10adp"
+                    android:background="@drawable/app_curve_button_white_with_outline"
+                    android:hint="@string/address2"
+                    android:textAlignment="viewStart"
+                    android:padding="@dimen/_15adp"
+                    android:textColor="@color/newtaxi_app_black"
+                    android:textCursorDrawable="@color/newtaxi_app_black"
+                    android:textSize="@dimen/_15asp"
+                    app:fontname="@string/font_Medium" />
+
+                <com.seentechs.newtaxidriver.common.custompalette.FontEditText
+                    android:id="@+id/citytext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/addresstext2"
+                    android:layout_marginStart="@dimen/_12adp"
+                    android:layout_marginTop="@dimen/_10adp"
+                    android:layout_marginEnd="@dimen/_12adp"
+                    android:layout_marginBottom="@dimen/_10adp"
+                    android:background="@drawable/app_curve_button_white_with_outline"
+                    android:textAlignment="viewStart"
+                    android:hint="@string/city"
+                    android:padding="@dimen/_15adp"
+                    android:textColor="@color/newtaxi_app_black"
+                    android:textCursorDrawable="@color/newtaxi_app_black"
+                    android:textSize="@dimen/_15asp"
+                    app:fontname="@string/font_Medium" />
+
+                <com.seentechs.newtaxidriver.common.custompalette.FontEditText
+                    android:id="@+id/statetext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/citytext"
+                    android:layout_marginStart="@dimen/_12adp"
+                    android:layout_marginTop="@dimen/_10adp"
+                    android:layout_marginEnd="@dimen/_12adp"
+                    android:layout_marginBottom="@dimen/_10adp"
+                    android:background="@drawable/app_curve_button_white_with_outline"
+                    android:textAlignment="viewStart"
+                    android:hint="@string/state"
+                    android:padding="@dimen/_15adp"
+                    android:textColor="@color/newtaxi_app_black"
+                    android:textCursorDrawable="@color/newtaxi_app_black"
+                    android:textSize="@dimen/_15asp"
+                    app:fontname="@string/font_Medium" />
+
+                <com.seentechs.newtaxidriver.common.custompalette.FontEditText
+                    android:id="@+id/posttext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/statetext"
+                    android:layout_marginStart="@dimen/_12adp"
+                    android:layout_marginTop="@dimen/_10adp"
+                    android:layout_marginEnd="@dimen/_12adp"
+                    android:layout_marginBottom="@dimen/_10adp"
+                    android:background="@drawable/app_curve_button_white_with_outline"
+                    android:textAlignment="viewStart"
+                    android:hint="@string/postalcode"
+                    android:padding="@dimen/_15adp"
+                    android:textColor="@color/newtaxi_app_black"
+                    android:textCursorDrawable="@color/newtaxi_app_black"
+                    android:textSize="@dimen/_15asp"
+                    app:fontname="@string/font_Medium" />
+                <include
+                    android:id="@+id/common_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/posttext"
+                    android:layout_marginTop="@dimen/_10adp"
+                    android:layout_marginBottom="@dimen/_50adp"
+                    layout="@layout/app_common_button_large"/>
+                <com.seentechs.newtaxidriver.common.custompalette.FontButton
+                    android:id="@+id/savebutton"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50adp"
+                    android:layout_marginTop="@dimen/_20adp"
+                    android:layout_marginBottom="@dimen/_20adp"
+                    android:layout_marginStart="@dimen/_10adp"
+                    android:layout_marginEnd="@dimen/_10adp"
+                    android:background="@drawable/app_curve_button_navy"
+                    android:text="@string/save"
+                    android:textColor="@color/newtaxi_app_black"
+                    android:textSize="@dimen/_16asp"
+                    android:layout_below="@+id/posttext"
+                    app:fontname="@string/font_Medium" />
+
+            </RelativeLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+</RelativeLayout>

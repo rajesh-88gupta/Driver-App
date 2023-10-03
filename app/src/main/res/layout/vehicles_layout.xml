@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="vehicleType"
+            type="com.seentechs.newtaxidriver.home.datamodel.VehiclesModel" />
+
+        <variable
+            name="callback"
+            type="com.seentechs.newtaxidriver.home.managevehicles.adapter.ManageVehicleAdapter.OnClickListener" />
+
+        <variable
+            name="position"
+            type="Integer" />
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/newtaxi_app_white">
+
+
+        <RelativeLayout
+            android:id="@+id/rlt_vehicles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/app_curve_button_white_with_outline"
+            android:elevation="@dimen/_3adp"
+            android:layout_margin="@dimen/_3adp"
+
+            >
+
+            <RelativeLayout
+                android:layout_margin="@dimen/_10adp"
+                android:id="@+id/rlt_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10adp"
+                android:layout_marginBottom="@dimen/_10adp">
+
+                <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+                    android:id="@+id/tv_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:paddingStart="@dimen/_10adp"
+                    android:paddingTop="@dimen/_10adp"
+                    android:paddingEnd="@dimen/_10adp"
+                    android:text="@{vehicleType.vehicleStatus}"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/newtaxi_app_black"
+                    android:textSize="@dimen/_14asp"
+                    app:fontname="@string/font_Medium" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="@dimen/_40adp"
+                    android:layout_height="@dimen/_40adp"
+                    android:layout_below="@+id/tv_status"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/_5adp"
+                    android:padding="@dimen/_5adp"
+                    android:src="@drawable/app_ic_car"
+                    android:background="@drawable/app_curve_layout_dark_gray"
+                    android:id="@+id/iv_car"
+                    android:visibility="visible" />
+
+
+                <!--   <ImageView
+                       android:layout_width="40dp"
+                       android:layout_height="40dp"
+                       android:src="@drawable/car_one"
+                       android:layout_marginStart="5dp"
+                       android:visibility="visible"
+                       android:layout_below="@+id/tv_status"
+                       android:layout_centerHorizontal="true"
+                       android:layout_centerVertical="true"
+                       android:id="@+id/iv_car"
+                       />-->
+
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="@dimen/_1adp"
+                android:layout_height="@dimen/_50adp"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="@dimen/_5adp"
+                android:layout_toEndOf="@+id/rlt_status"
+                android:background="@color/newtaxi_app_text_ash" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_10adp"
+                android:layout_marginEnd="@dimen/_10adp"
+                android:layout_toStartOf="@+id/rlt_edit"
+                android:layout_toEndOf="@+id/view">
+
+                <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+                    android:id="@+id/tv_car_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/_10adp"
+                    android:paddingTop="@dimen/_10adp"
+                    android:paddingEnd="@dimen/_10adp"
+                    android:text="@{vehicleType.vehicleName}"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorblack"
+                    android:textSize="@dimen/_14asp"
+                    app:fontname="@string/font_Medium" />
+
+                <com.seentechs.newtaxidriver.common.custompalette.FontTextView
+                    android:id="@+id/tv_car_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_car_name"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/_10adp"
+                    android:paddingTop="@dimen/_2adp"
+                    android:paddingEnd="@dimen/_10adp"
+                    android:paddingBottom="@dimen/_5adp"
+                    android:text="@{vehicleType.licenseNumber}"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/newtaxi_app_text_ash"
+                    android:textSize="@dimen/_12asp"
+                    app:fontname="@string/font_UBERNews" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlt_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/_10adp">
+
+                <ImageView
+                    android:id="@+id/iv_document"
+                    android:layout_width="@dimen/_22adp"
+                    android:layout_height="@dimen/_22adp"
+                    android:src="@drawable/document_view"
+                    app:tint="@color/newtaxi_app_navy" />
+
+                <ImageView
+                    android:id="@+id/iv_edit"
+                    android:layout_width="@dimen/_22adp"
+                    android:layout_height="@dimen/_22adp"
+                    android:layout_marginStart="@dimen/_10adp"
+                    android:layout_toEndOf="@+id/iv_document"
+                    android:src="@drawable/edit"
+                    app:tint="@color/newtaxi_app_navy"
+
+                    />
+
+                <ImageView
+                    android:id="@+id/iv_delete"
+                    android:layout_width="@dimen/_22adp"
+                    android:layout_height="@dimen/_22adp"
+                    android:layout_marginStart="@dimen/_10adp"
+                    android:layout_toEndOf="@+id/iv_edit"
+                    android:src="@drawable/delete"
+                    app:tint="@color/newtaxi_app_navy" />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</layout>
+
