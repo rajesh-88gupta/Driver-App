@@ -200,10 +200,8 @@
                         android:layout_centerInParent="true"
                         android:layout_toStartOf="@+id/iv_send"
                         android:layout_toEndOf="@+id/tv_gif_icon"
-                        android:textCursorDrawable="@drawable/app_cursor_color"
                         android:background="@null"
                         android:hint="@string/send_a_message"
-                        android:textAlignment="viewStart"
                         android:inputType="textEmailAddress"
                         android:maxLines="5"
                         android:paddingStart="@dimen/_10adp"
@@ -211,10 +209,12 @@
                         android:paddingBottom="@dimen/_6adp"
                         android:scrollbars="vertical"
                         android:text=""
-                        app:fontname="@string/font_Book"
-                        android:textSize="@dimen/_15asp">
+                        android:textAlignment="viewStart"
+                        android:textCursorDrawable="@drawable/app_cursor_color"
+                        android:textSize="@dimen/_15asp"
+                        app:fontname="@string/font_Book">
 
-                        <requestFocus/>
+                        <requestFocus />
                     </com.seentechs.newtaxidriver.common.custompalette.FontEditText>
 
                     <ImageView

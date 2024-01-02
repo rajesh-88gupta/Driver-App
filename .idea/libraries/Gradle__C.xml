@@ -1,7 +1,7 @@
 <component name="libraryTable">
   <library name="Gradle: C">
     <CLASSES>
-      <root url="jar://$USER_HOME$/AppData/Local/Android/Sdk/platforms/android-32/optional/org.apache.http.legacy.jar!/" />
+      <root url="jar://$USER_HOME$/AppData/Local/Android/Sdk/platforms/android-31/optional/org.apache.http.legacy.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

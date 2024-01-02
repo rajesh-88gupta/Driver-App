@@ -1,11 +1,11 @@
 <component name="libraryTable">
   <library name="Gradle: com.google.firebase:firebase-common-ktx:19.4.0@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/c2597215b51741e8712754139939893d/transformed/jetified-firebase-common-ktx-19.4.0/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c2597215b51741e8712754139939893d/transformed/jetified-firebase-common-ktx-19.4.0/AndroidManifest.xml" />
+      <root url="jar://D:/EspressoUITest-Examples/caches/transforms-3/c2597215b51741e8712754139939893d/transformed/jetified-firebase-common-ktx-19.4.0/jars/classes.jar!/" />
+      <root url="file://D:/EspressoUITest-Examples/caches/transforms-3/c2597215b51741e8712754139939893d/transformed/jetified-firebase-common-ktx-19.4.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.firebase/firebase-common-ktx/19.4.0/6700642c770c88deb3570b5481a45e0b26a6b286/firebase-common-ktx-19.4.0-javadoc.jar!/" />
+      <root url="jar://D:/EspressoUITest-Examples/caches/modules-2/files-2.1/com.google.firebase/firebase-common-ktx/19.4.0/6700642c770c88deb3570b5481a45e0b26a6b286/firebase-common-ktx-19.4.0-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES />
   </library>

@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: com.braintreepayments.api:three-d-secure:3.14.2@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/70c27ad171132c8975e2a3a20fe4b5fa/transformed/jetified-three-d-secure-3.14.2/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/70c27ad171132c8975e2a3a20fe4b5fa/transformed/jetified-three-d-secure-3.14.2/AndroidManifest.xml" />
+      <root url="jar://D:/EspressoUITest-Examples/caches/transforms-3/70c27ad171132c8975e2a3a20fe4b5fa/transformed/jetified-three-d-secure-3.14.2/jars/classes.jar!/" />
+      <root url="file://D:/EspressoUITest-Examples/caches/transforms-3/70c27ad171132c8975e2a3a20fe4b5fa/transformed/jetified-three-d-secure-3.14.2/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

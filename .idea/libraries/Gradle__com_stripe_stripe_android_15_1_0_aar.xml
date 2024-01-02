@@ -1,15 +1,15 @@
 <component name="libraryTable">
   <library name="Gradle: com.stripe:stripe-android:15.1.0@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/f911aaa27fbc0fa95039f16f50bbeb2c/transformed/jetified-stripe-android-15.1.0/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/f911aaa27fbc0fa95039f16f50bbeb2c/transformed/jetified-stripe-android-15.1.0/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/f911aaa27fbc0fa95039f16f50bbeb2c/transformed/jetified-stripe-android-15.1.0/AndroidManifest.xml" />
+      <root url="file://D:/EspressoUITest-Examples/caches/transforms-3/f911aaa27fbc0fa95039f16f50bbeb2c/transformed/jetified-stripe-android-15.1.0/res" />
+      <root url="jar://D:/EspressoUITest-Examples/caches/transforms-3/f911aaa27fbc0fa95039f16f50bbeb2c/transformed/jetified-stripe-android-15.1.0/jars/classes.jar!/" />
+      <root url="file://D:/EspressoUITest-Examples/caches/transforms-3/f911aaa27fbc0fa95039f16f50bbeb2c/transformed/jetified-stripe-android-15.1.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.stripe/stripe-android/15.1.0/3d57134e80825b5b558ab8e53b884a099b013bb5/stripe-android-15.1.0-javadoc.jar!/" />
+      <root url="jar://D:/EspressoUITest-Examples/caches/modules-2/files-2.1/com.stripe/stripe-android/15.1.0/3d57134e80825b5b558ab8e53b884a099b013bb5/stripe-android-15.1.0-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.stripe/stripe-android/15.1.0/d6722b9c510335b44000388bebf8773f8619431b/stripe-android-15.1.0-sources.jar!/" />
+      <root url="jar://D:/EspressoUITest-Examples/caches/modules-2/files-2.1/com.stripe/stripe-android/15.1.0/d6722b9c510335b44000388bebf8773f8619431b/stripe-android-15.1.0-sources.jar!/" />
     </SOURCES>
   </library>
 </component>
