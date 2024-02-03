@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="Gradle: com.stripe:stripe-android:15.1.0@aar">
+  <library name="Gradle: com.stripe:stripe-android:15.1.0@aar" external-system-id="GRADLE">
     <CLASSES>
       <root url="file://D:/EspressoUITest-Examples/caches/transforms-3/f911aaa27fbc0fa95039f16f50bbeb2c/transformed/jetified-stripe-android-15.1.0/res" />
       <root url="jar://D:/EspressoUITest-Examples/caches/transforms-3/f911aaa27fbc0fa95039f16f50bbeb2c/transformed/jetified-stripe-android-15.1.0/jars/classes.jar!/" />

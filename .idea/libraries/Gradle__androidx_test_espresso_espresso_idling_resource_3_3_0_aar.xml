@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="Gradle: androidx.test.espresso:espresso-idling-resource:3.3.0@aar">
+  <library name="Gradle: androidx.test.espresso:espresso-idling-resource:3.3.0@aar" external-system-id="GRADLE">
     <CLASSES>
       <root url="jar://D:/EspressoUITest-Examples/caches/transforms-3/b60714519789a674662f9f295ede1921/transformed/espresso-idling-resource-3.3.0/jars/classes.jar!/" />
       <root url="file://D:/EspressoUITest-Examples/caches/transforms-3/b60714519789a674662f9f295ede1921/transformed/espresso-idling-resource-3.3.0/AndroidManifest.xml" />

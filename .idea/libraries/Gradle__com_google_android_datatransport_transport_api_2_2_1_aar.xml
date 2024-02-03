@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="Gradle: com.google.android.datatransport:transport-api:2.2.1@aar">
+  <library name="Gradle: com.google.android.datatransport:transport-api:2.2.1@aar" external-system-id="GRADLE">
     <CLASSES>
       <root url="file://D:/EspressoUITest-Examples/caches/transforms-3/ca44b675db8d0eeebd42247153341007/transformed/jetified-transport-api-2.2.1/AndroidManifest.xml" />
       <root url="jar://D:/EspressoUITest-Examples/caches/transforms-3/ca44b675db8d0eeebd42247153341007/transformed/jetified-transport-api-2.2.1/jars/classes.jar!/" />

@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="Gradle: com.nimbusds:nimbus-jose-jwt:8.20">
+  <library name="Gradle: com.nimbusds:nimbus-jose-jwt:8.20" external-system-id="GRADLE">
     <CLASSES>
       <root url="jar://D:/EspressoUITest-Examples/caches/modules-2/files-2.1/com.nimbusds/nimbus-jose-jwt/8.20/67503d40e7429692b08ca0f1187781097921d351/nimbus-jose-jwt-8.20.jar!/" />
     </CLASSES>

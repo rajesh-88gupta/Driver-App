@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="Gradle: com.google.android.datatransport:transport-backend-cct:2.3.3@aar">
+  <library name="Gradle: com.google.android.datatransport:transport-backend-cct:2.3.3@aar" external-system-id="GRADLE">
     <CLASSES>
       <root url="file://D:/EspressoUITest-Examples/caches/transforms-3/8c3a7d30c45c932bd06343e546d718d3/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml" />
       <root url="jar://D:/EspressoUITest-Examples/caches/transforms-3/8c3a7d30c45c932bd06343e546d718d3/transformed/jetified-transport-backend-cct-2.3.3/jars/classes.jar!/" />

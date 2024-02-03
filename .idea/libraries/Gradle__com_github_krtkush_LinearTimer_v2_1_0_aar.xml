@@ -1,9 +1,9 @@
 <component name="libraryTable">
-  <library name="Gradle: com.github.krtkush:LinearTimer:v2.1.0@aar">
+  <library name="Gradle: com.github.krtkush:LinearTimer:v2.1.0@aar" external-system-id="GRADLE">
     <CLASSES>
-      <root url="jar://D:/EspressoUITest-Examples/caches/transforms-3/ed564058246d2d3f13c5ef7053fd38c7/transformed/jetified-LinearTimer-v2.1.0/jars/classes.jar!/" />
-      <root url="file://D:/EspressoUITest-Examples/caches/transforms-3/ed564058246d2d3f13c5ef7053fd38c7/transformed/jetified-LinearTimer-v2.1.0/res" />
-      <root url="file://D:/EspressoUITest-Examples/caches/transforms-3/ed564058246d2d3f13c5ef7053fd38c7/transformed/jetified-LinearTimer-v2.1.0/AndroidManifest.xml" />
+      <root url="jar://D:/EspressoUITest-Examples/caches/transforms-3/3f084ce0b097b01aeeb1ceee5d1a2f99/transformed/jetified-LinearTimer-v2.1.0/jars/classes.jar!/" />
+      <root url="file://D:/EspressoUITest-Examples/caches/transforms-3/3f084ce0b097b01aeeb1ceee5d1a2f99/transformed/jetified-LinearTimer-v2.1.0/res" />
+      <root url="file://D:/EspressoUITest-Examples/caches/transforms-3/3f084ce0b097b01aeeb1ceee5d1a2f99/transformed/jetified-LinearTimer-v2.1.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://D:/EspressoUITest-Examples/caches/modules-2/files-2.1/com.github.krtkush/LinearTimer/v2.1.0/c0ffaba71829133cb17a9e0bb129bec658be7ac5/LinearTimer-v2.1.0-javadoc.jar!/" />

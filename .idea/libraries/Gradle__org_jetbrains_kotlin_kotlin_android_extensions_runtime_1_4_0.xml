@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="Gradle: org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.4.0">
+  <library name="Gradle: org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.4.0" external-system-id="GRADLE">
     <CLASSES>
       <root url="jar://D:/EspressoUITest-Examples/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-android-extensions-runtime/1.4.0/98be06f8dfc5750d45b887d2b3330ef49390aeb7/kotlin-android-extensions-runtime-1.4.0.jar!/" />
     </CLASSES>

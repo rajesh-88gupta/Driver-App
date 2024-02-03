@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="Gradle: androidx.work:work-runtime:2.7.1@aar">
+  <library name="Gradle: androidx.work:work-runtime:2.7.1@aar" external-system-id="GRADLE">
     <CLASSES>
       <root url="file://D:/EspressoUITest-Examples/caches/transforms-3/8419426e155f2147af03db0dd68f8aaf/transformed/work-runtime-2.7.1/res" />
       <root url="file://D:/EspressoUITest-Examples/caches/transforms-3/8419426e155f2147af03db0dd68f8aaf/transformed/work-runtime-2.7.1/AndroidManifest.xml" />

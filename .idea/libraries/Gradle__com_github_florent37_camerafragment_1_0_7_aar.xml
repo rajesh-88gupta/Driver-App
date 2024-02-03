@@ -1,12 +1,12 @@
 <component name="libraryTable">
-  <library name="Gradle: com.github.florent37:camerafragment:1.0.7@aar">
+  <library name="Gradle: com.github.florent37:camerafragment:1.0.7@aar" external-system-id="GRADLE">
     <ANNOTATIONS>
-      <root url="jar://D:/EspressoUITest-Examples/caches/transforms-3/ec82bde2a81bc3b1950ba8d6e0cf084a/transformed/jetified-camerafragment-1.0.7/annotations.zip!/" />
+      <root url="jar://D:/EspressoUITest-Examples/caches/transforms-3/8ffed6ddd54a51b306ede2ee884e1248/transformed/jetified-camerafragment-1.0.7/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://D:/EspressoUITest-Examples/caches/transforms-3/ec82bde2a81bc3b1950ba8d6e0cf084a/transformed/jetified-camerafragment-1.0.7/jars/classes.jar!/" />
-      <root url="file://D:/EspressoUITest-Examples/caches/transforms-3/ec82bde2a81bc3b1950ba8d6e0cf084a/transformed/jetified-camerafragment-1.0.7/res" />
-      <root url="file://D:/EspressoUITest-Examples/caches/transforms-3/ec82bde2a81bc3b1950ba8d6e0cf084a/transformed/jetified-camerafragment-1.0.7/AndroidManifest.xml" />
+      <root url="jar://D:/EspressoUITest-Examples/caches/transforms-3/8ffed6ddd54a51b306ede2ee884e1248/transformed/jetified-camerafragment-1.0.7/jars/classes.jar!/" />
+      <root url="file://D:/EspressoUITest-Examples/caches/transforms-3/8ffed6ddd54a51b306ede2ee884e1248/transformed/jetified-camerafragment-1.0.7/AndroidManifest.xml" />
+      <root url="file://D:/EspressoUITest-Examples/caches/transforms-3/8ffed6ddd54a51b306ede2ee884e1248/transformed/jetified-camerafragment-1.0.7/res" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://D:/EspressoUITest-Examples/caches/modules-2/files-2.1/com.github.florent37/camerafragment/1.0.7/cb81540a507ca2aa8d7c1d0bd24b0be92546eba1/camerafragment-1.0.7-javadoc.jar!/" />

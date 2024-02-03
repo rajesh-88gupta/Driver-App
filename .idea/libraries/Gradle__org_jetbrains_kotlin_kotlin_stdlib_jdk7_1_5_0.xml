@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.5.0">
+  <library name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.5.0" external-system-id="GRADLE">
     <CLASSES>
       <root url="jar://D:/EspressoUITest-Examples/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.5.0/f61904618ea7be07a66e0545ffe8dc2c70a19b77/kotlin-stdlib-jdk7-1.5.0.jar!/" />
     </CLASSES>

@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="Gradle: com.jakewharton:butterknife:10.2.1@aar">
+  <library name="Gradle: com.jakewharton:butterknife:10.2.1@aar" external-system-id="GRADLE">
     <CLASSES>
       <root url="file://D:/EspressoUITest-Examples/caches/transforms-3/bf568baac8d72eece542e8363fefae62/transformed/jetified-butterknife-10.2.1/AndroidManifest.xml" />
       <root url="jar://D:/EspressoUITest-Examples/caches/transforms-3/bf568baac8d72eece542e8363fefae62/transformed/jetified-butterknife-10.2.1/jars/classes.jar!/" />

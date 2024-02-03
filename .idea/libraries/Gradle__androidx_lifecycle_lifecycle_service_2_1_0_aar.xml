@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="Gradle: androidx.lifecycle:lifecycle-service:2.1.0@aar">
+  <library name="Gradle: androidx.lifecycle:lifecycle-service:2.1.0@aar" external-system-id="GRADLE">
     <CLASSES>
       <root url="file://D:/EspressoUITest-Examples/caches/transforms-3/d6214d0b4a54bc4395cf51da77af2dd7/transformed/jetified-lifecycle-service-2.1.0/AndroidManifest.xml" />
       <root url="jar://D:/EspressoUITest-Examples/caches/transforms-3/d6214d0b4a54bc4395cf51da77af2dd7/transformed/jetified-lifecycle-service-2.1.0/jars/classes.jar!/" />

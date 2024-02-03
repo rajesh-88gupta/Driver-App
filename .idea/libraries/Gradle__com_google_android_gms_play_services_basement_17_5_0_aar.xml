@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="Gradle: com.google.android.gms:play-services-basement:17.5.0@aar">
+  <library name="Gradle: com.google.android.gms:play-services-basement:17.5.0@aar" external-system-id="GRADLE">
     <CLASSES>
       <root url="file://D:/EspressoUITest-Examples/caches/transforms-3/a9ae0d6b7829b23c70d84bfb44bb6390/transformed/jetified-play-services-basement-17.5.0/AndroidManifest.xml" />
       <root url="file://D:/EspressoUITest-Examples/caches/transforms-3/a9ae0d6b7829b23c70d84bfb44bb6390/transformed/jetified-play-services-basement-17.5.0/res" />

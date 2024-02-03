@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="Gradle: com.braintreepayments.api:core:3.14.2@aar">
+  <library name="Gradle: com.braintreepayments.api:core:3.14.2@aar" external-system-id="GRADLE">
     <CLASSES>
       <root url="file://D:/EspressoUITest-Examples/caches/transforms-3/9b43f460d46283b60901271344e857e4/transformed/jetified-core-3.14.2/AndroidManifest.xml" />
       <root url="jar://D:/EspressoUITest-Examples/caches/transforms-3/9b43f460d46283b60901271344e857e4/transformed/jetified-core-3.14.2/jars/classes.jar!/" />

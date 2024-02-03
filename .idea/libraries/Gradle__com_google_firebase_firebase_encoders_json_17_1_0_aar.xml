@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="Gradle: com.google.firebase:firebase-encoders-json:17.1.0@aar">
+  <library name="Gradle: com.google.firebase:firebase-encoders-json:17.1.0@aar" external-system-id="GRADLE">
     <CLASSES>
       <root url="file://D:/EspressoUITest-Examples/caches/transforms-3/ed04a84901b3bcc14c75b691c413e39c/transformed/jetified-firebase-encoders-json-17.1.0/AndroidManifest.xml" />
       <root url="jar://D:/EspressoUITest-Examples/caches/transforms-3/ed04a84901b3bcc14c75b691c413e39c/transformed/jetified-firebase-encoders-json-17.1.0/jars/classes.jar!/" />

@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="Gradle: com.google.android.gms:play-services-ads-identifier:17.0.0@aar">
+  <library name="Gradle: com.google.android.gms:play-services-ads-identifier:17.0.0@aar" external-system-id="GRADLE">
     <CLASSES>
       <root url="jar://D:/EspressoUITest-Examples/caches/transforms-3/09f4494fff14dfa1205f20ff793ac55e/transformed/jetified-play-services-ads-identifier-17.0.0/jars/classes.jar!/" />
       <root url="file://D:/EspressoUITest-Examples/caches/transforms-3/09f4494fff14dfa1205f20ff793ac55e/transformed/jetified-play-services-ads-identifier-17.0.0/AndroidManifest.xml" />

@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="Gradle: androidx.viewpager2:viewpager2:1.0.0@aar">
+  <library name="Gradle: androidx.viewpager2:viewpager2:1.0.0@aar" external-system-id="GRADLE">
     <ANNOTATIONS>
       <root url="jar://D:/EspressoUITest-Examples/caches/transforms-3/7f7bc5cc6ea7070b989e9216b702d8a0/transformed/jetified-viewpager2-1.0.0/annotations.zip!/" />
     </ANNOTATIONS>

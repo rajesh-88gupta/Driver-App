@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="Gradle: androidx.annotation:annotation-experimental:1.1.0@aar">
+  <library name="Gradle: androidx.annotation:annotation-experimental:1.1.0@aar" external-system-id="GRADLE">
     <CLASSES>
       <root url="file://D:/EspressoUITest-Examples/caches/transforms-3/7e518cb30c38104570f1473e7d50c69a/transformed/jetified-annotation-experimental-1.1.0/res" />
       <root url="jar://D:/EspressoUITest-Examples/caches/transforms-3/7e518cb30c38104570f1473e7d50c69a/transformed/jetified-annotation-experimental-1.1.0/jars/classes.jar!/" />

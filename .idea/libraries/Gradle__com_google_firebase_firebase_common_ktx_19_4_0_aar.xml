@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="Gradle: com.google.firebase:firebase-common-ktx:19.4.0@aar">
+  <library name="Gradle: com.google.firebase:firebase-common-ktx:19.4.0@aar" external-system-id="GRADLE">
     <CLASSES>
       <root url="jar://D:/EspressoUITest-Examples/caches/transforms-3/c2597215b51741e8712754139939893d/transformed/jetified-firebase-common-ktx-19.4.0/jars/classes.jar!/" />
       <root url="file://D:/EspressoUITest-Examples/caches/transforms-3/c2597215b51741e8712754139939893d/transformed/jetified-firebase-common-ktx-19.4.0/AndroidManifest.xml" />

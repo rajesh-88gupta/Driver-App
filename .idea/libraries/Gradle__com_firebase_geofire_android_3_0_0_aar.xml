@@ -1,9 +1,9 @@
 <component name="libraryTable">
-  <library name="Gradle: com.firebase:geofire-android:3.0.0@aar">
+  <library name="Gradle: com.firebase:geofire-android:3.0.0@aar" external-system-id="GRADLE">
     <CLASSES>
-      <root url="file://D:/EspressoUITest-Examples/caches/transforms-3/fd6d07c15ba5df3ec2feb2aacd2bf2f8/transformed/jetified-geofire-android-3.0.0/AndroidManifest.xml" />
-      <root url="file://D:/EspressoUITest-Examples/caches/transforms-3/fd6d07c15ba5df3ec2feb2aacd2bf2f8/transformed/jetified-geofire-android-3.0.0/res" />
-      <root url="jar://D:/EspressoUITest-Examples/caches/transforms-3/fd6d07c15ba5df3ec2feb2aacd2bf2f8/transformed/jetified-geofire-android-3.0.0/jars/classes.jar!/" />
+      <root url="file://D:/EspressoUITest-Examples/caches/transforms-3/72f2ff8874feb0393d1cc8da35b73b45/transformed/jetified-geofire-android-3.0.0/res" />
+      <root url="jar://D:/EspressoUITest-Examples/caches/transforms-3/72f2ff8874feb0393d1cc8da35b73b45/transformed/jetified-geofire-android-3.0.0/jars/classes.jar!/" />
+      <root url="file://D:/EspressoUITest-Examples/caches/transforms-3/72f2ff8874feb0393d1cc8da35b73b45/transformed/jetified-geofire-android-3.0.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://D:/EspressoUITest-Examples/caches/modules-2/files-2.1/com.firebase/geofire-android/3.0.0/284662bb7b1f8f9c4187eaf7a3f8d426f53d4534/geofire-android-3.0.0-javadoc.jar!/" />

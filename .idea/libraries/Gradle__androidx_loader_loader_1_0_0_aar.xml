@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="Gradle: androidx.loader:loader:1.0.0@aar">
+  <library name="Gradle: androidx.loader:loader:1.0.0@aar" external-system-id="GRADLE">
     <CLASSES>
       <root url="file://D:/EspressoUITest-Examples/caches/transforms-3/f0127546dfb194e143e69a9bd093cb56/transformed/loader-1.0.0/AndroidManifest.xml" />
       <root url="jar://D:/EspressoUITest-Examples/caches/transforms-3/f0127546dfb194e143e69a9bd093cb56/transformed/loader-1.0.0/jars/classes.jar!/" />

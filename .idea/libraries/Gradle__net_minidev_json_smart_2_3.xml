@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="Gradle: net.minidev:json-smart:2.3">
+  <library name="Gradle: net.minidev:json-smart:2.3" external-system-id="GRADLE">
     <CLASSES>
       <root url="jar://D:/EspressoUITest-Examples/caches/modules-2/files-2.1/net.minidev/json-smart/2.3/7396407491352ce4fa30de92efb158adb76b5b/json-smart-2.3.jar!/" />
     </CLASSES>

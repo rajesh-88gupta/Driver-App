@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="Gradle: com.google.android.gms:play-services-cloud-messaging:16.0.0@aar">
+  <library name="Gradle: com.google.android.gms:play-services-cloud-messaging:16.0.0@aar" external-system-id="GRADLE">
     <CLASSES>
       <root url="file://D:/EspressoUITest-Examples/caches/transforms-3/f4a0a217ac904fd88712d4a179bf8f2f/transformed/jetified-play-services-cloud-messaging-16.0.0/AndroidManifest.xml" />
       <root url="jar://D:/EspressoUITest-Examples/caches/transforms-3/f4a0a217ac904fd88712d4a179bf8f2f/transformed/jetified-play-services-cloud-messaging-16.0.0/jars/classes.jar!/" />

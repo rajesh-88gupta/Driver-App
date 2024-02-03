@@ -1,9 +1,9 @@
 <component name="libraryTable">
-  <library name="Gradle: com.github.hadiidbouk:ChartProgressBar-Android:2.0.6@aar">
+  <library name="Gradle: com.github.hadiidbouk:ChartProgressBar-Android:2.0.6@aar" external-system-id="GRADLE">
     <CLASSES>
-      <root url="file://D:/EspressoUITest-Examples/caches/transforms-3/02adba1344da31f757ba86dede1512b4/transformed/jetified-ChartProgressBar-Android-2.0.6/res" />
-      <root url="file://D:/EspressoUITest-Examples/caches/transforms-3/02adba1344da31f757ba86dede1512b4/transformed/jetified-ChartProgressBar-Android-2.0.6/AndroidManifest.xml" />
-      <root url="jar://D:/EspressoUITest-Examples/caches/transforms-3/02adba1344da31f757ba86dede1512b4/transformed/jetified-ChartProgressBar-Android-2.0.6/jars/classes.jar!/" />
+      <root url="file://D:/EspressoUITest-Examples/caches/transforms-3/32410af38d49a4420af06515f8fbea7b/transformed/jetified-ChartProgressBar-Android-2.0.6/res" />
+      <root url="jar://D:/EspressoUITest-Examples/caches/transforms-3/32410af38d49a4420af06515f8fbea7b/transformed/jetified-ChartProgressBar-Android-2.0.6/jars/classes.jar!/" />
+      <root url="file://D:/EspressoUITest-Examples/caches/transforms-3/32410af38d49a4420af06515f8fbea7b/transformed/jetified-ChartProgressBar-Android-2.0.6/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

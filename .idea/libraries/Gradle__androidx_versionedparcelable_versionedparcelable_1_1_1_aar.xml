@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="Gradle: androidx.versionedparcelable:versionedparcelable:1.1.1@aar">
+  <library name="Gradle: androidx.versionedparcelable:versionedparcelable:1.1.1@aar" external-system-id="GRADLE">
     <CLASSES>
       <root url="file://D:/EspressoUITest-Examples/caches/transforms-3/1c36a2e3720f24e8bb4940c542595f66/transformed/versionedparcelable-1.1.1/AndroidManifest.xml" />
       <root url="jar://D:/EspressoUITest-Examples/caches/transforms-3/1c36a2e3720f24e8bb4940c542595f66/transformed/versionedparcelable-1.1.1/jars/classes.jar!/" />

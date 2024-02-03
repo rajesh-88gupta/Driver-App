@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="Gradle: com.google.dagger:dagger:2.31.2">
+  <library name="Gradle: com.google.dagger:dagger:2.31.2" external-system-id="GRADLE">
     <CLASSES>
       <root url="jar://D:/EspressoUITest-Examples/caches/modules-2/files-2.1/com.google.dagger/dagger/2.31.2/f6e341211412ea1736befe8390af78b8c7ed8c25/dagger-2.31.2.jar!/" />
     </CLASSES>

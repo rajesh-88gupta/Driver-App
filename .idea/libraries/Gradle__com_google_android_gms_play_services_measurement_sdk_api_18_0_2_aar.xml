@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="Gradle: com.google.android.gms:play-services-measurement-sdk-api:18.0.2@aar">
+  <library name="Gradle: com.google.android.gms:play-services-measurement-sdk-api:18.0.2@aar" external-system-id="GRADLE">
     <CLASSES>
       <root url="file://D:/EspressoUITest-Examples/caches/transforms-3/9a8fe5ea11ce22a41b647525119de332/transformed/jetified-play-services-measurement-sdk-api-18.0.2/AndroidManifest.xml" />
       <root url="jar://D:/EspressoUITest-Examples/caches/transforms-3/9a8fe5ea11ce22a41b647525119de332/transformed/jetified-play-services-measurement-sdk-api-18.0.2/jars/classes.jar!/" />

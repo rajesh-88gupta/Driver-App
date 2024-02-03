@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="Gradle: androidx.viewpager:viewpager:1.0.0@aar">
+  <library name="Gradle: androidx.viewpager:viewpager:1.0.0@aar" external-system-id="GRADLE">
     <CLASSES>
       <root url="file://D:/EspressoUITest-Examples/caches/transforms-3/8a9dd2f8ffe2d6ed8137454188dea6c6/transformed/viewpager-1.0.0/AndroidManifest.xml" />
       <root url="jar://D:/EspressoUITest-Examples/caches/transforms-3/8a9dd2f8ffe2d6ed8137454188dea6c6/transformed/viewpager-1.0.0/jars/classes.jar!/" />

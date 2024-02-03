@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="Gradle: androidx.appcompat:appcompat:1.2.0@aar">
+  <library name="Gradle: androidx.appcompat:appcompat:1.2.0@aar" external-system-id="GRADLE">
     <ANNOTATIONS>
       <root url="jar://D:/EspressoUITest-Examples/caches/transforms-3/0a1cf0b1b16252004047983844ac9287/transformed/appcompat-1.2.0/annotations.zip!/" />
     </ANNOTATIONS>

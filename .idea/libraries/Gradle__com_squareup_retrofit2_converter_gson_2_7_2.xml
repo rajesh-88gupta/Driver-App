@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="Gradle: com.squareup.retrofit2:converter-gson:2.7.2">
+  <library name="Gradle: com.squareup.retrofit2:converter-gson:2.7.2" external-system-id="GRADLE">
     <CLASSES>
       <root url="jar://D:/EspressoUITest-Examples/caches/modules-2/files-2.1/com.squareup.retrofit2/converter-gson/2.7.2/2c17c9e58aa21707099f35ae0fe2e24f72c792c9/converter-gson-2.7.2.jar!/" />
     </CLASSES>

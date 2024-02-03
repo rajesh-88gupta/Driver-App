@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="Gradle: com.paypal.android.sdk:paypal-one-touch:3.14.2@aar">
+  <library name="Gradle: com.paypal.android.sdk:paypal-one-touch:3.14.2@aar" external-system-id="GRADLE">
     <ANNOTATIONS>
       <root url="jar://D:/EspressoUITest-Examples/caches/transforms-3/f99dc177c22ead98f9ddec98d83442fe/transformed/jetified-paypal-one-touch-3.14.2/annotations.zip!/" />
     </ANNOTATIONS>

@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="Gradle: id.zelory:compressor:1.0.1@aar">
+  <library name="Gradle: id.zelory:compressor:1.0.1@aar" external-system-id="GRADLE">
     <CLASSES>
       <root url="jar://D:/EspressoUITest-Examples/caches/transforms-3/b26abd5f53e739d7d0f829574b21514f/transformed/jetified-compressor-1.0.1/jars/classes.jar!/" />
       <root url="file://D:/EspressoUITest-Examples/caches/transforms-3/b26abd5f53e739d7d0f829574b21514f/transformed/jetified-compressor-1.0.1/res" />

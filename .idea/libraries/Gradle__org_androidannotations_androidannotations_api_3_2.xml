@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="Gradle: org.androidannotations:androidannotations-api:3.2">
+  <library name="Gradle: org.androidannotations:androidannotations-api:3.2" external-system-id="GRADLE">
     <CLASSES>
       <root url="jar://D:/EspressoUITest-Examples/caches/modules-2/files-2.1/org.androidannotations/androidannotations-api/3.2/89b33bb1e996eb2c4089f79d1b8651c71fe8e2d1/androidannotations-api-3.2.jar!/" />
     </CLASSES>

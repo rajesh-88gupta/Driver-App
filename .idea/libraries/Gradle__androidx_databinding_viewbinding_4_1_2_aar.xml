@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="Gradle: androidx.databinding:viewbinding:4.1.2@aar">
+  <library name="Gradle: androidx.databinding:viewbinding:4.1.2@aar" external-system-id="GRADLE">
     <CLASSES>
       <root url="jar://D:/EspressoUITest-Examples/caches/transforms-3/f182c64a0029fef49cec57d8371b212c/transformed/jetified-viewbinding-4.1.2/jars/classes.jar!/" />
       <root url="file://D:/EspressoUITest-Examples/caches/transforms-3/f182c64a0029fef49cec57d8371b212c/transformed/jetified-viewbinding-4.1.2/AndroidManifest.xml" />

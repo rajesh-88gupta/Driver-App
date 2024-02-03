@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="Gradle: androidx.navigation:navigation-common-ktx:2.0.0@aar">
+  <library name="Gradle: androidx.navigation:navigation-common-ktx:2.0.0@aar" external-system-id="GRADLE">
     <CLASSES>
       <root url="file://D:/EspressoUITest-Examples/caches/transforms-3/116f09b5195caf2a28e0981d9b323ad7/transformed/navigation-common-ktx-2.0.0/AndroidManifest.xml" />
       <root url="jar://D:/EspressoUITest-Examples/caches/transforms-3/116f09b5195caf2a28e0981d9b323ad7/transformed/navigation-common-ktx-2.0.0/jars/classes.jar!/" />

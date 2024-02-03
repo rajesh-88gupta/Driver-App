@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="Gradle: com.braintreepayments.api:google-payment:3.3.1@aar">
+  <library name="Gradle: com.braintreepayments.api:google-payment:3.3.1@aar" external-system-id="GRADLE">
     <CLASSES>
       <root url="file://D:/EspressoUITest-Examples/caches/transforms-3/9ab0ffb7fd289a677bd925fc0d163449/transformed/jetified-google-payment-3.3.1/res" />
       <root url="file://D:/EspressoUITest-Examples/caches/transforms-3/9ab0ffb7fd289a677bd925fc0d163449/transformed/jetified-google-payment-3.3.1/AndroidManifest.xml" />

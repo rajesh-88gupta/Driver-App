@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="Gradle: com.braintreepayments:card-form:5.0.0@aar">
+  <library name="Gradle: com.braintreepayments:card-form:5.0.0@aar" external-system-id="GRADLE">
     <ANNOTATIONS>
       <root url="jar://D:/EspressoUITest-Examples/caches/transforms-3/dd5565f63bdcf0b5c54e6fe375e03f88/transformed/jetified-card-form-5.0.0/annotations.zip!/" />
     </ANNOTATIONS>

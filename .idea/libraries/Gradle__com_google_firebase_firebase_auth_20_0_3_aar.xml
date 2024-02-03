@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="Gradle: com.google.firebase:firebase-auth:20.0.3@aar">
+  <library name="Gradle: com.google.firebase:firebase-auth:20.0.3@aar" external-system-id="GRADLE">
     <CLASSES>
       <root url="file://D:/EspressoUITest-Examples/caches/transforms-3/7f1d320e3f5a594ce69f8f285d8b86dd/transformed/jetified-firebase-auth-20.0.3/AndroidManifest.xml" />
       <root url="jar://D:/EspressoUITest-Examples/caches/transforms-3/7f1d320e3f5a594ce69f8f285d8b86dd/transformed/jetified-firebase-auth-20.0.3/jars/classes.jar!/" />
